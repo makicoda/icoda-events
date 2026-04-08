@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0B0B1E;color:#fff;overflow-x:hidden}
+
+/* NAV */
+.nav{display:flex;align-items:center;padding:14px 60px;border-bottom:1px solid rgba(255,255,255,0.06);gap:0}
+.nav-logo{font-size:22px;font-weight:700;color:#fff;letter-spacing:-0.5px;margin-right:auto;font-family:'Inter',sans-serif}
+.nav-logo span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:6px;font-size:14px;color:rgba(255,255,255,0.55);margin-right:auto}
+.nav-links a{color:inherit;text-decoration:none;transition:all .2s;padding:8px 14px;border-radius:8px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.nav-links a:hover{color:#fff}
+.nav-links a .dd-arrow{font-size:9px;opacity:0.4}
+.nav-links a.ai-seo{background:rgba(91,80,255,0.1);color:rgba(255,255,255,0.7);border-radius:20px}
+.nav-links a.ai-seo .ai-icon{width:14px;height:14px;background:rgba(91,80,255,0.5);border-radius:50%;display:inline-block;margin-right:2px}
+.nav-right{display:flex;align-items:center;gap:14px;margin-left:auto}
+.nav-cta{padding:10px 24px;border-radius:8px;background:#5B50FF;color:#fff;font-size:12px;font-weight:600;border:none;cursor:pointer;text-decoration:none;letter-spacing:0.8px;text-transform:uppercase}
+.nav-cta:hover{background:#4A3FE6}
+.nav-flag{width:24px;height:16px;border-radius:3px;background:#1a3a6e;border:1px solid rgba(255,255,255,0.1);cursor:pointer;position:relative;overflow:hidden}
+.nav-flag::before{content:'';position:absolute;top:0;left:0;right:0;height:33%;background:#B22234}
+.nav-flag::after{content:'';position:absolute;top:33%;left:0;right:0;height:34%;background:#fff}
+
+/* HERO */
+.hero-section{padding:48px 60px 40px}
+.hero-title{font-size:36px;font-weight:700;margin-bottom:8px;line-height:1.2}
+.hero-sub{display:flex;align-items:center;gap:12px;margin-bottom:36px}
+.submit-btn{font-size:13px;color:#5B50FF;text-decoration:none;border:1px solid rgba(91,80,255,0.3);padding:6px 16px;border-radius:6px;transition:all .2s}
+.submit-btn:hover{background:rgba(91,80,255,0.1)}
+
+.hero-content{display:flex;gap:0;background:#111128;border-radius:16px;overflow:hidden;min-height:320px}
+.hero-list{flex:1;padding:0}
+.hero-item{padding:24px 32px;border-bottom:1px solid rgba(255,255,255,0.06);cursor:pointer;transition:background .2s}
+.hero-item:last-child{border-bottom:none}
+.hero-item:hover,.hero-item.active{background:rgba(91,80,255,0.06)}
+.hero-item-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.hero-date{font-size:13px;color:#5B50FF;font-weight:500}
+.hero-loc{font-size:13px;color:rgba(255,255,255,0.4)}
+.hero-tags{display:flex;gap:6px;margin-left:auto}
+.hero-tag{font-size:11px;padding:3px 10px;border-radius:4px;border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.5)}
+.hero-name{font-size:20px;font-weight:600;margin-bottom:12px}
+.hero-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.btn-grab{padding:8px 20px;border-radius:8px;background:#5B50FF;color:#fff;font-size:13px;font-weight:500;border:none;cursor:pointer;text-decoration:none;transition:background .2s}
+.btn-grab:hover{background:#4A3FE6}
+.btn-review{padding:8px 20px;border-radius:8px;background:transparent;color:rgba(255,255,255,0.6);font-size:13px;border:1px solid rgba(255,255,255,0.15);cursor:pointer;text-decoration:none;transition:all .2s}
+.btn-review:hover{border-color:rgba(255,255,255,0.3);color:#fff}
+.promo-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:8px;background:rgba(91,80,255,0.1);font-size:12px;color:#8B83FF}
+.promo-code{font-weight:600;color:#A9A3FF;letter-spacing:0.5px}
+.promo-copy{cursor:pointer;color:#5B50FF;font-weight:500;transition:color .2s}
+.promo-copy:hover{color:#fff}
+
+.hero-banner{width:420px;flex-shrink:0;position:relative;overflow:hidden}
+.hero-banner-img{display:none;width:100%;height:100%;object-fit:cover}
+.hero-banner-img.active{display:block}
+.hero-banner-placeholder{width:100%;height:100%;background:linear-gradient(135deg,#1a1a3e,#2d1b4e);display:flex;align-items:center;justify-content:center;display:none}
+.hero-banner-placeholder.active{display:flex}
+.banner-inner{padding:32px;text-align:center}
+.banner-inner h3{font-size:18px;margin-bottom:8px;font-weight:600}
+.banner-inner p{font-size:12px;color:rgba(255,255,255,0.5)}
+
+/* FEATURED EVENTS */
+.featured-section{padding:48px 60px}
+.featured-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.featured-title{font-size:24px;font-weight:600}
+
+/* TABS */
+.tabs-row{display:flex;gap:8px;margin-bottom:20px}
+.tab-btn{padding:8px 20px;border-radius:20px;font-size:13px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:rgba(255,255,255,0.5);cursor:pointer;transition:all .2s}
+.tab-btn.active{background:#5B50FF;color:#fff;border-color:#5B50FF}
+.tab-btn:hover:not(.active){border-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.8)}
+.tab-new{font-size:9px;background:rgba(91,80,255,0.2);color:#A9A3FF;padding:1px 5px;border-radius:3px;margin-left:4px;vertical-align:middle}
+
+/* FILTERS */
+.filters-row{display:flex;gap:10px;margin-bottom:28px;align-items:center;flex-wrap:wrap}
+.filter-dd{padding:8px 16px;border-radius:8px;font-size:13px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.5);cursor:pointer;display:flex;align-items:center;gap:6px}
+.filter-dd svg{width:10px;height:10px;fill:rgba(255,255,255,0.3)}
+.filter-toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.5);margin-left:auto}
+.toggle-switch{width:34px;height:18px;border-radius:9px;background:rgba(255,255,255,0.1);position:relative;cursor:pointer}
+.toggle-switch.on{background:#5B50FF}
+.toggle-dot{width:14px;height:14px;border-radius:50%;background:#fff;position:absolute;top:2px;left:2px;transition:left .2s}
+.toggle-switch.on .toggle-dot{left:18px}
+
+/* EVENT CARDS */
+.event-cards{display:flex;flex-direction:column;gap:0}
+.event-card{display:flex;gap:0;background:#111128;border-radius:14px;overflow:hidden;margin-bottom:16px;border:1px solid rgba(255,255,255,0.04);transition:border-color .2s}
+.event-card:hover{border-color:rgba(255,255,255,0.08)}
+.ec-left{flex:1;padding:28px 32px}
+.ec-title-row{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:6px}
+.ec-name{font-size:18px;font-weight:600}
+.ec-expand{font-size:12px;color:#5B50FF;cursor:pointer}
+.ec-desc{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;margin-bottom:14px}
+.ec-desc-full{display:none}
+.ec-meta{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:14px}
+.ec-meta-item{font-size:12px;color:rgba(255,255,255,0.4)}
+.ec-meta-label{color:rgba(255,255,255,0.25);display:block;margin-bottom:2px;font-size:11px}
+.ec-meta-value{color:rgba(255,255,255,0.7)}
+.ec-topics{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.ec-topic{font-size:11px;padding:3px 10px;border-radius:4px;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)}
+.ec-role{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:14px}
+.ec-role span{color:#5B50FF;font-weight:500}
+.ec-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ec-countdown{font-size:12px;color:rgba(255,255,255,0.3);margin-left:auto}
+.ec-countdown strong{color:rgba(255,255,255,0.7)}
+
+.show-more-wrap{text-align:center;padding:16px 0}
+.show-more-btn{padding:12px 32px;border-radius:10px;background:transparent;color:rgba(255,255,255,0.5);font-size:14px;border:1px solid rgba(255,255,255,0.1);cursor:pointer;transition:all .2s}
+.show-more-btn:hover{border-color:rgba(255,255,255,0.25);color:#fff}
+
+.hidden-cards{display:none}
+.hidden-cards.visible{display:block}
+
+/* MEET ICODA */
+.meet-section{padding:48px 60px;display:flex;align-items:center;gap:48px;background:#111128;border-radius:16px;margin:24px 60px}
+.meet-text{flex:1}
+.meet-text h2{font-size:28px;font-weight:700;margin-bottom:12px}
+.meet-text p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:20px}
+.meet-img{width:360px;height:220px;border-radius:12px;background:linear-gradient(135deg,#1a1a3e,#2d1b4e);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.meet-img span{font-size:13px;color:rgba(255,255,255,0.3)}
+
+/* PARTNERS */
+.partners-section{padding:60px 60px 48px;text-align:center}
+.partners-section h2{font-size:24px;font-weight:600;margin-bottom:8px}
+.partners-section p{font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:36px}
+.marquee-wrap{overflow:hidden;margin-bottom:16px;position:relative}
+.marquee-wrap::before,.marquee-wrap::after{content:'';position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}
+.marquee-wrap::before{left:0;background:linear-gradient(90deg,#0B0B1E,transparent)}
+.marquee-wrap::after{right:0;background:linear-gradient(-90deg,#0B0B1E,transparent)}
+.marquee-track{display:flex;gap:40px;align-items:center;width:max-content}
+.marquee-track.right{animation:scrollRight 30s linear infinite}
+.marquee-track.left{animation:scrollLeft 30s linear infinite}
+@keyframes scrollRight{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes scrollLeft{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+.partner-logo{height:36px;padding:12px 28px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;white-space:nowrap;font-size:13px;font-weight:500;color:rgba(255,255,255,0.4);flex-shrink:0;transition:all .3s}
+.partner-logo:hover{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.12)}
+.marquee-wrap:hover .marquee-track{animation-play-state:paused}
+
+/* YOU MAY LIKE */
+.youmaylike-section{padding:48px 60px}
+.youmaylike-section h2{font-size:24px;font-weight:600;margin-bottom:24px}
+.ym-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ym-card{background:#111128;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);transition:border-color .2s}
+.ym-card:hover{border-color:rgba(255,255,255,0.1)}
+.ym-thumb{height:120px;background:linear-gradient(135deg,#141432,#1c1444);display:flex;align-items:center;justify-content:center}
+.ym-thumb span{font-size:11px;color:rgba(255,255,255,0.2);text-align:center;padding:8px}
+.ym-body{padding:14px 16px}
+.ym-tags{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.ym-tag{font-size:10px;color:#5B50FF;background:rgba(91,80,255,0.1);padding:2px 8px;border-radius:4px}
+.ym-card-title{font-size:13px;font-weight:500;line-height:1.4;margin-bottom:8px;color:rgba(255,255,255,0.85)}
+.ym-card-desc{font-size:11px;color:rgba(255,255,255,0.35);line-height:1.5;margin-bottom:10px}
+.ym-card-meta{font-size:11px;color:rgba(255,255,255,0.25)}
+
+/* FOOTER */
+.footer{padding:48px 60px 32px;border-top:1px solid rgba(255,255,255,0.06);margin-top:48px}
+.footer-top{display:flex;gap:48px;margin-bottom:36px}
+.footer-col{flex:1}
+.footer-col h4{font-size:13px;font-weight:600;margin-bottom:14px;color:rgba(255,255,255,0.7)}
+.footer-col a{display:block;font-size:12px;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:rgba(255,255,255,0.6)}
+.footer-group{display:flex;gap:24px;margin-bottom:28px}
+.footer-group-item{display:flex;align-items:center;gap:10px;padding:12px 20px;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid rgba(255,255,255,0.05)}
+.footer-group-label{font-size:10px;color:rgba(255,255,255,0.3)}
+.footer-group-name{font-size:13px;font-weight:500;color:rgba(255,255,255,0.6)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:rgba(255,255,255,0.2);border-top:1px solid rgba(255,255,255,0.04);padding-top:20px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">icoda<span>.</span></div>
+  <div class="nav-links">
+    <a href="#">Crypto Marketing <span class="dd-arrow">&#9662;</span></a>
+    <a href="#">iGaming Marketing <span class="dd-arrow">&#9662;</span></a>
+    <a href="#" class="ai-seo"><span class="ai-icon"></span>AI SEO <span class="dd-arrow">&#9662;</span></a>
+    <a href="#">Company <span class="dd-arrow">&#9662;</span></a>
+    <a href="#">Pricing</a>
+  </div>
+  <div class="nav-right">
+    <a href="#" class="nav-cta">Contact Us</a>
+    <div class="nav-flag"></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+  <h1 class="hero-title">Top Crypto, Web3 & Blockchain Events (2026)</h1>
+  <div class="hero-sub">
+    <a href="#" class="submit-btn">Submit your Event</a>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-list">
+
+      <div class="hero-item active" onmouseenter="switchBanner(0)">
+        <div class="hero-item-top">
+          <span class="hero-date">14 - 15 April, 2026</span>
+          <span class="hero-loc">Moscow, Russia</span>
+          <div class="hero-tags">
+            <span class="hero-tag">AI</span>
+            <span class="hero-tag">Blockchain</span>
+            <span class="hero-tag">Fintech</span>
+            <span class="hero-tag">Web3</span>
+          </div>
+        </div>
+        <div class="hero-name">AI Future Forum</div>
+        <div class="hero-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill">
+            <span class="promo-code">ICODA20</span>
+            <span style="color:rgba(255,255,255,0.15)">|</span>
+            <span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-item" onmouseenter="switchBanner(1)">
+        <div class="hero-item-top">
+          <span class="hero-date">14 - 15 April, 2026</span>
+          <span class="hero-loc">Moscow, Russia</span>
+          <div class="hero-tags">
+            <span class="hero-tag">Blockchain</span>
+            <span class="hero-tag">Crypto</span>
+          </div>
+        </div>
+        <div class="hero-name">Blockchain Forum 2026</div>
+        <div class="hero-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+        </div>
+      </div>
+
+      <div class="hero-item" onmouseenter="switchBanner(2)">
+        <div class="hero-item-top">
+          <span class="hero-date">01 - 02 December, 2026</span>
+          <span class="hero-loc">Dubai, UAE</span>
+          <div class="hero-tags">
+            <span class="hero-tag">Blockchain</span>
+            <span class="hero-tag">Web3</span>
+          </div>
+        </div>
+        <div class="hero-name">Blockchain Life 2026</div>
+        <div class="hero-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill">
+            <span class="promo-code">ICODA10</span>
+            <span style="color:rgba(255,255,255,0.15)">|</span>
+            <span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-banner">
+      <div class="hero-banner-placeholder active" id="banner-0">
+        <div class="banner-inner">
+          <h3>AI Future Forum</h3>
+          <p>Moscow, Crocus Expo<br>April 14–15, 2026</p>
+          <div style="margin-top:16px;display:flex;gap:16px;justify-content:center">
+            <div><div style="font-size:18px;font-weight:700">20000+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">ATTENDEES</div></div>
+            <div><div style="font-size:18px;font-weight:700">200+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">SPEAKERS</div></div>
+            <div><div style="font-size:18px;font-weight:700">250+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">BOOTHS</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-banner-placeholder" id="banner-1">
+        <div class="banner-inner">
+          <h3>Blockchain Forum 2026</h3>
+          <p>Moscow, Russia<br>April 14–15, 2026</p>
+          <div style="margin-top:16px;display:flex;gap:16px;justify-content:center">
+            <div><div style="font-size:18px;font-weight:700">5000+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">ATTENDEES</div></div>
+            <div><div style="font-size:18px;font-weight:700">80+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">SPEAKERS</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-banner-placeholder" id="banner-2">
+        <div class="banner-inner">
+          <h3>Blockchain Life 2026</h3>
+          <p>Dubai, UAE<br>December 1–2, 2026</p>
+          <div style="margin-top:16px;display:flex;gap:16px;justify-content:center">
+            <div><div style="font-size:18px;font-weight:700">10000+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">ATTENDEES</div></div>
+            <div><div style="font-size:18px;font-weight:700">150+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">SPEAKERS</div></div>
+            <div><div style="font-size:18px;font-weight:700">200+</div><div style="font-size:9px;color:rgba(255,255,255,0.35)">BOOTHS</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED EVENTS -->
+<section class="featured-section">
+  <div class="featured-header">
+    <h2 class="featured-title">Featured Crypto Events</h2>
+  </div>
+
+  <div class="tabs-row">
+    <button class="tab-btn active" onclick="setTab(this)">All events</button>
+    <button class="tab-btn" onclick="setTab(this)">Crypto & Web3</button>
+    <button class="tab-btn" onclick="setTab(this)">AI & Tech <span class="tab-new">new</span></button>
+    <button class="tab-btn" onclick="setTab(this)">iGaming <span class="tab-new">new</span></button>
+  </div>
+
+  <div class="filters-row">
+    <div class="filter-dd">Location <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4"/></svg></div>
+    <div class="filter-dd">Date <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4"/></svg></div>
+    <div class="filter-dd">Topics <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4"/></svg></div>
+    <div class="filter-toggle">
+      Online <div class="toggle-switch" onclick="this.classList.toggle('on')"><div class="toggle-dot"></div></div>
+    </div>
+    <div class="filter-toggle">
+      With promo codes <div class="toggle-switch" onclick="this.classList.toggle('on')"><div class="toggle-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- CARD 1 -->
+  <div class="event-cards" id="visible-cards">
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">AI Future Forum</div>
+        <div class="ec-desc">AI Future Forum is part of the global Blockchain Life Forum — a unique expert platform fully dedicated to exploring the synergy between AI and Blockchain.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">14 - 15 April, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Moscow, Russia</span></div>
+        </div>
+        <div class="ec-topics">
+          <span class="ec-topic">AI</span><span class="ec-topic">Blockchain</span><span class="ec-topic">Fintech</span><span class="ec-topic">Web3</span>
+        </div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill">
+            <span class="promo-code">ICODA20</span>
+            <span style="color:rgba(255,255,255,0.15)">|</span>
+            <span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span>
+          </div>
+          <span class="ec-countdown"><strong>6</strong> days left</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">Blockchain Forum 2026</div>
+        <div class="ec-desc">Subsidiary of the international Blockchain Life Forum. Uniting the Russian-speaking and international crypto community.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">14 - 15 April, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Moscow, Russia</span></div>
+        </div>
+        <div class="ec-topics">
+          <span class="ec-topic">Blockchain</span><span class="ec-topic">Crypto</span>
+        </div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <span class="ec-countdown"><strong>6</strong> days left</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">Consensus Miami 2026</div>
+        <div class="ec-desc">Consensus brings its flagship event to Miami — an electric hub embracing crypto innovation. Gateway to Latin American markets.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">05 - 07 May, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Miami, USA</span></div>
+        </div>
+        <div class="ec-topics">
+          <span class="ec-topic">Crypto</span>
+        </div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill">
+            <span class="promo-code">ICODA15</span>
+            <span style="color:rgba(255,255,255,0.15)">|</span>
+            <span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span>
+          </div>
+          <span class="ec-countdown"><strong>27</strong> days left</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIDDEN BATCH -->
+  <div class="hidden-cards" id="batch-2">
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">Blockchain Life 2026</div>
+        <div class="ec-desc">A landmark event in the space of Web3, cryptocurrencies, and mining. 10th edition in Dubai.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">01 - 02 December, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Dubai, UAE</span></div>
+        </div>
+        <div class="ec-topics"><span class="ec-topic">Blockchain</span><span class="ec-topic">Web3</span></div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill"><span class="promo-code">ICODA10</span><span style="color:rgba(255,255,255,0.15)">|</span><span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span></div>
+          <span class="ec-countdown"><strong>238</strong> days left</span>
+        </div>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">TOKEN2049 Singapore</div>
+        <div class="ec-desc">The world's largest crypto event. 25K+ attendees, 300+ speakers, 1000+ side events at Marina Bay Sands.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">07 - 08 October, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Singapore</span></div>
+        </div>
+        <div class="ec-topics"><span class="ec-topic">Crypto</span><span class="ec-topic">Web3</span><span class="ec-topic">DeFi</span></div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill"><span class="promo-code">ICODA10</span><span style="color:rgba(255,255,255,0.15)">|</span><span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span></div>
+          <span class="ec-countdown"><strong>183</strong> days left</span>
+        </div>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="ec-left">
+        <div class="ec-name">Paris Blockchain Week 2026</div>
+        <div class="ec-desc">Where institutional finance meets digital assets. Europe's premier blockchain gathering.</div>
+        <div class="ec-meta">
+          <div class="ec-meta-item"><span class="ec-meta-label">Date</span><span class="ec-meta-value">15 - 16 April, 2026</span></div>
+          <div class="ec-meta-item"><span class="ec-meta-label">Location</span><span class="ec-meta-value">Paris, France</span></div>
+        </div>
+        <div class="ec-topics"><span class="ec-topic">Blockchain</span><span class="ec-topic">DeFi</span><span class="ec-topic">Web3</span></div>
+        <div class="ec-role">iCODA Role: <span>Media Partner</span></div>
+        <div class="ec-actions">
+          <a href="#" class="btn-grab">Grab your spot</a>
+          <a href="#" class="btn-review">Read our review</a>
+          <div class="promo-pill"><span class="promo-code">ICODA-PBW15</span><span style="color:rgba(255,255,255,0.15)">|</span><span class="promo-copy" onclick="this.textContent='Copied!'">Copy</span></div>
+          <span class="ec-countdown"><strong>7</strong> days left</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-more-wrap">
+    <button class="show-more-btn" onclick="showMore()">Show more</button>
+  </div>
+</section>
+
+<!-- MEET ICODA -->
+<div class="meet-section">
+  <div class="meet-text">
+    <h2>Meet ICODA worldwide.</h2>
+    <p>Catch us at major blockchain, crypto, and iGaming events across the globe.</p>
+    <a href="#" class="btn-grab">Book A Meeting</a>
+  </div>
+  <div class="meet-img"><span>[ Photo collage placeholder ]</span></div>
+</div>
+
+<!-- PARTNERS -->
+<section class="partners-section">
+  <h2>Our partners</h2>
+  <p>Proud media partner of the world's leading crypto & blockchain conferences</p>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track right" id="track1">
+      <div class="partner-logo">TOKEN2049</div>
+      <div class="partner-logo">Blockchain Life</div>
+      <div class="partner-logo">Consensus</div>
+      <div class="partner-logo">Paris Blockchain Week</div>
+      <div class="partner-logo">Next Block Expo</div>
+      <div class="partner-logo">Web Summit</div>
+      <div class="partner-logo">GITEX</div>
+      <div class="partner-logo">ETHGlobal</div>
+      <div class="partner-logo">TOKEN2049</div>
+      <div class="partner-logo">Blockchain Life</div>
+      <div class="partner-logo">Consensus</div>
+      <div class="partner-logo">Paris Blockchain Week</div>
+      <div class="partner-logo">Next Block Expo</div>
+      <div class="partner-logo">Web Summit</div>
+      <div class="partner-logo">GITEX</div>
+      <div class="partner-logo">ETHGlobal</div>
+    </div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track left" id="track2">
+      <div class="partner-logo">Money Expo</div>
+      <div class="partner-logo">Crypto Expo Europe</div>
+      <div class="partner-logo">Wiki Finance Expo</div>
+      <div class="partner-logo">SBC Summit</div>
+      <div class="partner-logo">UN:BLOCK</div>
+      <div class="partner-logo">Blockchain Forum</div>
+      <div class="partner-logo">AI Future Forum</div>
+      <div class="partner-logo">WAGMI Miami</div>
+      <div class="partner-logo">Money Expo</div>
+      <div class="partner-logo">Crypto Expo Europe</div>
+      <div class="partner-logo">Wiki Finance Expo</div>
+      <div class="partner-logo">SBC Summit</div>
+      <div class="partner-logo">UN:BLOCK</div>
+      <div class="partner-logo">Blockchain Forum</div>
+      <div class="partner-logo">AI Future Forum</div>
+      <div class="partner-logo">WAGMI Miami</div>
+    </div>
+  </div>
+</section>
+
+<!-- YOU MAY LIKE -->
+<section class="youmaylike-section">
+  <h2>You may like</h2>
+  <div class="ym-grid">
+    <div class="ym-card">
+      <div class="ym-thumb"><span>8 Best AI Automation Agencies</span></div>
+      <div class="ym-body">
+        <div class="ym-tags"><span class="ym-tag">AI Marketing</span></div>
+        <div class="ym-card-title">8 Best AI Automation Agencies in 2026</div>
+        <div class="ym-card-desc">AI automation agencies compared for startups, mid-market, and enterprise...</div>
+        <div class="ym-card-meta">Anastasia Shalepina &middot; 02 April, 2026</div>
+      </div>
+    </div>
+    <div class="ym-card">
+      <div class="ym-thumb"><span>iGaming Platform Providers AI Visibility</span></div>
+      <div class="ym-body">
+        <div class="ym-tags"><span class="ym-tag">AI SEO</span><span class="ym-tag">iGaming</span></div>
+        <div class="ym-card-title">60% of iGaming Platform Providers Are Invisible to AI</div>
+        <div class="ym-card-desc">Original audit of 30 providers with visibility scores...</div>
+        <div class="ym-card-meta">Vladislav Pivnev &middot; 01 April, 2026</div>
+      </div>
+    </div>
+    <div class="ym-card">
+      <div class="ym-thumb"><span>LLM SEO Rank Tracking Tools</span></div>
+      <div class="ym-body">
+        <div class="ym-tags"><span class="ym-tag">LLM SEO</span></div>
+        <div class="ym-card-title">Best LLM SEO Rank Tracking Tools in 2026</div>
+        <div class="ym-card-desc">Compared 7 LLM rank trackers for accuracy and pricing...</div>
+        <div class="ym-card-meta">Anastasia Shalepina &middot; 29 March, 2026</div>
+      </div>
+    </div>
+    <div class="ym-card">
+      <div class="ym-thumb"><span>Best Web3 PR Agencies</span></div>
+      <div class="ym-body">
+        <div class="ym-tags"><span class="ym-tag">PR</span><span class="ym-tag">Web3</span></div>
+        <div class="ym-card-title">Web3 PR: 12 Best Agencies & How to Choose</div>
+        <div class="ym-card-desc">Compare 12 web3 PR agencies ranked by verified results...</div>
+        <div class="ym-card-meta">Anastasia Shalepina &middot; 27 March, 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-group">
+    <div class="footer-group-item">
+      <div><div class="footer-group-name">ICODA</div><div class="footer-group-label">Marketing Services</div></div>
+    </div>
+    <div class="footer-group-item">
+      <div><div class="footer-group-name">BC.Team</div><div class="footer-group-label">Blockchain Development</div></div>
+    </div>
+    <div class="footer-group-item">
+      <div><div class="footer-group-name">AI SEO</div><div class="footer-group-label">AI Visibility Services</div></div>
+    </div>
+  </div>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>Crypto Marketing</h4>
+      <a href="#">Token Sale</a><a href="#">DeFi Promotion</a><a href="#">Crypto Traffic</a><a href="#">Crypto PR</a><a href="#">YouTube Influencers</a><a href="#">Crypto & Blockchain SEO</a><a href="#">Marketing Strategy</a>
+    </div>
+    <div class="footer-col">
+      <h4>iGaming Marketing</h4>
+      <a href="#">Gambling & Casino SEO</a><a href="#">Design for Online Casino</a><a href="#">Casino PR</a><a href="#">Influencer Marketing</a><a href="#">Casino & iGaming PPC</a><a href="#">Casino Marketing Strategy</a>
+    </div>
+    <div class="footer-col">
+      <h4>AI SEO</h4>
+      <a href="#">ChatGPT SEO</a><a href="#">Gemini SEO</a><a href="#">AI Overviews SEO</a><a href="#">Perplexity SEO</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <a href="#">Poland, Wroclaw</a>
+      <a href="#">United States, Bellevue, WA</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2017-2026 All rights reserved. — icoda.io</span>
+    <span>Privacy Policy &middot; Terms and Conditions</span>
+  </div>
+</footer>
+
+<script>
+function switchBanner(i){
+  document.querySelectorAll('.hero-banner-placeholder').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.hero-item').forEach(c=>c.classList.remove('active'));
+  document.getElementById('banner-'+i).classList.add('active');
+  document.querySelectorAll('.hero-item')[i].classList.add('active');
+}
+function setTab(el){
+  document.querySelectorAll('.tab-btn').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+}
+function showMore(){
+  var b=document.getElementById('batch-2');
+  if(!b.classList.contains('visible')){b.classList.add('visible')}
+}
+</script>
+</body>
+</html>
