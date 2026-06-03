@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReadyToScale — ICODA Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #06060f; font-family: 'Inter', sans-serif; }
+
+  /* ── Section ── */
+  .rts {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 60px;
+    background: #0B0B1E;
+  }
+
+  /* ── Map layer ── */
+  .rts__map-wrap {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+  .rts__map-wrap svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Flag pins */
+  .rts__pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+    transition: transform 0.15s;
+  }
+  .rts__pin:hover { transform: translate(-50%,-50%) scale(1.3); }
+
+  /* ── Content ── */
+  .rts__content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+  }
+
+  /* Headline — gradient text */
+  .rts__title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0.55) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Country badges */
+  .rts__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+  .rts__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: rgba(91,80,255,0.08);
+    border: 1px solid rgba(91,80,255,0.18);
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    backdrop-filter: blur(4px);
+    transition: background 0.2s, border-color 0.2s;
+    cursor: default;
+  }
+  .rts__badge:hover {
+    background: rgba(91,80,255,0.16);
+    border-color: rgba(91,80,255,0.35);
+  }
+  .rts__badge-icon { font-size: 16px; line-height: 1; }
+
+  /* CTA buttons */
+  .rts__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .rts__btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+  }
+  .rts__btn--primary {
+    background: #5B50FF;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+  .rts__btn--primary:hover {
+    background: #4A3FE6;
+    transform: translateY(-1px);
+  }
+  .rts__btn--secondary {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.75);
+  }
+  .rts__btn--secondary:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.25);
+    color: #fff;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .rts { padding: 56px 24px; }
+    .rts__actions { flex-direction: column; align-items: stretch; }
+    .rts__btn { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<section class="rts">
+
+  <!-- World map SVG + flag pins -->
+  <div class="rts__map-wrap">
+    <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+      <!-- Continent fills -->
+      <g fill="rgba(91,80,255,0.07)" stroke="rgba(91,80,255,0.16)" stroke-width="1.2">
+        <!-- North America -->
+        <path d="M60,60 L200,50 L220,80 L210,120 L180,160 L140,200 L100,220 L70,200 L50,160 L40,120 Z"/>
+        <!-- South America -->
+        <path d="M160,230 L220,220 L240,260 L230,320 L200,370 L170,360 L150,310 L140,270 Z"/>
+        <!-- Europe -->
+        <path d="M430,60 L530,55 L545,80 L530,110 L490,120 L460,110 L440,90 Z"/>
+        <!-- Africa -->
+        <path d="M450,150 L550,145 L565,200 L560,300 L530,360 L490,370 L460,340 L440,280 L435,210 Z"/>
+        <!-- Asia -->
+        <path d="M545,55 L820,50 L850,80 L840,160 L800,200 L740,210 L680,190 L620,200 L580,180 L555,140 L540,100 Z"/>
+        <!-- Southeast Asia -->
+        <path d="M720,230 L820,220 L840,250 L810,270 L770,265 L730,255 Z"/>
+        <!-- Australia -->
+        <path d="M760,290 L880,285 L900,330 L880,380 L830,400 L780,385 L755,340 Z"/>
+      </g>
+      <!-- Grid lines -->
+      <g stroke="rgba(255,255,255,0.04)" stroke-width="0.8" fill="none">
+        <line x1="0" y1="100" x2="1000" y2="100"/>
+        <line x1="0" y1="200" x2="1000" y2="200"/>
+        <line x1="0" y1="300" x2="1000" y2="300"/>
+        <line x1="0" y1="400" x2="1000" y2="400"/>
+        <line x1="100" y1="0" x2="100" y2="500"/>
+        <line x1="200" y1="0" x2="200" y2="500"/>
+        <line x1="300" y1="0" x2="300" y2="500"/>
+        <line x1="400" y1="0" x2="400" y2="500"/>
+        <line x1="500" y1="0" x2="500" y2="500"/>
+        <line x1="600" y1="0" x2="600" y2="500"/>
+        <line x1="700" y1="0" x2="700" y2="500"/>
+        <line x1="800" y1="0" x2="800" y2="500"/>
+        <line x1="900" y1="0" x2="900" y2="500"/>
+      </g>
+    </svg>
+
+    <!-- Flag pins — left/top % match equirectangular map positions -->
+    <span class="rts__pin" style="left:17%;top:38%" title="USA">🇺🇸</span>
+    <span class="rts__pin" style="left:27%;top:53%" title="Venezuela">🇻🇪</span>
+    <span class="rts__pin" style="left:22%;top:52%" title="Panama">🇵🇦</span>
+    <span class="rts__pin" style="left:49%;top:28%" title="Germany">🇩🇪</span>
+    <span class="rts__pin" style="left:49%;top:31%" title="Switzerland">🇨🇭</span>
+    <span class="rts__pin" style="left:51%;top:27%" title="Poland">🇵🇱</span>
+    <span class="rts__pin" style="left:50%;top:34%" title="Italy">🇮🇹</span>
+    <span class="rts__pin" style="left:56%;top:34%" title="Turkey">🇹🇷</span>
+    <span class="rts__pin" style="left:51%;top:32%" title="Montenegro">🇲🇪</span>
+    <span class="rts__pin" style="left:55%;top:42%" title="Egypt">🇪🇬</span>
+    <span class="rts__pin" style="left:73%;top:48%" title="Thailand">🇹🇭</span>
+    <span class="rts__pin" style="left:77%;top:56%" title="Indonesia">🇮🇩</span>
+    <span class="rts__pin" style="left:75%;top:37%" title="China">🇨🇳</span>
+    <span class="rts__pin" style="left:83%;top:33%" title="Japan">🇯🇵</span>
+  </div>
+
+  <!-- Main content -->
+  <div class="rts__content">
+    <h2 class="rts__title">Ready to scale with&nbsp;AI?</h2>
+
+    <div class="rts__badges">
+      <div class="rts__badge"><span class="rts__badge-icon">🇺🇸</span> USA</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇩🇪</span> Germany</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇨🇭</span> Swiss</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇵🇱</span> Poland</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇮🇹</span> Italy</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇹🇷</span> Turkey</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇻🇪</span> Venezuela</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇪🇬</span> Egypt</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇵🇦</span> Panama</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇹🇭</span> Thailand</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇮🇩</span> Indonesia</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇨🇳</span> China</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇯🇵</span> Japan</div>
+      <div class="rts__badge"><span class="rts__badge-icon">🇲🇪</span> Montenegro</div>
+    </div>
+
+    <div class="rts__actions">
+      <a href="https://calendly.com/as-stive/30min" class="rts__btn rts__btn--primary">
+        Book Strategy Call
+      </a>
+      <a href="#get-proposal" class="rts__btn rts__btn--secondary">
+        Get Proposal
+      </a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
