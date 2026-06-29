@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" width="1080" height="680">
+  <defs>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#341882"/>
+      <stop offset="100%" stop-color="#C8006B"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#341882"/>
+      <stop offset="100%" stop-color="#C8006B"/>
+    </linearGradient>
+    <style>
+      .logo-text {
+        font-family: 'FreeSans', 'Liberation Sans', 'Arial Black', Impact, sans-serif;
+        font-size: 272px;
+        font-weight: 900;
+        font-style: oblique 12deg;
+        fill: white;
+        stroke: #1A1A1A;
+        stroke-width: 5;
+        paint-order: stroke fill;
+      }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect width="1080" height="680" fill="white"/>
+
+  <!-- ===== TEXT (rendered first, gradient will go on top) ===== -->
+  <text x="28" y="300" class="logo-text">Money</text>
+  <text x="28" y="578" class="logo-text">Expo</text>
+
+  <!-- ===== GRADIENT ACCENTS (on top of text, show inside letters) ===== -->
+
+  <!-- M inner chevrons — two upward-pointing gradient triangles -->
+  <polygon points="88,293 155,293 121,112" fill="url(#accentGrad)"/>
+  <polygon points="162,293 229,293 195,112" fill="url(#accentGrad)"/>
+
+  <!-- Expo: right-pointing ">" chevron inside the x letter, bold arms -->
+  <path d="M 198,392 L 340,485 L 198,578 L 248,578 L 390,485 L 248,392 Z" fill="url(#accentGrad)"/>
+
+  <!-- ===== GLOBAL BADGE ===== -->
+  <rect x="960" y="48" width="88" height="590" rx="18" ry="18" fill="url(#badgeGrad)"/>
+  <text
+    transform="translate(1004, 582) rotate(-90)"
+    font-family="'Liberation Sans', Arial, Helvetica, sans-serif"
+    font-size="44"
+    font-weight="700"
+    fill="white"
+    letter-spacing="11">GLOBAL</text>
+
+</svg>
