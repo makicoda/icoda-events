@@ -4,7 +4,7 @@ import { readFileSync } from 'fs';
 const html = readFileSync('/home/user/icoda-events/tg-stories/tg-q-presale-meta-ads.html', 'utf8');
 const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', headless: true });
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
   const page = await browser.newPage({ viewport: { width: 360, height: 640 }, deviceScaleFactor: 3 });
   const patched = html.replace('</style>', `
     body { padding:0!important; gap:0!important; background:#FAFBFD!important; }
