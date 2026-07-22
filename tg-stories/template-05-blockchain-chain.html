@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Template 05 — Blockchain Chain Background</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Onest',sans-serif; background:#1B1C2E; display:flex; gap:24px; padding:48px; flex-wrap:wrap; align-items:flex-start; }
+.slide{width:360px;height:640px;background:linear-gradient(160deg,#FAFBFD 0%,#EFF2F7 55%,#F7F9FC 100%);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;padding:36px 32px;flex-shrink:0;position:relative;isolation:isolate;}
+.bg-deco{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;border-radius:24px;}
+.label{font-size:11px;font-weight:600;color:#2D344D;letter-spacing:0.08em;text-transform:uppercase;text-align:center;margin-bottom:28px;}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+  SHARED BACKGROUND MOTIF — "Blockchain Chain"
+  Same light neutral base. Decoration: two diagonal chains of
+  interlocking rounded-rect links (top-right and bottom-left
+  corners), alternating rotation so consecutive links overlap
+  like a real chain. One accent link per chain in brand blue.
+============================================================= -->
+
+<!-- SLIDE 1 — LABEL -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-width="3">
+        <!-- top-right chain -->
+        <rect x="230" y="32" width="50" height="26" rx="13" transform="rotate(-45 255 45)"  stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="252" y="54" width="50" height="26" rx="13" transform="rotate(45 277 67)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="274" y="76" width="50" height="26" rx="13" transform="rotate(-45 299 89)"   stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="296" y="98" width="50" height="26" rx="13" transform="rotate(45 321 111)"   stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="318" y="120" width="50" height="26" rx="13" transform="rotate(-45 343 133)" stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <!-- bottom-left chain -->
+        <rect x="-8" y="502" width="50" height="26" rx="13" transform="rotate(45 17 515)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="14" y="524" width="50" height="26" rx="13" transform="rotate(-45 39 537)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="36" y="546" width="50" height="26" rx="13" transform="rotate(45 61 559)"     stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="58" y="568" width="50" height="26" rx="13" transform="rotate(-45 83 581)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="80" y="590" width="50" height="26" rx="13" transform="rotate(45 105 603)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S1_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+    <div style="font-size:64px;font-weight:800;color:#3C61E2;line-height:1.1;">{{S1_HIGHLIGHT}}</div>
+    <div style="font-size:26px;font-weight:600;color:#2D344D;line-height:1.35;margin-top:20px;">{{S1_DESCRIPTION}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-width="3">
+        <rect x="230" y="32" width="50" height="26" rx="13" transform="rotate(-45 255 45)"  stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="252" y="54" width="50" height="26" rx="13" transform="rotate(45 277 67)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="274" y="76" width="50" height="26" rx="13" transform="rotate(-45 299 89)"   stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="296" y="98" width="50" height="26" rx="13" transform="rotate(45 321 111)"   stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="318" y="120" width="50" height="26" rx="13" transform="rotate(-45 343 133)" stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="-8" y="502" width="50" height="26" rx="13" transform="rotate(45 17 515)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="14" y="524" width="50" height="26" rx="13" transform="rotate(-45 39 537)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="36" y="546" width="50" height="26" rx="13" transform="rotate(45 61 559)"     stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="58" y="568" width="50" height="26" rx="13" transform="rotate(-45 83 581)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="80" y="590" width="50" height="26" rx="13" transform="rotate(45 105 603)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S2_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:26px;font-weight:700;color:#2D344D;line-height:1.3;margin-bottom:18px;">{{S2_HEADLINE}}</div>
+    <div style="border-top:1px solid #D5DBE5;margin:14px 0;"></div>
+    <div style="font-size:14px;color:#7C8AA0;line-height:1.6;">{{S2_BODY}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-width="3">
+        <rect x="230" y="32" width="50" height="26" rx="13" transform="rotate(-45 255 45)"  stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="252" y="54" width="50" height="26" rx="13" transform="rotate(45 277 67)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="274" y="76" width="50" height="26" rx="13" transform="rotate(-45 299 89)"   stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="296" y="98" width="50" height="26" rx="13" transform="rotate(45 321 111)"   stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="318" y="120" width="50" height="26" rx="13" transform="rotate(-45 343 133)" stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="-8" y="502" width="50" height="26" rx="13" transform="rotate(45 17 515)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="14" y="524" width="50" height="26" rx="13" transform="rotate(-45 39 537)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="36" y="546" width="50" height="26" rx="13" transform="rotate(45 61 559)"     stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="58" y="568" width="50" height="26" rx="13" transform="rotate(-45 83 581)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="80" y="590" width="50" height="26" rx="13" transform="rotate(45 105 603)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S3_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:28px;font-weight:800;color:#2D344D;line-height:1.25;margin-bottom:22px;">{{S3_HEADLINE}}</div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_1}}</span></div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_2}}</span></div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_3}}</span></div>
+    <div style="border-top:1px solid #D5DBE5;margin:18px 0;"></div>
+    <div style="font-size:13px;color:#7C8AA0;line-height:1.6;">{{S3_FOOTER}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-width="3">
+        <rect x="230" y="32" width="50" height="26" rx="13" transform="rotate(-45 255 45)"  stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="252" y="54" width="50" height="26" rx="13" transform="rotate(45 277 67)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="274" y="76" width="50" height="26" rx="13" transform="rotate(-45 299 89)"   stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="296" y="98" width="50" height="26" rx="13" transform="rotate(45 321 111)"   stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="318" y="120" width="50" height="26" rx="13" transform="rotate(-45 343 133)" stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="-8" y="502" width="50" height="26" rx="13" transform="rotate(45 17 515)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="14" y="524" width="50" height="26" rx="13" transform="rotate(-45 39 537)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="36" y="546" width="50" height="26" rx="13" transform="rotate(45 61 559)"     stroke="#3C61E2" stroke-opacity="0.40"/>
+        <rect x="58" y="568" width="50" height="26" rx="13" transform="rotate(-45 83 581)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+        <rect x="80" y="590" width="50" height="26" rx="13" transform="rotate(45 105 603)"    stroke="#9AA7BC" stroke-opacity="0.30"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S4_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:32px;font-weight:800;color:#2D344D;line-height:1.25;">{{S4_HEADLINE}}</div>
+    <div style="border-top:1px solid #D5DBE5;margin:18px 0;"></div>
+    <div style="font-size:14px;color:#7C8AA0;line-height:1.6;margin-bottom:32px;">{{S4_SUBLINE}}</div>
+    <button style="background:#3C61E2;color:#FAFBFD;border:none;border-radius:12px;padding:15px 0;font-family:'Onest',sans-serif;font-size:15px;font-weight:600;cursor:pointer;width:100%;">{{S4_CTA}}</button>
+  </div>
+</div>
+
+</body>
+</html>
