@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Template 03 — Topographic Background</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Onest',sans-serif; background:#1B1C2E; display:flex; gap:24px; padding:48px; flex-wrap:wrap; align-items:flex-start; }
+.slide{width:360px;height:640px;background:linear-gradient(160deg,#FAFBFD 0%,#EFF2F7 55%,#F7F9FC 100%);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;padding:36px 32px;flex-shrink:0;position:relative;isolation:isolate;}
+.bg-deco{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;border-radius:24px;}
+.label{font-size:11px;font-weight:600;color:#2D344D;letter-spacing:0.08em;text-transform:uppercase;text-align:center;margin-bottom:28px;}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+  SHARED BACKGROUND MOTIF — "Topographic"
+  Same light neutral base as template 02. Decoration: gentle
+  horizontal contour-map waves of varying amplitude/opacity,
+  two of them tinted brand blue as quiet accent lines. Calm,
+  premium, keeps focus on the copy.
+============================================================= -->
+
+<!-- SLIDE 1 — LABEL -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <path d="M0,30 C90,10 270,50 360,30"   stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+        <path d="M0,110 C90,140 270,80 360,110" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,190 C90,168 270,212 360,190" stroke="#3C61E2" stroke-opacity="0.14" stroke-width="1.4"/>
+        <path d="M0,270 C90,296 270,244 360,270" stroke="#9AA7BC" stroke-opacity="0.12" stroke-width="1"/>
+        <path d="M0,350 C90,326 270,374 360,350" stroke="#9AA7BC" stroke-opacity="0.16" stroke-width="1.2"/>
+        <path d="M0,430 C90,456 270,404 360,430" stroke="#3C61E2" stroke-opacity="0.12" stroke-width="1.4"/>
+        <path d="M0,510 C90,488 270,532 360,510" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,590 C90,612 270,568 360,590" stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S1_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+    <div style="font-size:64px;font-weight:800;color:#3C61E2;line-height:1.1;">{{S1_HIGHLIGHT}}</div>
+    <div style="font-size:26px;font-weight:600;color:#2D344D;line-height:1.35;margin-top:20px;">{{S1_DESCRIPTION}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <path d="M0,30 C90,10 270,50 360,30"   stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+        <path d="M0,110 C90,140 270,80 360,110" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,190 C90,168 270,212 360,190" stroke="#3C61E2" stroke-opacity="0.14" stroke-width="1.4"/>
+        <path d="M0,270 C90,296 270,244 360,270" stroke="#9AA7BC" stroke-opacity="0.12" stroke-width="1"/>
+        <path d="M0,350 C90,326 270,374 360,350" stroke="#9AA7BC" stroke-opacity="0.16" stroke-width="1.2"/>
+        <path d="M0,430 C90,456 270,404 360,430" stroke="#3C61E2" stroke-opacity="0.12" stroke-width="1.4"/>
+        <path d="M0,510 C90,488 270,532 360,510" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,590 C90,612 270,568 360,590" stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S2_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:26px;font-weight:700;color:#2D344D;line-height:1.3;margin-bottom:18px;">{{S2_HEADLINE}}</div>
+    <div style="border-top:1px solid #D5DBE5;margin:14px 0;"></div>
+    <div style="font-size:14px;color:#7C8AA0;line-height:1.6;">{{S2_BODY}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <path d="M0,30 C90,10 270,50 360,30"   stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+        <path d="M0,110 C90,140 270,80 360,110" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,190 C90,168 270,212 360,190" stroke="#3C61E2" stroke-opacity="0.14" stroke-width="1.4"/>
+        <path d="M0,270 C90,296 270,244 360,270" stroke="#9AA7BC" stroke-opacity="0.12" stroke-width="1"/>
+        <path d="M0,350 C90,326 270,374 360,350" stroke="#9AA7BC" stroke-opacity="0.16" stroke-width="1.2"/>
+        <path d="M0,430 C90,456 270,404 360,430" stroke="#3C61E2" stroke-opacity="0.12" stroke-width="1.4"/>
+        <path d="M0,510 C90,488 270,532 360,510" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,590 C90,612 270,568 360,590" stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S3_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:28px;font-weight:800;color:#2D344D;line-height:1.25;margin-bottom:22px;">{{S3_HEADLINE}}</div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_1}}</span></div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_2}}</span></div>
+    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;"><span style="color:#3C61E2;font-size:15px;font-weight:700;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;font-weight:500;color:#2D344D;line-height:1.45;">{{S3_RESULT_3}}</span></div>
+    <div style="border-top:1px solid #D5DBE5;margin:18px 0;"></div>
+    <div style="font-size:13px;color:#7C8AA0;line-height:1.6;">{{S3_FOOTER}}</div>
+  </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <path d="M0,30 C90,10 270,50 360,30"   stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+        <path d="M0,110 C90,140 270,80 360,110" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,190 C90,168 270,212 360,190" stroke="#3C61E2" stroke-opacity="0.14" stroke-width="1.4"/>
+        <path d="M0,270 C90,296 270,244 360,270" stroke="#9AA7BC" stroke-opacity="0.12" stroke-width="1"/>
+        <path d="M0,350 C90,326 270,374 360,350" stroke="#9AA7BC" stroke-opacity="0.16" stroke-width="1.2"/>
+        <path d="M0,430 C90,456 270,404 360,430" stroke="#3C61E2" stroke-opacity="0.12" stroke-width="1.4"/>
+        <path d="M0,510 C90,488 270,532 360,510" stroke="#9AA7BC" stroke-opacity="0.10" stroke-width="1"/>
+        <path d="M0,590 C90,612 270,568 360,590" stroke="#9AA7BC" stroke-opacity="0.14" stroke-width="1.2"/>
+      </g>
+    </svg>
+  </div>
+  <div class="label">{{S4_LABEL}}</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:32px;font-weight:800;color:#2D344D;line-height:1.25;">{{S4_HEADLINE}}</div>
+    <div style="border-top:1px solid #D5DBE5;margin:18px 0;"></div>
+    <div style="font-size:14px;color:#7C8AA0;line-height:1.6;margin-bottom:32px;">{{S4_SUBLINE}}</div>
+    <button style="background:#3C61E2;color:#FAFBFD;border:none;border-radius:12px;padding:15px 0;font-family:'Onest',sans-serif;font-size:15px;font-weight:600;cursor:pointer;width:100%;">{{S4_CTA}}</button>
+  </div>
+</div>
+
+</body>
+</html>
