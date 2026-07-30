@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Story — Format 4: Shocking Stat (Export 1080×1920)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    background: #cdd1de;
+  }
+  .page-head {
+    text-align: center;
+    padding: 48px 24px 8px;
+  }
+  .page-head h1 {
+    color: #1a2340;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+  }
+  .page-head p {
+    color: #6b7286;
+    font-size: 13px;
+  }
+  .canvas-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    padding: 40px 24px 100px;
+  }
+  .canvas-block { text-align: center; }
+  .canvas-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6b7286;
+    margin-bottom: 14px;
+  }
+
+  /* ===== STORY CANVAS — exact export size 1080x1920 ===== */
+  .story {
+    width: 1080px;
+    height: 1920px;
+    background: #f0f2f6;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    padding: 190px 90px 150px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .story-num {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4361ee;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 12px 32px;
+    border-radius: 40px;
+  }
+
+  .prog { position: absolute; top: 40px; left: 90px; right: 90px; display: flex; gap: 10px; }
+  .ps { height: 6px; flex: 1; border-radius: 6px; background: #c8ccd8; }
+  .ps.on { background: #4361ee; }
+
+  .tag {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #a0a8bc;
+    text-align: center;
+    margin-bottom: 44px;
+    text-transform: uppercase;
+  }
+  .divider { height: 2px; background: #d4d8e4; margin: 44px 0; }
+  .bl { color: #4361ee; }
+
+  .hook {
+    font-size: 74px;
+    font-weight: 900;
+    color: #1a2340;
+    line-height: 1.22;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sub {
+    font-size: 36px;
+    color: #1a2340;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .muted {
+    font-size: 32px;
+    color: #8a93a8;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .bold-num {
+    font-size: 268px;
+    font-weight: 900;
+    color: #4361ee;
+    line-height: 1;
+    letter-spacing: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .unit {
+    font-size: 44px;
+    font-weight: 600;
+    color: #4361ee;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .bl-row {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    margin-bottom: 26px;
+    font-size: 36px;
+    color: #1a2340;
+    line-height: 1.4;
+  }
+  .dot { width: 18px; height: 18px; border-radius: 50%; background: #4361ee; margin-top: 12px; flex-shrink: 0; }
+
+  .cta {
+    background: #4361ee;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    border-radius: 24px;
+    padding: 34px 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .stat-platform {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 26px;
+    padding: 30px 36px;
+    background: white;
+    border-radius: 20px;
+  }
+  .plat-icon {
+    width: 68px; height: 68px;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; font-weight: 800; flex-shrink: 0;
+  }
+  .plat-tg { background: #4361ee; color: white; }
+  .plat-x { background: #1a2340; color: white; }
+  .plat-li { background: #0a66c2; color: white; }
+  .plat-name { font-size: 32px; color: #8a93a8; flex: 1; text-align: left; }
+  .plat-val { font-size: 36px; font-weight: 700; color: #1a2340; }
+
+  .spacer { flex: 1; }
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <h1>Format 4 — Shocking Stat</h1>
+  <p>3 Telegram Stories · each canvas is exactly 1080×1920px, export-ready · crypto influencer KOL campaign case study</p>
+</div>
+
+<div class="canvas-row">
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 1 / 3 — Insight</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps"></div><div class="ps"></div></div>
+      <div class="story-num">1 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">Insight</div>
+      <div class="bold-num">15.2</div>
+      <div class="unit">% engagement on X</div>
+      <div class="divider"></div>
+      <div class="sub" style="margin-bottom:14px;">Niche benchmark:</div>
+      <div class="sub" style="font-size:64px; font-weight:800; color:#1a2340;">3–5%</div>
+      <div class="divider"></div>
+      <div class="muted">Not luck. A system.</div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 2 / 3 — Full Picture</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps on"></div><div class="ps"></div></div>
+      <div class="story-num">2 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">Full Picture</div>
+      <div class="hook" style="font-size:52px; margin-bottom:56px;">Results across<br>all platforms:</div>
+      <div class="stat-platform">
+        <div class="plat-icon plat-tg">✈</div>
+        <div class="plat-name">Telegram</div>
+        <div class="plat-val">20,700 subs</div>
+      </div>
+      <div class="stat-platform">
+        <div class="plat-icon plat-x">𝕏</div>
+        <div class="plat-name">X</div>
+        <div class="plat-val">15.2% eng.</div>
+      </div>
+      <div class="stat-platform">
+        <div class="plat-icon plat-li">in</div>
+        <div class="plat-name">LinkedIn</div>
+        <div class="plat-val">4,100 connections</div>
+      </div>
+      <div class="divider"></div>
+      <div class="muted">From zero. In 35 days.</div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 3 / 3 — The Point</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps on"></div><div class="ps on"></div></div>
+      <div class="story-num">3 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">The Point</div>
+      <div class="hook" style="font-size:52px; margin-bottom:40px;">Most experts post content<br><span class="bl">— and hear silence.</span></div>
+      <div class="sub" style="font-size:34px; color:#1a2340; margin-bottom:40px;">We build a system where every post drives trust and inbound — no paid media needed.</div>
+      <div class="bl-row"><div class="dot"></div><span>Brand strategy for your niche</span></div>
+      <div class="bl-row"><div class="dot"></div><span>Content system without ads</span></div>
+      <div class="bl-row"><div class="dot"></div><span>Built from scratch in 35 days</span></div>
+      <div class="divider"></div>
+      <div class="muted">Want numbers like this for yourself?</div>
+      <div class="cta">Break down my case →</div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
