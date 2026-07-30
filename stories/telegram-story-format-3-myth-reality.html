@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Story — Format 3: Myth / Reality (Export 1080×1920)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    background: #cdd1de;
+  }
+  .page-head {
+    text-align: center;
+    padding: 48px 24px 8px;
+  }
+  .page-head h1 {
+    color: #1a2340;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+  }
+  .page-head p {
+    color: #6b7286;
+    font-size: 13px;
+  }
+  .canvas-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    padding: 40px 24px 100px;
+  }
+  .canvas-block { text-align: center; }
+  .canvas-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6b7286;
+    margin-bottom: 14px;
+  }
+
+  /* ===== STORY CANVAS — exact export size 1080x1920 ===== */
+  .story {
+    width: 1080px;
+    height: 1920px;
+    background: #f0f2f6;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    padding: 190px 90px 150px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .story-num {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4361ee;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 12px 32px;
+    border-radius: 40px;
+  }
+
+  .prog { position: absolute; top: 40px; left: 90px; right: 90px; display: flex; gap: 10px; }
+  .ps { height: 6px; flex: 1; border-radius: 6px; background: #c8ccd8; }
+  .ps.on { background: #4361ee; }
+
+  .tag {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #a0a8bc;
+    text-align: center;
+    margin-bottom: 44px;
+    text-transform: uppercase;
+  }
+  .divider { height: 2px; background: #d4d8e4; margin: 44px 0; }
+  .bl { color: #4361ee; }
+
+  .hook {
+    font-size: 58px;
+    font-weight: 900;
+    color: #1a2340;
+    line-height: 1.25;
+    letter-spacing: -1.2px;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .muted {
+    font-size: 32px;
+    color: #8a93a8;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .bl-row {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #1a2340;
+    line-height: 1.4;
+  }
+  .chk { color: #4361ee; font-size: 40px; flex-shrink: 0; margin-top: 2px; }
+
+  .cta {
+    background: #4361ee;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    border-radius: 24px;
+    padding: 34px 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .myth-box {
+    background: white;
+    border-radius: 20px;
+    padding: 32px 38px;
+    margin-bottom: 26px;
+  }
+  .myth-lbl {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0c4d0;
+    margin-bottom: 12px;
+  }
+  .myth-txt {
+    font-size: 38px;
+    color: #8a93a8;
+    line-height: 1.4;
+    text-decoration: line-through;
+    text-decoration-color: #c0c4d0;
+    text-decoration-thickness: 2px;
+  }
+
+  .truth-box {
+    background: #eef0fd;
+    border-radius: 20px;
+    padding: 32px 38px;
+    margin-bottom: 26px;
+    border-left: 8px solid #4361ee;
+  }
+  .truth-lbl {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4361ee;
+    margin-bottom: 12px;
+  }
+  .truth-txt {
+    font-size: 36px;
+    color: #1a2340;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .spacer { flex: 1; }
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <h1>Format 3 — Myth / Reality</h1>
+  <p>3 Telegram Stories · each canvas is exactly 1080×1920px, export-ready · crypto influencer KOL campaign case study</p>
+</div>
+
+<div class="canvas-row">
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 1 / 3 — Myth</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps"></div><div class="ps"></div></div>
+      <div class="story-num">1 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">Myth</div>
+      <div class="hook" style="font-size:52px; margin-bottom:48px;">What most founders believe:</div>
+      <div class="myth-box">
+        <div class="myth-lbl">Myth 01</div>
+        <div class="myth-txt">"Building an audience takes years"</div>
+      </div>
+      <div class="myth-box">
+        <div class="myth-lbl">Myth 02</div>
+        <div class="myth-txt">"You need ad budget to grow"</div>
+      </div>
+      <div class="myth-box" style="margin-bottom:0;">
+        <div class="myth-lbl">Myth 03</div>
+        <div class="myth-txt">"Personal brand is a vanity project"</div>
+      </div>
+      <div class="divider"></div>
+      <div class="muted">Swipe to see what actually happens 👉</div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 2 / 3 — Reality</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps on"></div><div class="ps"></div></div>
+      <div class="story-num">2 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">Reality</div>
+      <div class="hook" style="font-size:52px; margin-bottom:48px;">Here's what<br><span class="bl">actually happens:</span></div>
+      <div class="truth-box">
+        <div class="truth-lbl">Fact 01</div>
+        <div class="truth-txt">34,000 followers in 35 days — zero ad spend</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-lbl">Fact 02</div>
+        <div class="truth-txt">15.2% engagement on X vs. 3–5% niche benchmark</div>
+      </div>
+      <div class="truth-box" style="margin-bottom:0;">
+        <div class="truth-lbl">Fact 03</div>
+        <div class="truth-txt">Inbound requests — before any sales call</div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div class="canvas-block">
+    <div class="canvas-label">Story 3 / 3 — The Secret</div>
+    <div class="story">
+      <div class="prog"><div class="ps on"></div><div class="ps on"></div><div class="ps on"></div></div>
+      <div class="story-num">3 / 3</div>
+      <div class="spacer"></div>
+      <div class="tag">The Secret</div>
+      <div class="hook" style="font-size:52px; margin-bottom:48px;">It's not about time<br>or budget.<br><span class="bl">It's about the system.</span></div>
+      <div class="bl-row"><div class="chk">✓</div><span>Right positioning from day one</span></div>
+      <div class="bl-row"><div class="chk">✓</div><span>Content that actually resonates</span></div>
+      <div class="bl-row"><div class="chk">✓</div><span>3 platforms running in sync</span></div>
+      <div class="divider"></div>
+      <div class="muted">We bust these myths every month. Want to see how?</div>
+      <div class="cta">Write us →</div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
