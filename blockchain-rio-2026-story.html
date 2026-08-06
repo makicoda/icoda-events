@@ -62,33 +62,17 @@
     flex-shrink: 0;
   }
 
-  /* 1. Top-left logo / branding */
-  .brand {
-    position: absolute;
-    top: 64px;
-    left: 64px;
-    z-index: 5;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    line-height: 1;
-  }
+  /* 1. Hero already carries its own logo mark (top-right, baked into the
+     artwork), so no separate top-left brand overlay is drawn on top of it. */
 
-  .brand .brand-main {
-    font-size: 40px;
-    color: var(--white);
-    text-transform: uppercase;
-  }
-
-  .brand .brand-accent {
-    color: var(--accent);
-  }
-
-  /* 2. Hero photo, ~55% of height, with bottom gradient */
+  /* 2. Hero — the supplied banner is a fixed 1920x1080 (16:9) graphic, so
+     the hero box is locked to that ratio at full story width rather than
+     an arbitrary % of height. Its rounded corners carry real alpha, so the
+     page background shows through them as a subtle inset-card edge. */
   .hero {
     position: relative;
     width: 100%;
-    height: 55%;
+    aspect-ratio: 16 / 9;
   }
 
   .hero img {
@@ -104,71 +88,75 @@
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(10, 10, 10, 0) 45%,
-      rgba(10, 10, 10, 0.55) 70%,
+      rgba(10, 10, 10, 0) 55%,
+      rgba(10, 10, 10, 0.6) 82%,
       var(--bg) 100%
     );
   }
 
-  /* 3 & 4. Headline + date, sitting over the faded-to-black zone */
+  /* 3 & 4. Headline + date — the banner already states the event name and
+     dates, so this block just adds the year as a big standalone mark. */
   .content {
     position: relative;
     padding: 0 64px;
-    margin-top: -140px;
+    margin-top: 96px;
   }
 
   .headline {
     font-family: 'Anton', sans-serif;
     font-weight: 400; /* Anton is already a black weight */
     text-transform: uppercase;
-    font-size: 96px;
+    font-size: 220px;
     line-height: 1;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--white);
   }
 
   .headline .accent { color: var(--accent); }
 
-  .date-line {
-    margin-top: 28px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.85);
-  }
-
   .venue-line {
-    margin-top: 6px;
+    margin-top: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.5);
   }
 
-  /* 5. Speaker cards row */
+  /* 5. Speaker cards — stacked full-width rows so the larger photos and
+     names have room to breathe without wrapping mid-word. */
+  .speakers-label {
+    position: absolute;
+    bottom: 596px;
+    left: 64px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
   .speakers {
     position: absolute;
-    bottom: 72px;
+    bottom: 96px;
     left: 64px;
     right: 64px;
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 36px;
   }
 
   .speaker-card {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 32px;
   }
 
   .speaker-photo {
-    width: 128px;
-    height: 128px;
-    border-radius: 14px;
+    width: 210px;
+    height: 210px;
+    border-radius: 22px;
     object-fit: cover;
     flex-shrink: 0;
     background: #1a1a1a;
@@ -180,18 +168,17 @@
   .speaker-name {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 52px;
     line-height: 1.08;
     text-transform: uppercase;
     color: var(--white);
-    word-break: break-word;
   }
 
   .speaker-role {
-    margin-top: 6px;
+    margin-top: 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 28px;
     letter-spacing: 0.5px;
     color: var(--accent);
   }
@@ -226,40 +213,32 @@
 
   <div class="story">
 
-    <!-- 1. Top-left logo area -->
-    <div class="brand">
-      <span class="brand-main">BLOCKCHAIN<span class="brand-accent">.RIO</span></span>
-    </div>
-
-    <!-- 2. Hero photo with dark gradient overlay -->
+    <!-- 1 & 2. Hero photo — the banner already carries the logo, dates
+         and venue, so it doubles as the branding block too. -->
     <div class="hero">
-      <img src="./photo.jpg" alt="Event photo">
+      <img src="./photo.png" alt="Blockchain.Rio 2026 — August 12-13, ExpoRio">
     </div>
 
-    <!-- 3 & 4. Headline + date -->
+    <!-- 3 & 4. Headline -->
     <div class="content">
-      <div class="headline">
-        BLOCKCHAIN<br>
-        <span class="accent">.RIO</span><br>
-        2026
-      </div>
-      <div class="date-line">12&ndash;13 August</div>
-      <div class="venue-line">ExpoRio</div>
+      <div class="headline"><span class="accent">2026</span></div>
+      <div class="venue-line">Rio de Janeiro, Brazil</div>
     </div>
 
     <!-- 5. Speaker cards -->
+    <div class="speakers-label">Speakers</div>
     <div class="speakers">
       <div class="speaker-card">
         <img class="speaker-photo" src="./speaker1.jpg" alt="Artem Voinov">
         <div class="speaker-info">
-          <div class="speaker-name">Artem<br>Voinov</div>
+          <div class="speaker-name">Artem Voinov</div>
           <div class="speaker-role">CBDO</div>
         </div>
       </div>
       <div class="speaker-card">
         <img class="speaker-photo" src="./speaker2.jpg" alt="Sergey Nelyubin">
         <div class="speaker-info">
-          <div class="speaker-name">Sergey<br>Nelyubin</div>
+          <div class="speaker-name">Sergey Nelyubin</div>
           <div class="speaker-role">CFO</div>
         </div>
       </div>
