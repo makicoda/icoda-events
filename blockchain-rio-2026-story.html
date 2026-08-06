@@ -122,33 +122,56 @@
     color: rgba(255, 255, 255, 0.5);
   }
 
+  /* Ticket-style badge: solid gradient fill + dashed stub divider, set apart
+     from the plain outlined pill this replaced. Positioned absolutely so it
+     can be centered in the gap between the location line and the team
+     section below, independent of either one's exact height. */
   .promo {
-    margin-top: 44px;
+    position: absolute;
+    left: 64px;
+    top: 1108px;
     display: inline-flex;
     align-items: center;
-    gap: 20px;
-    background: rgba(0, 224, 168, 0.1);
-    border: 2px solid var(--accent);
-    border-radius: 999px;
-    padding: 18px 36px;
+    gap: 24px;
+    background: linear-gradient(135deg, var(--accent), #00a381);
+    border-radius: 18px;
+    padding: 22px 38px;
+    box-shadow: 0 14px 32px rgba(0, 224, 168, 0.22);
+  }
+
+  .promo-icon {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .promo-divider {
+    width: 0;
+    align-self: stretch;
+    border-left: 2px dashed rgba(10, 10, 10, 0.35);
+  }
+
+  .promo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .promo-label {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 18px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(10, 10, 10, 0.6);
   }
 
   .promo-code {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     font-size: 38px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--accent);
+    color: #0a0a0a;
   }
 
   /* 5. Team cards — stacked full-width rows so the larger photos and
@@ -251,7 +274,13 @@
     <div class="content">
       <div class="headline">Blockchain<br><span class="accent">.Rio</span></div>
       <div class="venue-line">&#128205; ExpoRio, Rio de Janeiro, Brazil &middot; August 12&ndash;13</div>
-      <div class="promo">
+    </div>
+
+    <!-- Promo badge, centered between the location line and the team below -->
+    <div class="promo">
+      <span class="promo-icon">&#127915;</span>
+      <span class="promo-divider"></span>
+      <div class="promo-text">
         <span class="promo-label">Promo code</span>
         <span class="promo-code">BRIO10OFFICODA</span>
       </div>
