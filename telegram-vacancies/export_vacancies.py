@@ -96,13 +96,14 @@ async def main():
 
             rows.append(
                 {
-                    "Чат": title,
-                    "Дата": message.date.strftime("%Y-%m-%d %H:%M"),
-                    "Автор": sender_name or "",
-                    "Текст": clean_snippet(message.text),
-                    "Ссылка": build_message_link(entity, message.id),
-                    "Совпадения (маркетинг)": ", ".join(sorted(set(marketing_hits))),
-                    "Совпадения (вакансия)": ", ".join(sorted(set(vacancy_hits))),
+                    "chat": chat_ref,
+                    "chat_title": title,
+                    "date": message.date.strftime("%Y-%m-%d %H:%M"),
+                    "poster_contact": sender_name or "",
+                    "link": build_message_link(entity, message.id),
+                    "text": clean_snippet(message.text, limit=2000),
+                    "matched_marketing_keywords": ", ".join(sorted(set(marketing_hits))),
+                    "matched_vacancy_keywords": ", ".join(sorted(set(vacancy_hits))),
                 }
             )
             count += 1

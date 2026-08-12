@@ -11,19 +11,16 @@ PHONE = os.environ["TG_PHONE"]
 SESSION_NAME = os.environ.get("TG_SESSION_NAME", "vacancies_session")
 
 CHATS_FILE = os.path.join(os.path.dirname(__file__), "chats.txt")
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "marketing_vacancies.csv")
+OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "raw_marketing_vacancies.csv")
 
-# Диапазон выгрузки. По умолчанию — с 1 июня текущего года по сейчас.
-# При необходимости задай START_DATE/END_DATE переменными окружения (YYYY-MM-DD).
-_now = datetime.now(timezone.utc)
+# Диапазон выгрузки. По умолчанию — 1 июня 2026 – 12 августа 2026 (текущее задание).
+# При необходимости переопредели TG_START_DATE/TG_END_DATE переменными окружения (YYYY-MM-DD).
 START_DATE = datetime.strptime(
-    os.environ.get("TG_START_DATE", f"{_now.year}-06-01"), "%Y-%m-%d"
+    os.environ.get("TG_START_DATE", "2026-06-01"), "%Y-%m-%d"
 ).replace(tzinfo=timezone.utc)
-END_DATE = (
-    datetime.strptime(os.environ["TG_END_DATE"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
-    if os.environ.get("TG_END_DATE")
-    else _now
-)
+END_DATE = datetime.strptime(
+    os.environ.get("TG_END_DATE", "2026-08-12"), "%Y-%m-%d"
+).replace(tzinfo=timezone.utc)
 
 # Сообщение считается вакансией, если содержит хотя бы одно слово отсюда...
 VACANCY_KEYWORDS = [

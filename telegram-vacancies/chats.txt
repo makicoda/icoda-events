@@ -6,7 +6,12 @@
 #
 # Строки, начинающиеся с #, игнорируются.
 #
-# Примеры (замени своими чатами):
-# @marketing_jobs_ru
-# @remote_it_jobs
-# https://t.me/+AbCdEfGhIjKlMnOp
+@opento_crypto
+@cryptovakansii
+@workers_tg
+@rabotaweb3
+@LaborXWeb3Jobs
+@cryptojobslist
+@remoteweb3jobs
+@crypto_jobs
+@CryptoJobs
