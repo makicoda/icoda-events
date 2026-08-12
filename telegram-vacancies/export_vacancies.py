@@ -1,33 +1,11 @@
 import asyncio
 import csv
-import re
 
 from telethon import TelegramClient
 from telethon.tl.types import Channel, Chat, User
 
 import config
-
-
-def load_chats(path):
-    chats = []
-    with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            chats.append(line)
-    return chats
-
-
-def matches_marketing_vacancy(text):
-    if not text:
-        return None, None
-    lowered = text.lower()
-    vacancy_hits = [kw for kw in config.VACANCY_KEYWORDS if kw in lowered]
-    marketing_hits = [kw for kw in config.MARKETING_KEYWORDS if kw in lowered]
-    if vacancy_hits and marketing_hits:
-        return vacancy_hits, marketing_hits
-    return None, None
+from common import clean_snippet, load_chats, matches_marketing_vacancy
 
 
 def build_message_link(entity, message_id):
@@ -47,12 +25,15 @@ def chat_title(entity):
     return str(entity)
 
 
-def clean_snippet(text, limit=400):
-    snippet = re.sub(r"\s+", " ", text).strip()
-    return snippet if len(snippet) <= limit else snippet[:limit] + "…"
-
-
 async def main():
+    if not (config.API_ID and config.API_HASH and config.PHONE):
+        print(
+            "Не заданы TG_API_ID/TG_API_HASH/TG_PHONE в .env — они нужны для этого "
+            "скрипта (доступ через Telegram API). Если API-доступа нет, используй "
+            "scrape_public_preview.py — он работает без логина для публичных каналов."
+        )
+        return
+
     client = TelegramClient(config.SESSION_NAME, config.API_ID, config.API_HASH)
     await client.start(phone=config.PHONE)
 

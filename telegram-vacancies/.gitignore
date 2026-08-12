@@ -4,4 +4,6 @@
 .login_state.json
 marketing_vacancies.csv
 raw_marketing_vacancies.csv
+raw_marketing_vacancies_preview.csv
 venv/
+__pycache__/

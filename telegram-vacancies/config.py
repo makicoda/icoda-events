@@ -5,13 +5,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(os.environ["TG_API_ID"])
-API_HASH = os.environ["TG_API_HASH"]
-PHONE = os.environ["TG_PHONE"]
+# Нужны только для export_vacancies.py / login.py (вариант через Telegram API).
+# Для scrape_public_preview.py (публичные веб-превью каналов) не требуются.
+_api_id = os.environ.get("TG_API_ID")
+API_ID = int(_api_id) if _api_id else None
+API_HASH = os.environ.get("TG_API_HASH")
+PHONE = os.environ.get("TG_PHONE")
 SESSION_NAME = os.environ.get("TG_SESSION_NAME", "vacancies_session")
 
 CHATS_FILE = os.path.join(os.path.dirname(__file__), "chats.txt")
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "raw_marketing_vacancies.csv")
+PREVIEW_OUTPUT_FILE = os.path.join(
+    os.path.dirname(__file__), "raw_marketing_vacancies_preview.csv"
+)
 
 # Диапазон выгрузки. По умолчанию — 1 июня 2026 – 12 августа 2026 (текущее задание).
 # При необходимости переопредели TG_START_DATE/TG_END_DATE переменными окружения (YYYY-MM-DD).
