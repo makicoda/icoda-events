@@ -1,5 +1,7 @@
 .env
 *.session
 *.session-journal
+.login_state.json
 marketing_vacancies.csv
+raw_marketing_vacancies.csv
 venv/
