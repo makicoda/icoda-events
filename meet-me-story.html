@@ -36,8 +36,6 @@
     display: flex;
     gap: 12px;
     margin-bottom: 24px;
-    position: sticky;
-    top: 20px;
     z-index: 999;
   }
 
@@ -96,56 +94,72 @@
     z-index: 1;
   }
 
-  .checker {
+  .logo-lockup {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 420px;
-    height: 190px;
-    display: grid;
-    grid-template-columns: 140px 140px 140px;
-    grid-template-rows: 95px 95px;
-  }
-
-  .checker div:nth-child(1) { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-green) 100%); }
-  .checker div:nth-child(2) { background: transparent; }
-  .checker div:nth-child(3) { background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent) 100%); }
-  .checker div:nth-child(4) { background: transparent; }
-  .checker div:nth-child(5) { background: var(--accent); }
-  .checker div:nth-child(6) { background: transparent; }
-
-  .wordmark {
-    position: absolute;
-    top: 56px;
+    top: 50px;
     right: 72px;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 22px;
   }
 
-  .wordmark .name {
+  .logo-icon { width: 78px; height: 78px; flex-shrink: 0; }
+
+  .logo-text .line1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    font-size: 46px;
-    color: var(--text);
+    font-size: 40px;
+    line-height: 1;
+    color: #26282B;
     letter-spacing: 0.01em;
     white-space: nowrap;
   }
 
-  .wordmark .name span { color: var(--accent); }
+  .logo-text .line2 {
+    margin-top: 6px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    white-space: nowrap;
+  }
 
-  .wordmark .dates {
-    margin-top: 14px;
+  .logo-text .line2 .asia {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 40px;
+    line-height: 1;
+    color: #26282B;
+    letter-spacing: 0.01em;
+  }
+
+  .logo-text .line2 .yr {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1;
+    color: #26282B;
+  }
+
+  .dates-line {
+    position: absolute;
+    top: 172px;
+    right: 72px;
+    text-align: right;
+  }
+
+  .dates-line .dates {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     color: var(--text);
     letter-spacing: 0.02em;
   }
 
-  .wordmark .place {
+  .dates-line .place {
     margin-top: 2px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--muted);
   }
 
@@ -378,43 +392,7 @@
     color: var(--muted);
   }
 
-  /* ================= BOTTOM BAR ================= */
-  .bottombar {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 72px;
-    z-index: 3;
-  }
-
-  .bottombar-left {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--muted);
-  }
-
-  .bottombar-left b { color: var(--text); font-weight: 600; }
-
-  .bottombar-pill {
-    border: 1.5px solid var(--accent);
-    color: var(--accent);
-    background: transparent;
-    border-radius: 100px;
-    padding: 8px 24px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
+  /* ================= BOTTOM GRADIENT LINE ================= */
   .bottom-gradient-line {
     position: absolute;
     bottom: 0;
@@ -450,12 +428,23 @@
 
       <!-- ================= BANNER TOP STRIP ================= -->
       <div class="banner-top">
-        <div class="checker">
-          <div></div><div></div><div></div>
-          <div></div><div></div><div></div>
+        <div class="logo-lockup">
+          <svg class="logo-icon" viewBox="0 0 100 100">
+            <g fill="#2563EB">
+              <path d="M50,50 C38,42 28,26 33,12 C36,4 48,2 54,9 C60,17 58,36 50,50 Z"/>
+              <path d="M50,50 C60,40 78,34 90,42 C97,47 96,59 87,63 C77,68 59,61 50,50 Z"/>
+              <path d="M50,50 C58,62 60,81 48,90 C41,95 30,90 29,81 C27,70 39,56 50,50 Z"/>
+              <path d="M50,50 C40,58 22,63 11,54 C4,48 6,37 16,34 C27,30 43,39 50,50 Z"/>
+              <path d="M50,50 C44,38 44,20 55,10 C61,5 71,11 70,20 C69,31 58,44 50,50 Z" opacity="0.85"/>
+            </g>
+            <circle cx="50" cy="50" r="11" fill="#0B2C8C"/>
+          </svg>
+          <div class="logo-text">
+            <div class="line1">COINFEST</div>
+            <div class="line2"><span class="asia">ASIA</span><span class="yr">2026</span></div>
+          </div>
         </div>
-        <div class="wordmark">
-          <div class="name">CoinFest<span>Asia</span></div>
+        <div class="dates-line">
           <div class="dates">20&ndash;21 August</div>
           <div class="place">Bali, Indonesia</div>
         </div>
@@ -514,12 +503,6 @@
       </div>
 
       <div class="lime-blob"></div>
-
-      <!-- ================= BOTTOM BAR ================= -->
-      <div class="bottombar">
-        <div class="bottombar-left">Our rep at <b>CoinFest Asia 2026</b></div>
-        <div class="bottombar-pill">ICODA</div>
-      </div>
 
       <div class="bottom-gradient-line"></div>
 
