@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meet Me at CoinFest Asia 2026 — Story Card</title>
+<title>Meet Us at CoinFest Asia 2026 — Story Card</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --accent: #2563EB;
@@ -85,148 +85,109 @@
   }
 
   .card.scale-full { transform: scale(1); box-shadow: none; }
-  .card.scale-fit { transform: scale(0.38); }
 
-  /* ================= TOP BAR (0-300px) ================= */
-  .topbar {
+  /* ================= BANNER TOP STRIP (0-260px) ================= */
+  .banner-top {
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 300px;
+    height: 260px;
+    background: #F4F6FA;
+    overflow: hidden;
+    z-index: 1;
   }
 
-  .brand {
+  .checker {
     position: absolute;
-    left: 72px;
-    top: 64px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 190px;
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 95px 95px;
   }
 
-  .brand-badge {
-    width: 68px;
-    height: 68px;
-    border-radius: 18px;
-    background: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  .checker div:nth-child(1) { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-green) 100%); }
+  .checker div:nth-child(2) { background: transparent; }
+  .checker div:nth-child(3) { background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent) 100%); }
+  .checker div:nth-child(4) { background: transparent; }
+  .checker div:nth-child(5) { background: var(--accent); }
+  .checker div:nth-child(6) { background: transparent; }
+
+  .wordmark {
+    position: absolute;
+    top: 56px;
+    right: 72px;
+    text-align: right;
   }
 
-  .brand-badge span {
-    font-family: 'Anton', sans-serif;
-    color: #fff;
-    font-size: 36px;
-    line-height: 1;
-    transform: translateY(2px);
-  }
-
-  .brand-name {
+  .wordmark .name {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: 40px;
-    line-height: 1;
+    font-size: 46px;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .wordmark .name span { color: var(--accent); }
+
+  .wordmark .dates {
+    margin-top: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
     color: var(--text);
     letter-spacing: 0.02em;
   }
 
-  .brand-tagline {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+  .wordmark .place {
+    margin-top: 2px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 4px;
   }
 
-  .conf-pill {
-    position: absolute;
-    right: 72px;
-    top: 76px;
-    background: var(--accent);
-    color: #fff;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: 0.06em;
-    border-radius: 100px;
-    padding: 10px 28px;
-    z-index: 3;
-    white-space: nowrap;
-  }
-
-  .diamond-topright {
-    position: absolute;
-    top: -22px;
-    right: -22px;
-    width: 110px;
-    height: 110px;
-    z-index: 1;
-  }
-
-  /* ================= HEADLINE (260-760px) ================= */
-  .headline-block {
+  /* ================= BANNER PHOTO (260-620px) ================= */
+  .banner-photo {
     position: absolute;
     top: 260px;
     left: 0;
     width: 100%;
-    height: 500px;
-    padding-left: 72px;
-    z-index: 2;
+    height: 360px;
+    overflow: hidden;
+    z-index: 1;
   }
 
-  .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
+  .banner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
-  .eyebrow-line {
-    width: 48px;
-    height: 4px;
-    background: var(--accent);
-    border-radius: 2px;
+  .ph-banner {
+    background: linear-gradient(120deg, #2563EB 0%, #60A5FA 55%, #84CC16 100%);
   }
 
-  .eyebrow-text {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    color: var(--accent);
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-  }
-
-  .headline {
-    font-family: 'Anton', sans-serif;
-    font-size: 160px;
-    line-height: 0.9;
-    text-transform: uppercase;
-    color: var(--text);
-  }
-
-  .headline .tag26 {
-    display: inline-block;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 44px;
-    color: var(--accent);
-    vertical-align: super;
-    letter-spacing: 0.02em;
-    margin-left: 8px;
+  /* ================= DECORATIVE SHAPES ================= */
+  .diamond-large-outline {
+    position: absolute;
+    left: -40px;
+    top: 1200px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.10;
+    z-index: 0;
   }
 
   .diamond-small-solid {
     position: absolute;
-    left: 90px;
-    top: 720px;
-    width: 28px;
-    height: 28px;
+    right: 96px;
+    top: 760px;
+    width: 26px;
+    height: 26px;
     background: var(--accent);
     opacity: 0.35;
     transform: rotate(45deg);
@@ -234,160 +195,183 @@
     z-index: 2;
   }
 
-  .diamond-large-outline {
-    position: absolute;
-    left: -30px;
-    top: 700px;
-    width: 180px;
-    height: 180px;
-    opacity: 0.10;
-    z-index: 0;
-  }
-
-  /* ================= PHOTO COLLAGE (520-1020 x, 160-900 y) ================= */
-  .collage {
-    position: absolute;
-    left: 520px;
-    top: 160px;
-    width: 500px;
-    height: 740px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 12px;
-    z-index: 2;
-  }
-
-  .collage-item {
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .collage-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .collage-item:nth-child(1) { transform: rotate(-1.5deg); }
-  .collage-item:nth-child(2) { transform: rotate(1.5deg); }
-  .collage-item:nth-child(3) { transform: rotate(1.5deg); }
-  .collage-item:nth-child(4) { transform: rotate(-1.5deg); }
-
-  .ph-1 { background: linear-gradient(135deg, #2563EB 0%, #60A5FA 100%); }
-  .ph-2 { background: linear-gradient(135deg, #1D4ED8 0%, #93C5FD 100%); }
-  .ph-3 { background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%); }
-  .ph-4 { background: linear-gradient(135deg, #60A5FA 0%, #2563EB 100%); }
-
-  .gear-icon {
-    position: absolute;
-    left: 992px;
-    top: 866px;
-    width: 56px;
-    height: 56px;
-    opacity: 0.16;
-    z-index: 3;
-  }
-
-  /* ================= LIME BLOB ================= */
   .lime-blob {
     position: absolute;
-    left: 40px;
-    top: 870px;
-    width: 280px;
-    height: 180px;
+    right: -60px;
+    top: 1620px;
+    width: 300px;
+    height: 200px;
     background: var(--accent-green);
+    opacity: 0.9;
     border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
     z-index: 0;
   }
 
-  /* ================= DATE PILL ================= */
-  .date-pill {
+  /* ================= HEADLINE ================= */
+  .headline-block {
     position: absolute;
-    top: 800px;
-    left: 72px;
-    background: var(--accent);
-    color: #fff;
-    border-radius: 100px;
-    padding: 14px 40px;
+    top: 720px;
+    left: 0;
+    width: 100%;
+    padding-left: 72px;
+    z-index: 2;
+  }
+
+  .headline {
+    font-family: 'Anton', sans-serif;
+    font-size: 148px;
+    line-height: 0.9;
+    text-transform: uppercase;
+  }
+
+  .headline .l1 { color: var(--text); }
+  .headline .l2 { color: var(--accent); }
+
+  .headline .tag26 {
+    display: inline-block;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    z-index: 2;
-    display: inline-block;
-    white-space: nowrap;
+    font-size: 40px;
+    color: var(--text);
+    vertical-align: super;
+    letter-spacing: 0.02em;
+    margin-left: 6px;
   }
 
-  /* ================= SPEAKER CARD ================= */
-  .speaker-card {
-    position: absolute;
-    top: 900px;
-    left: 72px;
-    right: 72px;
-    height: 250px;
-    background: #fff;
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
-    border-radius: 28px;
-    border: 1.5px solid #E2E8F0;
+  .location-line {
+    margin-top: 30px;
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding: 0 40px;
-    z-index: 3;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--muted);
   }
 
-  .speaker-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 18px;
-    border: 3px solid var(--accent);
+  .location-line svg { width: 24px; height: 24px; fill: var(--accent); flex-shrink: 0; }
+
+  /* ================= PROMO PILL ================= */
+  .promo-pill {
+    position: absolute;
+    top: 1090px;
+    left: 72px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: linear-gradient(100deg, var(--accent) 0%, #3B82F6 100%);
+    border-radius: 20px;
+    padding: 22px 40px;
+    box-shadow: 0 14px 34px rgba(37, 99, 235, 0.28);
+    z-index: 2;
+  }
+
+  .promo-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
-    overflow: hidden;
   }
 
-  .speaker-photo img {
+  .promo-icon svg { width: 28px; height: 28px; fill: #fff; }
+
+  .promo-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .promo-code {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 0.03em;
+  }
+
+  /* ================= MEET US THERE ================= */
+  .meet-label {
+    position: absolute;
+    top: 1250px;
+    left: 72px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--muted);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  /* ================= REP ROW ================= */
+  .rep-row {
+    position: absolute;
+    top: 1320px;
+    left: 72px;
+    right: 72px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    z-index: 2;
+  }
+
+  .rep-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 24px;
+    border: 3px solid var(--accent);
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  }
+
+  .rep-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
 
-  .ph-speaker {
+  .ph-rep {
     background: linear-gradient(160deg, #2563EB 0%, #1E40AF 100%);
   }
 
-  .speaker-role {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--accent);
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-
-  .speaker-name {
+  .rep-name {
     font-family: 'Anton', sans-serif;
-    font-size: 72px;
-    line-height: 0.92;
+    font-size: 68px;
+    line-height: 0.95;
     color: var(--text);
     text-transform: uppercase;
-    margin-bottom: 18px;
   }
 
-  .speaker-connect {
+  .rep-role {
+    margin-top: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .rep-connect {
+    margin-top: 22px;
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
-  .speaker-connect svg { width: 24px; height: 24px; fill: var(--accent); flex-shrink: 0; }
+  .rep-connect svg { width: 24px; height: 24px; fill: var(--accent); flex-shrink: 0; }
 
-  .speaker-connect span {
+  .rep-connect span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -414,6 +398,8 @@
     font-size: 16px;
     color: var(--muted);
   }
+
+  .bottombar-left b { color: var(--text); font-weight: 600; }
 
   .bottombar-pill {
     border: 1.5px solid var(--accent);
@@ -462,86 +448,77 @@
   <div class="stage">
     <div class="card" id="card">
 
-      <!-- ================= TOP BAR ================= -->
-      <div class="topbar">
-        <svg class="diamond-topright" viewBox="0 0 100 100">
-          <rect x="20" y="20" width="60" height="60" fill="none" stroke="#2563EB" stroke-width="3" transform="rotate(45 50 50)"/>
-        </svg>
-
-        <div class="brand">
-          <div class="brand-badge"><span>i</span></div>
-          <div>
-            <div class="brand-name">ICODA</div>
-            <div class="brand-tagline">Web3 · AI · iGaming Marketing</div>
-          </div>
+      <!-- ================= BANNER TOP STRIP ================= -->
+      <div class="banner-top">
+        <div class="checker">
+          <div></div><div></div><div></div>
+          <div></div><div></div><div></div>
         </div>
+        <div class="wordmark">
+          <div class="name">CoinFest<span>Asia</span></div>
+          <div class="dates">20&ndash;21 August</div>
+          <div class="place">Bali, Indonesia</div>
+        </div>
+      </div>
 
-        <div class="conf-pill">COINFEST ASIA 2026</div>
+      <!-- ================= BANNER PHOTO ================= -->
+      <div class="banner-photo ph-banner">
+        <img src="./banner.jpg" alt="" onerror="this.style.display='none';">
       </div>
 
       <!-- ================= HEADLINE ================= -->
       <div class="headline-block">
-        <div class="eyebrow">
-          <div class="eyebrow-line"></div>
-          <div class="eyebrow-text">Meet me at</div>
-        </div>
         <div class="headline">
-          <div>COIN</div>
-          <div>FEST</div>
-          <div>ASIA<span class="tag26">'26</span></div>
+          <div class="l1">COINFEST</div>
+          <div class="l2">ASIA<span class="tag26">2026</span></div>
+        </div>
+        <div class="location-line">
+          <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5 s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+          <span>Bali, Indonesia &middot; August 20&ndash;21</span>
         </div>
       </div>
 
       <div class="diamond-small-solid"></div>
 
+      <!-- ================= PROMO PILL ================= -->
+      <div class="promo-pill">
+        <div class="promo-icon">
+          <svg viewBox="0 0 24 24"><path d="M20,12c0-1.1,0.9-2,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v4c1.1,0,2,0.9,2,2s-0.9,2-2,2v4c0,1.1,0.9,2,2,2h16 c1.1,0,2-0.9,2-2v-4C20.9,14,20,13.1,20,12z M13,17.5h-2v-2h2V17.5z M13,13h-2v-2h2V13z M13,8.5h-2v-2h2V8.5z"/></svg>
+        </div>
+        <div>
+          <div class="promo-label">Promo code</div>
+          <div class="promo-code">CFA10OFFICODA</div>
+        </div>
+      </div>
+
       <svg class="diamond-large-outline" viewBox="0 0 100 100">
         <rect x="15" y="15" width="70" height="70" fill="none" stroke="#2563EB" stroke-width="3" transform="rotate(45 50 50)"/>
       </svg>
 
-      <!-- ================= PHOTO COLLAGE ================= -->
-      <div class="collage">
-        <div class="collage-item ph-1">
-          <img src="./photo1.jpg" alt="" onerror="this.style.display='none';">
-        </div>
-        <div class="collage-item ph-2">
-          <img src="./photo2.jpg" alt="" onerror="this.style.display='none';">
-        </div>
-        <div class="collage-item ph-3">
-          <img src="./photo3.jpg" alt="" onerror="this.style.display='none';">
-        </div>
-        <div class="collage-item ph-4">
-          <img src="./photo4.jpg" alt="" onerror="this.style.display='none';">
-        </div>
-      </div>
+      <!-- ================= MEET US THERE ================= -->
+      <div class="meet-label">Meet us there</div>
 
-      <svg class="gear-icon" viewBox="0 0 24 24">
-        <path fill="#2563EB" d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
-      </svg>
-
-      <div class="lime-blob"></div>
-
-      <!-- ================= DATE PILL ================= -->
-      <div class="date-pill">Bali, 20&ndash;21 August</div>
-
-      <!-- ================= SPEAKER CARD ================= -->
-      <div class="speaker-card">
-        <div class="speaker-photo ph-speaker">
-          <img src="./speaker1.jpg" alt="Artyom Abbasov" onerror="this.style.display='none';">
+      <!-- ================= REP ROW ================= -->
+      <div class="rep-row">
+        <div class="rep-photo ph-rep">
+          <img src="./artyom.jpg" alt="Artyom Abbasov" onerror="this.style.display='none';">
         </div>
         <div>
-          <div class="speaker-role">CMO</div>
-          <div class="speaker-name">Artyom<br>Abbasov</div>
-          <div class="speaker-connect">
+          <div class="rep-name">Artyom<br>Abbasov</div>
+          <div class="rep-role">CMO</div>
+          <div class="rep-connect">
             <svg viewBox="0 0 24 24"><path d="M21.05,3.62,2.87,10.7a1,1,0,0,0,.07,1.88l4.68,1.56,1.8,5.84a1,1,0,0,0,1.72.36l2.6-2.85,4.65,3.42a1,1,0,0,0,1.58-.6L22,4.44A1,1,0,0,0,21.05,3.62ZM9.4,13.83l-.9,3-1.2-3.9,9.34-6.14ZM10,17.6l-.86-2.8,1.5,1.1Zm7.94,1.06-4-2.94,4.86-8.02Z"/></svg>
             <span>Let's connect</span>
           </div>
         </div>
       </div>
 
+      <div class="lime-blob"></div>
+
       <!-- ================= BOTTOM BAR ================= -->
       <div class="bottombar">
-        <div class="bottombar-left">Our representative at</div>
-        <div class="bottombar-pill">COINFEST ASIA 2026</div>
+        <div class="bottombar-left">Our rep at <b>CoinFest Asia 2026</b></div>
+        <div class="bottombar-pill">ICODA</div>
       </div>
 
       <div class="bottom-gradient-line"></div>
@@ -552,7 +529,7 @@
 <script>
   function setScale(v) {
     var card = document.getElementById('card');
-    card.classList.remove('scale-full', 'scale-fit');
+    card.classList.remove('scale-full');
     if (v === 1) {
       card.classList.add('scale-full');
     } else {
