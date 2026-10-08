@@ -66,7 +66,7 @@ h1{font-weight:800;letter-spacing:-.03em;line-height:1.05}
 <div class="fill center">
  <h1 class="mid a" data-d=".2" data-t="left">Two weeks negotiating scope…</h1>
  <h1 class="mid a" data-d=".9" data-t="left" style="opacity:.7;margin-top:14px">…with someone who may not pay on time.</h1>
- <h1 class="big a" data-d="2.0" data-t="pop" style="margin-top:70px">We built a <span class="bl">program</span> to end that.</h1>
+ <h1 class="a" data-d="2.0" data-t="pop" style="margin-top:70px;font-size:64px;white-space:normal">We built a <span class="bl">program</span> to end that.</h1>
 </div></section>
 
 <!-- S3 -->
@@ -122,21 +122,8 @@ h1{font-weight:800;letter-spacing:-.03em;line-height:1.05}
  <h1 class="sm a" data-d="3.8" data-t="up" style="font-size:34px;opacity:.9">Terms in writing <span class="bl">before you confirm.</span></h1>
 </div></section>
 
-<!-- S7 -->
-<section class="scene light" data-s="29.65" data-e="35.5"><div class="blob a" style="width:500px;height:500px;right:-160px;top:-100px"></div>
-<div class="fill" style="justify-content:center">
- <h1 class="mid a" data-d=".1" data-t="up" style="margin-bottom:6px"><span class="bl">ICODA</span> vs going solo</h1>
- <div class="tiny a" data-d=".3" data-t="up" style="margin-bottom:24px;font-size:24px">✅ with ICODA &nbsp;·&nbsp; ❌ on your own</div>
- <div class="row a" data-d=".7" data-t="up"><h4>Brand outreach</h4><div class="y">✅ We pitch brands and bring you the deal</div><div class="n">❌ You pitch, or wait for a DM</div></div>
- <div class="row a" data-d="1.2" data-t="up"><h4>Briefs</h4><div class="y">✅ Reviewed and priced before they reach you</div><div class="n">❌ You read every pitch yourself</div></div>
- <div class="row a" data-d="1.7" data-t="up"><h4>Compliance</h4><div class="y">✅ Checked against platform rules before you post</div><div class="n">❌ You guess, and you carry the risk</div></div>
- <div class="row a" data-d="2.2" data-t="up"><h4>Partnerships</h4><div class="y">✅ Repeat work with brands that know your numbers</div><div class="n">❌ One-off deals, from zero each time</div></div>
- <div class="row a" data-d="2.7" data-t="up"><h4>Inbound briefs</h4><div class="y">✅ We answer them, so live slots don’t expire</div><div class="n">❌ They sit in your inbox</div></div>
- <div class="row a" data-d="3.2" data-t="up"><h4>Web3 experience</h4><div class="y">✅ Crypto marketing since 2017</div><div class="n">❌ You explain your niche to every brand</div></div>
-</div></section>
-
 <!-- S8 -->
-<section class="scene pinkbg" data-s="35.15" data-e="40.5"><div class="blob a" style="width:500px;height:500px;left:-140px;top:-80px"></div><div class="blob b" style="width:440px;height:440px;right:-140px;bottom:-40px"></div>
+<section class="scene pinkbg" data-s="29.65" data-e="35.0"><div class="blob a" style="width:500px;height:500px;left:-140px;top:-80px"></div><div class="blob b" style="width:440px;height:440px;right:-140px;bottom:-40px"></div>
 <div class="fill center">
  <h1 class="mid a" data-d=".1" data-t="up" style="margin-bottom:46px">Simple, from application <span class="pk">to payout</span></h1>
  <div class="step a" data-d=".6" data-t="right"><div class="num">1</div><div><h4>Apply</h4><p>Your channel, audience and formats.</p></div></div>
@@ -147,7 +134,7 @@ h1{font-weight:800;letter-spacing:-.03em;line-height:1.05}
 </div></section>
 
 <!-- S9 -->
-<section class="scene light" data-s="40.15" data-e="45.0"><div class="blob a" style="width:560px;height:560px;left:-160px;top:-80px"></div><div class="blob b" style="width:500px;height:500px;right:-180px;bottom:-60px"></div>
+<section class="scene light" data-s="34.65" data-e="39.5"><div class="blob a" style="width:560px;height:560px;left:-160px;top:-80px"></div><div class="blob b" style="width:500px;height:500px;right:-180px;bottom:-60px"></div>
 <div class="fill center" style="align-items:center;text-align:center">
  <div class="logo a" data-d=".1" data-t="pop" style="font-size:54px;margin-bottom:40px">IC<i>O</i>DA</div>
  <h1 class="mid a" data-d=".4" data-t="up">Ready to stop<br><span class="bl">chasing brands?</span></h1>
@@ -190,11 +177,11 @@ function render(t){
       const fl=p>=1&&e.classList.contains('card')?Math.sin(t*1.6+k)*3:0;
       e.style.opacity=op;
       e.style.transform=`translate(${x}px,${y+fl}px) scale(${sc})`;
-      if(e.dataset.count){e.textContent=Math.round(+e.dataset.count*eo).toLocaleString('en-US')+(p>=1?e.dataset.suf||'':'')}
-    });
+          });
   });
+  scenes.forEach((s,i)=>{if(t<+s.dataset.s||t>+s.dataset.e)return;s.querySelectorAll('[data-count]').forEach(c=>{const p=clamp((t-+s.dataset.s-(+c.parentElement.dataset.d)-.1)/.8);c.textContent=Math.round(+c.dataset.count*oc(p)).toLocaleString('en-US')+c.dataset.suf})});
   const b=document.getElementById('btn');
-  if(t>41.6){const k=1+.04*Math.sin((t-41.6)*5);b.style.transform=`scale(${k})`}
+  if(t>36.1){const k=1+.04*Math.sin((t-36.1)*5);b.style.transform=`scale(${k})`}
 }
 render(0);
 </script></body></html>
