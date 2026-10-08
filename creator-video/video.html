@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ICODA Creator Program</title>
+<style>
+:root{--blue:#3b5bdb;--navy:#2b3150;--pink:#f0336f;--lav:#f1f0ff;--rose:#ffe8f0;--ink:#0f1330;--muted:#5a6488}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:720px;height:1280px;overflow:hidden;background:#000;font-family:Inter,"Inter Display",sans-serif}
+#stage{position:relative;width:720px;height:1280px;overflow:hidden}
+.scene{position:absolute;inset:0;overflow:hidden;opacity:0;padding:70px 48px}
+.light{background:linear-gradient(160deg,#fff 0%,var(--lav) 100%);color:var(--navy)}
+.dark{background:linear-gradient(160deg,#141a3d 0%,#0b0f2a 100%);color:#fff}
+.pinkbg{background:linear-gradient(160deg,#fff4f8 0%,var(--rose) 100%);color:var(--navy)}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55}
+.light .blob.a{background:#b9c4ff}.light .blob.b{background:#e8c9ff}
+.dark .blob.a{background:#3b5bdb}.dark .blob.b{background:#a33bdb;opacity:.35}
+.pinkbg .blob.a{background:#ffb3cd}.pinkbg .blob.b{background:#c9d2ff}
+.a{opacity:0;will-change:transform,opacity}
+.fill{position:relative;height:100%;display:flex;flex-direction:column}
+.center{justify-content:center}
+h1{font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.big{font-size:74px;white-space:nowrap}.mid{font-size:62px}.sm{font-size:44px}
+.lbl{font-size:24px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.dark .lbl{color:#8fa2ff}
+.pk{color:var(--pink)}.bl{color:var(--blue)}.dark .bl{color:#8fa2ff}
+.bubble{background:#fff;border-radius:28px;padding:26px 30px;box-shadow:0 24px 60px rgba(43,49,80,.16);font-size:32px;font-weight:600;display:flex;gap:18px;align-items:center}
+.bubble small{display:block;font-size:20px;color:var(--muted);font-weight:500;margin-bottom:4px}
+.ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#8a5bff);flex:none;display:grid;place-items:center;font-size:30px}
+.card{background:#fff;border-radius:28px;box-shadow:0 20px 50px rgba(43,49,80,.12);padding:28px}
+.dark .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);box-shadow:none;color:#fff}
+.chip{display:inline-block;background:#fff;border-radius:999px;padding:12px 22px;font-size:24px;font-weight:700;color:var(--blue);box-shadow:0 10px 24px rgba(59,91,219,.15)}
+.logo{font-weight:900;font-size:40px;letter-spacing:.02em;color:var(--navy)}
+.logo i{font-style:normal;color:var(--blue)}.dark .logo{color:#fff}
+.stat{display:flex;align-items:baseline;gap:18px;padding:22px 30px}
+.stat b{font-size:54px;letter-spacing:-.03em;color:var(--blue);min-width:270px;white-space:nowrap}
+.stat span{font-size:28px;font-weight:600;color:var(--navy)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ic{width:72px;height:72px;border-radius:20px;background:rgba(143,162,255,.2);display:grid;place-items:center;font-size:38px;margin-bottom:18px}
+.card h3{font-size:34px;font-weight:800;margin-bottom:8px;letter-spacing:-.01em}
+.card p{font-size:25px;line-height:1.35;opacity:.78;font-weight:500}
+.chk{display:flex;align-items:center;gap:16px;font-size:32px;font-weight:700;padding:15px 0;border-bottom:1px solid #e6e8f5}
+.chk:last-child{border:none}.chk em{font-style:normal;width:40px;height:40px;border-radius:12px;background:#dff7e8;color:#16a34a;display:grid;place-items:center;font-size:24px;flex:none}
+.row{background:#fff;border-radius:22px;padding:15px 22px;margin-bottom:13px;box-shadow:0 12px 30px rgba(43,49,80,.09)}
+.row h4{font-size:24px;font-weight:800;margin-bottom:7px;color:var(--navy)}
+.row div{font-size:22px;line-height:1.3;font-weight:600}
+.row .y{color:#15803d}.row .n{color:#b4273f;opacity:.9;margin-top:3px}
+.step{display:flex;gap:22px;align-items:center;background:#fff;border-radius:28px;padding:26px 28px;margin-bottom:20px;box-shadow:0 14px 36px rgba(43,49,80,.10)}
+.num{width:70px;height:70px;border-radius:50%;background:var(--pink);color:#fff;font-weight:800;font-size:34px;display:grid;place-items:center;flex:none;box-shadow:0 10px 24px rgba(240,51,111,.4)}
+.step h4{font-size:36px;font-weight:800;margin-bottom:4px}.step p{font-size:23px;color:var(--muted);font-weight:500;line-height:1.3}
+.btn{display:inline-block;background:var(--pink);color:#fff;font-weight:800;font-size:44px;padding:30px 70px;border-radius:20px;box-shadow:0 20px 50px rgba(240,51,111,.45)}
+.url{font-size:30px;font-weight:700;color:var(--blue)}
+.tiny{font-size:19px;color:var(--muted);font-weight:500}
+</style></head><body>
+<div id="stage">
+
+<!-- S1 -->
+<section class="scene light" data-s="0" data-e="5.0"><div class="blob a" style="width:520px;height:520px;left:-120px;top:-100px"></div><div class="blob b" style="width:460px;height:460px;right:-160px;bottom:60px"></div>
+<div class="fill center">
+ <div class="bubble a" data-d=".2" data-t="pop" style="margin-bottom:70px"><div class="ava">🏢</div><div><small>New message · Brand</small>“Sponsorship opportunity! 👀”</div></div>
+ <h1 class="big a" data-d="1.0" data-t="up">No rate.</h1>
+ <h1 class="big a" data-d="1.6" data-t="up">No deliverables.</h1>
+ <h1 class="big a" data-d="2.2" data-t="up">No timeline.</h1>
+ <h1 class="sm a pk" data-d="3.2" data-t="up" style="margin-top:50px">Just “let’s hop on a call.”</h1>
+</div></section>
+
+<!-- S2 -->
+<section class="scene dark" data-s="4.65" data-e="8.5"><div class="blob a" style="width:560px;height:560px;left:-160px;top:200px"></div><div class="blob b" style="width:420px;height:420px;right:-120px;top:-60px"></div>
+<div class="fill center">
+ <h1 class="mid a" data-d=".2" data-t="left">Two weeks negotiating scope…</h1>
+ <h1 class="mid a" data-d=".9" data-t="left" style="opacity:.7;margin-top:14px">…with someone who may not pay on time.</h1>
+ <h1 class="big a" data-d="2.0" data-t="pop" style="margin-top:70px">We built a <span class="bl">program</span> to end that.</h1>
+</div></section>
+
+<!-- S3 -->
+<section class="scene light" data-s="8.15" data-e="13.0"><div class="blob a" style="width:500px;height:500px;right:-140px;top:-80px"></div><div class="blob b" style="width:440px;height:440px;left:-160px;bottom:0"></div>
+<div class="fill center">
+ <div class="logo a" data-d=".1" data-t="up" style="margin-bottom:26px">IC<i>O</i>DA</div>
+ <h1 class="mid a" data-d=".3" data-t="up" style="margin-bottom:46px">Creator <span class="bl">Program</span></h1>
+ <div class="card stat a" data-d=".9" data-t="right" style="margin-bottom:18px"><b>Since 2017</b><span>in crypto marketing</span></div>
+ <div class="card stat a" data-d="1.4" data-t="right" style="margin-bottom:18px"><b data-count="2000" data-suf="+">0</b><span>vetted creators</span></div>
+ <div class="card stat a" data-d="1.9" data-t="right" style="margin-bottom:40px"><b data-count="650" data-suf="+">0</b><span>projects run</span></div>
+ <div class="a" data-d="2.7" data-t="up" style="display:flex;flex-wrap:wrap;gap:12px"><span class="chip">Twitter/X</span><span class="chip">YouTube</span><span class="chip">Telegram</span><span class="chip">Kick</span><span class="chip">Instagram</span></div>
+</div></section>
+
+<!-- S4 -->
+<section class="scene dark" data-s="12.65" data-e="18.5"><div class="blob a" style="width:560px;height:560px;right:-200px;top:300px"></div><div class="blob b" style="width:420px;height:420px;left:-140px;top:-60px"></div>
+<div class="fill center">
+ <div class="lbl a" data-d=".1" data-t="up" style="margin-bottom:18px">Who it’s for</div>
+ <h1 class="mid a" data-d=".3" data-t="up" style="margin-bottom:46px">Built for creators <span class="bl">who move markets</span></h1>
+ <div class="grid2">
+  <div class="card a" data-d="1.0" data-t="pop"><div class="ic">📈</div><h3>Crypto Trading</h3><p>Technical analysis and market calls.</p></div>
+  <div class="card a" data-d="1.4" data-t="pop"><div class="ic">🔒</div><h3>DeFi</h3><p>Protocol reviews and yield breakdowns.</p></div>
+  <div class="card a" data-d="1.8" data-t="pop"><div class="ic">🎯</div><h3>NFT</h3><p>Mints, collections and drop-day communities.</p></div>
+  <div class="card a" data-d="2.2" data-t="pop"><div class="ic">🎲</div><h3>Web3 iGaming</h3><p>Casino and betting streams.</p></div>
+ </div>
+ <h1 class="sm a" data-d="3.4" data-t="up" style="margin-top:46px;font-size:36px;opacity:.85">Audiences that act on what they see.</h1>
+</div></section>
+
+<!-- S5 -->
+<section class="scene light" data-s="18.15" data-e="24.5"><div class="blob a" style="width:500px;height:500px;left:-150px;top:-100px"></div><div class="blob b" style="width:460px;height:460px;right:-150px;bottom:-40px"></div>
+<div class="fill center">
+ <h1 class="mid a" data-d=".2" data-t="up">You don’t pitch brands.</h1>
+ <h1 class="mid a bl" data-d=".9" data-t="up" style="margin-bottom:40px">Briefs come to you.</h1>
+ <div class="card a" data-d="1.6" data-t="pop" style="padding:24px 30px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span class="lbl">Campaign brief</span><span class="chip" style="font-size:20px;padding:8px 16px">Priced &amp; reviewed</span></div>
+  <div class="chk a" data-d="2.0" data-t="left"><em>✓</em>Platform &amp; GEO</div>
+  <div class="chk a" data-d="2.3" data-t="left"><em>✓</em>Content format</div>
+  <div class="chk a" data-d="2.6" data-t="left"><em>✓</em>Deliverables</div>
+  <div class="chk a" data-d="2.9" data-t="left"><em>✓</em>Compensation</div>
+  <div class="chk a" data-d="3.2" data-t="left"><em>✓</em>Timeline</div>
+ </div>
+ <h1 class="sm a" data-d="4.2" data-t="up" style="margin-top:36px;font-size:38px">Doesn’t fit? <span class="pk">Pass. No penalty.</span></h1>
+</div></section>
+
+<!-- S6 -->
+<section class="scene dark" data-s="24.15" data-e="30.0"><div class="blob a" style="width:540px;height:540px;left:-160px;bottom:-60px"></div><div class="blob b" style="width:440px;height:440px;right:-140px;top:-40px"></div>
+<div class="fill center">
+ <div class="lbl a" data-d=".1" data-t="up" style="margin-bottom:18px">Deal types</div>
+ <h1 class="mid a" data-d=".3" data-t="up" style="margin-bottom:40px">Four ways to <span class="bl">get paid</span></h1>
+ <div class="card a" data-d="1.0" data-t="right" style="margin-bottom:16px;display:flex;gap:22px;align-items:center"><div class="ic" style="margin:0">💵</div><div><h3>Flat fee</h3><p>Fixed pay for agreed deliverables.</p></div></div>
+ <div class="card a" data-d="1.6" data-t="right" style="margin-bottom:16px;display:flex;gap:22px;align-items:center"><div class="ic" style="margin:0">🚀</div><div><h3>Hybrid</h3><p>Fixed fee plus a performance bonus.</p></div></div>
+ <div class="card a" data-d="2.2" data-t="right" style="margin-bottom:16px;display:flex;gap:22px;align-items:center"><div class="ic" style="margin:0">📊</div><div><h3>Affiliate / performance</h3><p>Paid on agreed metrics, set in advance.</p></div></div>
+ <div class="card a" data-d="2.8" data-t="right" style="margin-bottom:30px;display:flex;gap:22px;align-items:center"><div class="ic" style="margin:0">🤝</div><div><h3>Long-term partnership</h3><p>Ongoing work with one brand.</p></div></div>
+ <h1 class="sm a" data-d="3.8" data-t="up" style="font-size:34px;opacity:.9">Terms in writing <span class="bl">before you confirm.</span></h1>
+</div></section>
+
+<!-- S7 -->
+<section class="scene light" data-s="29.65" data-e="35.5"><div class="blob a" style="width:500px;height:500px;right:-160px;top:-100px"></div>
+<div class="fill" style="justify-content:center">
+ <h1 class="mid a" data-d=".1" data-t="up" style="margin-bottom:6px"><span class="bl">ICODA</span> vs going solo</h1>
+ <div class="tiny a" data-d=".3" data-t="up" style="margin-bottom:24px;font-size:24px">✅ with ICODA &nbsp;·&nbsp; ❌ on your own</div>
+ <div class="row a" data-d=".7" data-t="up"><h4>Brand outreach</h4><div class="y">✅ We pitch brands and bring you the deal</div><div class="n">❌ You pitch, or wait for a DM</div></div>
+ <div class="row a" data-d="1.2" data-t="up"><h4>Briefs</h4><div class="y">✅ Reviewed and priced before they reach you</div><div class="n">❌ You read every pitch yourself</div></div>
+ <div class="row a" data-d="1.7" data-t="up"><h4>Compliance</h4><div class="y">✅ Checked against platform rules before you post</div><div class="n">❌ You guess, and you carry the risk</div></div>
+ <div class="row a" data-d="2.2" data-t="up"><h4>Partnerships</h4><div class="y">✅ Repeat work with brands that know your numbers</div><div class="n">❌ One-off deals, from zero each time</div></div>
+ <div class="row a" data-d="2.7" data-t="up"><h4>Inbound briefs</h4><div class="y">✅ We answer them, so live slots don’t expire</div><div class="n">❌ They sit in your inbox</div></div>
+ <div class="row a" data-d="3.2" data-t="up"><h4>Web3 experience</h4><div class="y">✅ Crypto marketing since 2017</div><div class="n">❌ You explain your niche to every brand</div></div>
+</div></section>
+
+<!-- S8 -->
+<section class="scene pinkbg" data-s="35.15" data-e="40.5"><div class="blob a" style="width:500px;height:500px;left:-140px;top:-80px"></div><div class="blob b" style="width:440px;height:440px;right:-140px;bottom:-40px"></div>
+<div class="fill center">
+ <h1 class="mid a" data-d=".1" data-t="up" style="margin-bottom:46px">Simple, from application <span class="pk">to payout</span></h1>
+ <div class="step a" data-d=".6" data-t="right"><div class="num">1</div><div><h4>Apply</h4><p>Your channel, audience and formats.</p></div></div>
+ <div class="step a" data-d=".95" data-t="right"><div class="num">2</div><div><h4>Get matched</h4><p>Briefs that fit your niche.</p></div></div>
+ <div class="step a" data-d="1.3" data-t="right"><div class="num">3</div><div><h4>Confirm terms</h4><p>Everything in writing, up front.</p></div></div>
+ <div class="step a" data-d="1.65" data-t="right"><div class="num">4</div><div><h4>Create</h4><p>You make it. We handle the business side.</p></div></div>
+ <div class="step a" data-d="2.0" data-t="right"><div class="num">5</div><div><h4>Get paid</h4><p>After delivery, as the terms state.</p></div></div>
+</div></section>
+
+<!-- S9 -->
+<section class="scene light" data-s="40.15" data-e="45.0"><div class="blob a" style="width:560px;height:560px;left:-160px;top:-80px"></div><div class="blob b" style="width:500px;height:500px;right:-180px;bottom:-60px"></div>
+<div class="fill center" style="align-items:center;text-align:center">
+ <div class="logo a" data-d=".1" data-t="pop" style="font-size:54px;margin-bottom:40px">IC<i>O</i>DA</div>
+ <h1 class="mid a" data-d=".4" data-t="up">Ready to stop<br><span class="bl">chasing brands?</span></h1>
+ <div class="tiny a" data-d=".9" data-t="up" style="font-size:28px;margin:26px 0 56px">Apply once. A real person replies.</div>
+ <div class="a" data-d="1.3" data-t="pop"><span class="btn" id="btn">Apply to Join</span></div>
+ <div class="url a" data-d="1.8" data-t="up" style="margin-top:44px">icoda.io/services/creator-program</div>
+ <div class="tiny a" data-d="2.3" data-t="fade" style="margin-top:50px">Applying is free. Opportunities and income are not guaranteed.</div>
+</div></section>
+
+</div>
+<script>
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const oc=x=>1-Math.pow(1-x,3);
+const ob=x=>{const c=1.70158,d=c+1;return 1+d*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const scenes=[...document.querySelectorAll('.scene')];
+const els=scenes.map(s=>[...s.querySelectorAll('.a')]);
+const FADE=.35,DUR=.7;
+function render(t){
+  scenes.forEach((s,i)=>{
+    const st=+s.dataset.s,en=+s.dataset.e;
+    const on=t>=st&&t<=en;
+    s.style.display=on?'block':'none';
+    s.style.zIndex=i;
+    if(!on)return;
+    const li=clamp((t-st)/FADE), lo=i===scenes.length-1?1:clamp((en-t)/FADE);
+    s.style.opacity=Math.min(i===0?1:li,1)*(i===scenes.length-1?1:1);
+    // outgoing scene stays opaque beneath incoming one, so only fade-in of the next matters
+    const loc=t-st;
+    s.querySelectorAll('.blob').forEach((b,k)=>{
+      b.style.transform=`translate(${Math.sin(t*.5+k*2)*40}px,${Math.cos(t*.4+k)*50}px)`;
+    });
+    els[i].forEach((e,k)=>{
+      const d=+e.dataset.d,p=clamp((loc-d)/DUR),ty=e.dataset.t||'fade';
+      let x=0,y=0,sc=1,op=p>0?clamp(p*2.2):0;
+      const eo=oc(p),eb=ob(p);
+      if(ty==='up')y=(1-eo)*70;
+      else if(ty==='left')x=-(1-eo)*130;
+      else if(ty==='right')x=(1-eo)*130;
+      else if(ty==='pop'){sc=.55+.45*eb;}
+      const fl=p>=1&&e.classList.contains('card')?Math.sin(t*1.6+k)*3:0;
+      e.style.opacity=op;
+      e.style.transform=`translate(${x}px,${y+fl}px) scale(${sc})`;
+      if(e.dataset.count){e.textContent=Math.round(+e.dataset.count*eo).toLocaleString('en-US')+(p>=1?e.dataset.suf||'':'')}
+    });
+  });
+  const b=document.getElementById('btn');
+  if(t>41.6){const k=1+.04*Math.sin((t-41.6)*5);b.style.transform=`scale(${k})`}
+}
+render(0);
+</script></body></html>
