@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICODA × Blockchain Life 2026 — 15s preview</title>
+<style>
+:root{--blue:#1e7bff;--cyan:#9be9ff;--navy:#031a4d;--ink:#02060f}
+*{box-sizing:border-box;margin:0}
+body{background:#0b0d12;color:#fff;font-family:Montserrat,Inter,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:16px}
+#stage{position:relative;width:min(92vw,calc(88vh*9/16));aspect-ratio:9/16;overflow:hidden;border-radius:18px;background:linear-gradient(180deg,#000 0%,#02112f 45%,#0a3a86 100%);container-type:inline-size}
+.layer{position:absolute;inset:0;opacity:0;transition:opacity .35s}
+.layer.on{opacity:1}
+.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:7.4cqw;line-height:1.15;opacity:0;transform:translateY(3cqw);transition:all .4s}
+.t.on,.layer.on .t.auto{opacity:1;transform:none}
+.grad{background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.coin{position:absolute;width:44cqw;height:44cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26cqw;font-weight:900;color:#cfe3ff;
+ background:radial-gradient(circle at 30% 25%,#7fb0ff,#1d4fb8 45%,#06235c 100%);box-shadow:inset 0 0 6cqw #9bd0ff88,0 0 10cqw #1e7bff66;text-shadow:0 0 3cqw #7fb0ff}
+.coin.btc{left:6cqw;top:34%;animation:spin 3s linear infinite}
+.coin.eth{right:4cqw;top:50%;width:32cqw;height:32cqw;font-size:19cqw;animation:spin 3.6s linear infinite reverse}
+@keyframes spin{0%{transform:rotateY(0)}100%{transform:rotateY(360deg)}}
+.skyline{position:absolute;left:0;right:0;bottom:0;height:46%;display:flex;align-items:flex-end;justify-content:center;gap:1.2cqw}
+.skyline i{display:block;width:6cqw;background:linear-gradient(180deg,#2d7cff,#06235c);box-shadow:0 0 4cqw #1e7bff55;transform-origin:bottom;transform:scaleY(0);transition:transform .7s}
+.on .skyline i{transform:scaleY(1)}
+.skyline i.burj{width:4cqw}
+.crowd{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#0b2a66 0 2cqw,transparent 2cqw 5cqw),linear-gradient(180deg,transparent 40%,#1e7bff44);mix-blend-mode:screen;animation:pan 1.2s linear infinite}
+@keyframes pan{to{background-position:10cqw 0,0 0}}
+.badge{position:absolute;left:50%;top:30%;width:42cqw;height:56cqw;margin-left:-21cqw;border-radius:3cqw;background:linear-gradient(160deg,#0f2f73,#041540);border:.5cqw solid #4aa2ff;box-shadow:0 0 8cqw #1e7bff88;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:6.4cqw;text-align:center;line-height:1.1;transform:rotate(-6deg)}
+.stat{position:absolute;left:0;right:0;text-align:center;font-weight:900;font-size:16cqw}
+.stat small{display:block;font-size:5cqw;letter-spacing:.2em;font-weight:700}
+.bl{position:absolute;left:0;right:0;top:36%;text-align:center}
+.bl b{display:block;font-size:11cqw;line-height:1}
+.bl span{font-size:11cqw;font-weight:300}
+.bl .box{display:inline-block;border:1cqw solid var(--blue);width:15cqw;height:15cqw;vertical-align:middle;margin-right:2cqw}
+.logo{position:absolute;left:50%;top:40%;width:72cqw;margin-left:-36cqw;opacity:0;transform:scale(.92);transition:all .6s}
+.logo.on{opacity:1;transform:none}
+.corner{position:absolute;width:6cqw;height:6cqw;border:0 solid #fff;opacity:0;transition:opacity .5s}
+.corner.on{opacity:1}
+.promo{position:absolute;left:50%;bottom:16%;transform:translateX(-50%);width:62cqw;padding:3cqw;border:.6cqw solid #6fb6ff;border-radius:2cqw;background:#02235f;text-align:center;font-weight:800;font-size:7cqw;opacity:0;transition:opacity .4s}
+.promo.on{opacity:1;animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 0 6cqw #4aa2ff}}
+.small{position:absolute;left:0;right:0;text-align:center;font-size:3.6cqw;letter-spacing:.06em;opacity:.85}
+.hud{position:absolute;left:0;right:0;top:3%;display:flex;justify-content:space-between;padding:0 5cqw;font-size:3.2cqw;font-weight:700;opacity:.8}
+.bar{position:absolute;left:0;bottom:0;height:.8cqw;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0}
+#ctl{display:flex;gap:12px;align-items:center;font-size:14px}
+button{background:#1e7bff;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- 0-2 / 2-4 : coins -->
+  <div class="layer" id="s1">
+    <div class="coin btc">₿</div><div class="coin eth">Ξ</div>
+    <div class="t grad" id="t1" style="top:14%">Bull Run is on</div>
+    <div class="t" id="t2" style="top:14%">The window is open</div>
+  </div>
+  <!-- 2-4 : skyline -->
+  <div class="layer" id="s2">
+    <div class="skyline" id="sky"></div>
+  </div>
+  <!-- 4-7 : crowd + stats -->
+  <div class="layer" id="s3">
+    <div class="crowd"></div>
+    <div class="badge">Blockchain<br>Life 2026</div>
+    <div class="stat grad" id="st1" style="top:10%">0<small>ATTENDEES</small></div>
+    <div class="stat" id="st2" style="top:78%">0<small>COUNTRIES</small></div>
+  </div>
+  <!-- 7-10 : BL logo -->
+  <div class="layer" id="s4">
+    <div class="bl"><span class="box"></span><b class="grad" style="display:inline-block">Blockchain</b><br><b style="display:inline-block;margin-left:17cqw">Life <span>2026</span></b></div>
+    <div class="t auto" style="top:62%;font-size:6cqw">December 1–2 · Dubai</div>
+  </div>
+  <!-- 10-15 : icoda -->
+  <div class="layer" id="s5">
+    <div class="t grad auto" style="top:11%;font-size:9cqw">Gold Sponsor</div>
+    <div class="small" style="top:24%;letter-spacing:.5em;font-size:4cqw">BOOTH <b style="border:.5cqw solid #6fb6ff;border-radius:1.5cqw;padding:.5cqw 2.5cqw;letter-spacing:0;font-size:6cqw">G16</b></div>
+    <img class="logo" id="logo" src="icoda-logo-white.png" alt="icoda.">
+    <div class="corner" style="left:9%;top:34%;border-top-width:.5cqw;border-left-width:.5cqw"></div>
+    <div class="corner" style="right:9%;top:34%;border-top-width:.5cqw;border-right-width:.5cqw"></div>
+    <div class="corner" style="left:9%;top:58%;border-bottom-width:.5cqw;border-left-width:.5cqw"></div>
+    <div class="corner" style="right:9%;top:58%;border-bottom-width:.5cqw;border-right-width:.5cqw"></div>
+    <div class="t auto" id="t5" style="top:70%;font-size:5.4cqw">10% OFF TICKETS · PROMO CODE</div>
+    <div class="promo" id="promo">ICODA</div>
+    <div class="small" id="url" style="bottom:7%;opacity:0">blockchain-life.com/autumn2026</div>
+  </div>
+  <div class="hud"><span>BLOCKCHAIN LIFE 2026</span><span id="clock">0.0s</span></div>
+  <div class="bar" id="bar"></div>
+</div>
+<div id="ctl"><button id="play">▶ Replay</button><span>15 сек · 9:16 · превью раскадровки</span></div>
+<script>
+const $=id=>document.getElementById(id);
+const sky=$('sky');
+[5,8,6,12,7,22,5,9,6,10,7].forEach((h,i)=>{const b=document.createElement('i');b.style.height=h*3+'cqw';if(h===22){b.className='burj';b.style.height='70cqw'}b.style.transitionDelay=i*.05+'s';sky.appendChild(b)});
+const ev=[ // [time, fn]
+ [0,()=>{L('s1');T('t1',1)}],
+ [1.9,()=>{T('t1',0);T('t2',1)}],
+ [2,()=>{L('s2')}],
+ [4,()=>{L('s3');count('st1',15000,'+',1.2);count('st2',130,'+',1.2,1.5)}],
+ [7,()=>{L('s4')}],
+ [10,()=>{L('s5');$('logo').classList.add('on');document.querySelectorAll('.corner').forEach(c=>c.classList.add('on'))}],
+ [12.5,()=>{$('promo').classList.add('on');$('url').style.opacity=.9}],
+];
+function L(id){document.querySelectorAll('.layer').forEach(l=>l.classList.toggle('on',l.id===id||(id==='s2'&&l.id==='s1'&&false)))}
+function T(id,on){$(id).classList.toggle('on',!!on)}
+function count(id,to,suf,dur,delay=0){const el=$(id),sm=el.querySelector('small'),lab=sm.outerHTML;const t0=performance.now()+delay*1000;
+ (function f(n){const k=Math.max(0,Math.min(1,(n-t0)/(dur*1000)));el.innerHTML=Math.round(to*k).toLocaleString('en-US')+(k>=1?suf:'')+lab;if(k<1)requestAnimationFrame(f)})(performance.now())}
+let timers=[],raf;
+function play(){
+ timers.forEach(clearTimeout);cancelAnimationFrame(raf);
+ document.querySelectorAll('.on').forEach(e=>e.classList.remove('on'));
+ $('promo').classList.remove('on');$('url').style.opacity=0;
+ const t0=performance.now();
+ ev.forEach(([t,fn])=>timers.push(setTimeout(fn,t*1000)));
+ (function tick(){const s=(performance.now()-t0)/1000;$('clock').textContent=Math.min(s,15).toFixed(1)+'s';$('bar').style.width=Math.min(s/15,1)*100+'%';if(s<15)raf=requestAnimationFrame(tick)})();
+}
+$('play').onclick=play;play();
+</script>
+</body>
+</html>
