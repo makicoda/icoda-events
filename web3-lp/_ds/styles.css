@@ -1,0 +1,5 @@
+/* =========================================================================
+   ICODA Design System — root entry point
+   Consumers link THIS file; it pulls in the full token + type layer.
+   ========================================================================= */
+@import url('colors_and_type.css');

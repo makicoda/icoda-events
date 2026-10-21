@@ -1,0 +1,399 @@
+/* =========================================================================
+   ICODA Design System — Colors & Typography Tokens
+   Sourced from design-tokens.json (v2.0.0) + design-system-brief.md (v1.4.0)
+   Brand reference: https://icoda.io
+   ========================================================================= */
+
+/* Onest is the SOLE UI font on icoda.io. Self-hosted in production.
+   Loading from Google Fonts here as a working stand-in until self-hosted
+   files are in place. Stolzl-Medium (display/preloader) is a licensed font;
+   substituted with Onest at the same size + tracking until provided. */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* -----------------------------------------------------------------------
+     BRAND PALETTE
+     The two blues are NOT interchangeable.
+     ----------------------------------------------------------------------- */
+  --logo-blue:        #3946F4;   /* SVG logo dot ONLY. Not for buttons. */
+  --interactive-blue: #3C61E2;   /* CTAs, links, focus, all interactive UI */
+  --text-primary:     #2D344D;   /* H1/H2, body — navy-tinted, not pure black */
+  --text-dark:        #18232F;   /* H3 — near-black navy */
+  --text-muted:       #54658D;   /* Nav links, secondary text */
+
+  /* -----------------------------------------------------------------------
+     BLUE SCALE (anchored at interactive-blue)
+     ----------------------------------------------------------------------- */
+  --blue-50:  #EEF2FD;
+  --blue-100: #E7EDFF;   /* hover/info bg, category badge */
+  --blue-200: #D5DBF1;   /* default border, divider */
+  --blue-300: #AABDE7;
+  --blue-400: #C5D0EC;
+  --blue-500: #3C61E2;   /* base — buttons, interactive */
+  --blue-600: #2E50C4;   /* button hover */
+  --blue-700: #2040A6;   /* button pressed */
+  --blue-800: #162E80;
+  --blue-900: #0C1D5A;   /* gradient/decorative only — NEVER bg surface */
+  --blue-950: #070F35;
+
+  /* -----------------------------------------------------------------------
+     NAVY SCALE (blue-tinted text neutrals)
+     ----------------------------------------------------------------------- */
+  --navy-50:  #FAFBFD;   /* nav dropdown bg */
+  --navy-100: #F5F5FD;
+  --navy-150: #F4F6F9;   /* alt section bg */
+  --navy-200: #E0E3EE;
+  --navy-300: #8A9AB5;   /* placeholder, disabled */
+  --navy-400: #54658D;   /* nav text, secondary */
+  --navy-500: #37384F;
+  --navy-600: #2D344D;   /* primary text (156 uses) */
+  --navy-700: #18232F;   /* H3 dark */
+  --navy-800: #101820;
+  --navy-900: #080D14;
+
+  /* -----------------------------------------------------------------------
+     SURFACE
+     ----------------------------------------------------------------------- */
+  --surface-bg:           #FFFFFF;
+  --surface-bg-alt:       #F4F6F9;
+  --surface-article-card: #F8F9FF;
+  --surface-nav-dropdown: #FAFBFD;
+  --surface-footer:       #FFFFFF;
+  --surface-footer-divider: #3C61E2;
+  --surface-blue-section: #3C61E2;   /* same as buttons — only colored section */
+  --surface-nav:          rgba(255, 255, 255, 0.90);
+  --surface-overlay:      rgba(0, 0, 0, 0.50);
+
+  /* -----------------------------------------------------------------------
+     SEMANTIC FOREGROUND
+     ----------------------------------------------------------------------- */
+  --fg-primary:        #2D344D;
+  --fg-dark:           #18232F;
+  --fg-secondary:      #54658D;
+  --fg-tertiary:       #8A9AB5;
+  --fg-inverted:       #FFFFFF;
+  --fg-inverted-muted: rgba(255, 255, 255, 0.70);
+  --fg-accent:         #3C61E2;
+  --fg-accent-hover:   #2E50C4;
+
+  /* Status (from .status-dot_* classes) */
+  --status-poor:      #F31212;
+  --status-fair:      #FE8C3A;
+  --status-good:      #F2D516;
+  --status-excellent: #07BD47;
+  --status-primary:   #3C61E2;
+
+  /* Status backgrounds */
+  --status-poor-bg:      #FEE2E2;
+  --status-fair-bg:      #FFF3E8;
+  --status-good-bg:      #FEFCE8;
+  --status-excellent-bg: #DCFCE7;
+  --status-primary-bg:   #E7EDFF;
+
+  /* -----------------------------------------------------------------------
+     BORDERS
+     ----------------------------------------------------------------------- */
+  --border-subtle:  #E7EDFF;
+  --border-default: #D5DBF1;
+  --border-medium:  #AABDE7;
+  --border-strong:  #8A9AB5;
+  --border-focus:   #3C61E2;
+  --border-error:   #F31212;
+
+  /* -----------------------------------------------------------------------
+     GRADIENTS
+     ----------------------------------------------------------------------- */
+  --gradient-hero: radial-gradient(ellipse at 40% 50%,
+                     rgba(197,201,245,0.6) 0%,
+                     rgba(240,197,213,0.4) 60%,
+                     rgba(255,255,255,0) 100%);   /* @kind color */
+  --gradient-brand: linear-gradient(135deg, #3C61E2 0%, #6F93EF 100%);   /* @kind color */
+  --gradient-dark:  linear-gradient(135deg, #0C1D5A 0%, #3C61E2 100%);   /* @kind color */
+
+  /* -----------------------------------------------------------------------
+     TYPOGRAPHY
+     Onest is the sole UI font. Stolzl-Medium = preloader display (legacy).
+     ----------------------------------------------------------------------- */
+  --font-primary:   'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Stolzl-Medium is a licensed display font — upload the file to register
+     its @font-face. Until then the 'Onest' fallback renders at the same
+     size + tracking. Token intentionally keeps Stolzl-Medium first. */
+  --font-preloader: 'Stolzl-Medium', 'Onest', sans-serif;
+  --font-mono:      'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace;
+
+  /* Weights */
+  --fw-regular:   400;   /* @kind font */
+  --fw-medium:    500;   /* @kind font */
+  --fw-semibold:  600;   /* @kind font */
+  --fw-bold:      700;   /* @kind font */
+  --fw-extrabold: 800;   /* @kind font */
+  --fw-black:     900;   /* @kind font */
+
+  /* Body sizes */
+  --fs-xs: 12px;   /* eyebrow, micro */
+  --fs-sm: 14px;   /* most-used body size */
+  --fs-nav: 15px;  /* nav, breadcrumb, lead text */
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-h3-content: 20px;   /* blog/article H3 */
+  --fs-h2: 24px;           /* marketing H2, H3 accent, block-title */
+  --fs-h1-inner: 32px;     /* service / hub H1 */
+  --fs-h1-article: 36px;   /* tool/case study H1 */
+  --fs-h1-blog: 44px;      /* blog/archive listing H1 */
+  --fs-h1-home: 54px;      /* homepage hero H1 */
+  --fs-display: 38px;      /* preloader display */
+
+  /* -----------------------------------------------------------------------
+     SPACING — 8px base unit
+     ----------------------------------------------------------------------- */
+  --sp-0:   0px;
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   20px;
+  --sp-6:   24px;
+  --sp-8:   32px;
+  --sp-10:  40px;
+  --sp-12:  48px;
+  --sp-16:  64px;
+  --sp-20:  80px;
+  --sp-24:  96px;
+  --sp-32: 128px;
+  --sp-40: 160px;
+
+  /* -----------------------------------------------------------------------
+     RADII (from main.css frequency analysis)
+     ----------------------------------------------------------------------- */
+  --radius-none:   0px;
+  --radius-sm:     4px;    /* buttons, badges, inputs — most common */
+  --radius-md:     8px;    /* cards, dropdowns */
+  --radius-button: 6px;    /* btn-blue specific */
+  --radius-input:  8px;
+  --radius-blog:  10px;    /* article-card specific */
+  --radius-lg:    12px;    /* cards, large images */
+  --radius-banner:16px;    /* push-banner */
+  --radius-xl:    20px;
+  --radius-pill: 100px;
+  --radius-full: 9999px;
+  --radius-circle: 50%;
+
+  /* -----------------------------------------------------------------------
+     SHADOWS — navy-tinted, not pure grey
+     ----------------------------------------------------------------------- */
+  --shadow-sm:        0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-md:        0 5px 8px rgba(0,0,0,0.12);
+  --shadow-lg:        0 4px 20px 0 rgba(8,34,101,0.15);   /* navy-tinted hero shadow */
+  --shadow-xl:        0 20px 16px rgba(0,0,0,0.12);
+  --shadow-blue-spot: 7px -7px 0 0 #3C61E2;               /* decorative */
+  --shadow-subtle:    0 8px 8px 0 rgba(10,74,171,0.02);   /* very subtle blue tint */
+
+  /* -----------------------------------------------------------------------
+     BREAKPOINTS — Bootstrap 4
+     ----------------------------------------------------------------------- */
+  --bp-sm:  576px;
+  --bp-md:  768px;
+  --bp-lg:  992px;
+  --bp-xl: 1200px;
+
+  /* -----------------------------------------------------------------------
+     Z-INDEX
+     ----------------------------------------------------------------------- */
+  --z-base:     0;     /* @kind other */
+  --z-raised:   10;    /* @kind other */
+  --z-dropdown: 100;   /* @kind other */
+  --z-sticky:   200;   /* @kind other */
+  --z-modal:    300;   /* @kind other */
+  --z-toast:    400;   /* @kind other */
+  --z-tooltip:  500;   /* @kind other */
+}
+
+/* =========================================================================
+   SEMANTIC TYPE STYLES
+   Two heading scales: marketing (tight leading) and content (open leading).
+   ========================================================================= */
+
+/* H1 — homepage hero (54/54, Onest-Bold 700) */
+.h1-homepage {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: 0.35px;
+  color: var(--text-primary);
+}
+
+/* H1 — blog & archive listing (44/57, ExtraBold 800) */
+.h1-blog {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 57px;
+  color: var(--text-primary);
+}
+.h1-archive {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 57.2px;
+  color: var(--text-muted);   /* de-emphasized — cards are the hero */
+}
+
+/* H1 — tools, case study (36/39.6, Bold 700) */
+.h1-article {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39.6px;
+  color: var(--text-primary);
+}
+
+/* H1 — service / hub inner pages (32/32, ExtraBold 800) */
+.h1-inner {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--text-primary);
+}
+.h1-inner-blue {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--interactive-blue);   /* hub/editorial pages */
+}
+
+/* H2 — marketing (24/26, Bold 700) */
+h2, .h2, .section-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--text-primary);
+}
+.section-title.text-white { color: #FFFFFF; }   /* on blue-section */
+
+/* H2 — content/article body (24/39.6, Bold) */
+.h2-content, .wp-block-heading.h2 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 39.6px;
+  color: var(--text-primary);
+}
+
+/* H2 — hub (24/28.8, SemiBold 600) */
+.h2-hub, .block-title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: var(--text-primary);
+}
+
+/* H3 variants */
+.h3-accent {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--interactive-blue);
+}
+.h3-dark, h3 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--text-dark);
+}
+.h3-content {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--text-primary);
+}
+
+/* Body */
+body, p, .body-md {
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.body-lg { font-size: 18px; line-height: 28px; }
+.body-sm { font-size: 14px; line-height: 20px; }
+.body-xs { font-size: 12px; line-height: 16px; }
+
+/* Nav */
+.nav-link {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.nav-link:hover { color: var(--interactive-blue); }
+
+/* Eyebrow */
+.eyebrow {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Lead — accent intro paragraph (blue, semibold) */
+.lead-text {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 600;
+  color: var(--interactive-blue);
+}
+
+/* Code & kbd */
+code, .code {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 20px;
+  background: #F0F2F7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--text-primary);
+}
+kbd {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  background: #F0F2F7;
+  border: 1px solid #C2C8DD;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Two-tone H1 helper — first phrase blue, rest dark */
+.tone-accent { color: var(--interactive-blue); }
+.tone-primary { color: var(--text-primary); }
+
+a {
+  color: var(--interactive-blue);
+  text-decoration: none;
+}
+a:hover { color: var(--fg-accent-hover); }
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--surface-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
