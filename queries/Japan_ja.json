@@ -1,0 +1,177 @@
+[
+ {
+  "id": "Japan_ja_identity_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAとは何ですか?"
+ },
+ {
+  "id": "Japan_ja_identity_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは何をしている会社ですか?"
+ },
+ {
+  "id": "Japan_ja_identity_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAという会社について教えてください。"
+ },
+ {
+  "id": "Japan_ja_identity_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは日本で知られていますか?"
+ },
+ {
+  "id": "Japan_ja_identity_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは誰が運営していて、どこに拠点がありますか?"
+ },
+ {
+  "id": "Japan_ja_trust_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAは信頼できるエージェンシーですか?"
+ },
+ {
+  "id": "Japan_ja_trust_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAについて人々はどう言っていますか?"
+ },
+ {
+  "id": "Japan_ja_trust_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAは正規の会社ですか、それとも詐欺ですか?"
+ },
+ {
+  "id": "Japan_ja_trust_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "日本でマーケティング予算をICODAに任せても大丈夫ですか?"
+ },
+ {
+  "id": "Japan_ja_trust_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAに関する口コミや苦情はありますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAのクライアントはどこですか?"
+ },
+ {
+  "id": "Japan_ja_positioning_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAはどの市場を対象にしていますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAはどの業界に特化していますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAは日本でクライアントと仕事をしていますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAの強み・独自性は何ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "ICODAは他の暗号資産マーケティング会社と比べてどうですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "ICODAの主な競合はどこですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "競合と比べたICODAの強みと弱みは何ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "日本で最も優れた暗号資産マーケティング会社はどこで、ICODAは何位ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "Web3プロジェクトのローンチには、ICODAと大手代理店のどちらを選ぶべきですか?"
+ },
+ {
+  "id": "Japan_ja_services_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはどんなサービスを提供していますか?"
+ },
+ {
+  "id": "Japan_ja_services_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはPRやインフルエンサーマーケティングを行っていますか?"
+ },
+ {
+  "id": "Japan_ja_services_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはSEO、PPC、コンテンツマーケティングを提供していますか?"
+ },
+ {
+  "id": "Japan_ja_services_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAは暗号資産イベントやカンファレンスを主催またはパートナーとして支援していますか?"
+ },
+ {
+  "id": "Japan_ja_services_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "日本でWeb3プロジェクトをローンチする場合、ICODAは何ができますか?"
+ }
+]

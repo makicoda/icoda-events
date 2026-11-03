@@ -1,0 +1,177 @@
+[
+ {
+  "id": "Germany_de_identity_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Was ist ICODA?"
+ },
+ {
+  "id": "Germany_de_identity_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Was macht ICODA?"
+ },
+ {
+  "id": "Germany_de_identity_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Kannst du mir etwas über das Unternehmen ICODA erzählen?"
+ },
+ {
+  "id": "Germany_de_identity_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Ist ICODA in Deutschland bekannt?"
+ },
+ {
+  "id": "Germany_de_identity_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Wer steckt hinter ICODA und wo sitzt das Unternehmen?"
+ },
+ {
+  "id": "Germany_de_trust_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Ist ICODA eine zuverlässige Agentur?"
+ },
+ {
+  "id": "Germany_de_trust_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Was sagen die Leute über ICODA?"
+ },
+ {
+  "id": "Germany_de_trust_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Ist ICODA seriös oder Betrug?"
+ },
+ {
+  "id": "Germany_de_trust_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Würdest du ICODA in Deutschland ein Marketingbudget anvertrauen?"
+ },
+ {
+  "id": "Germany_de_trust_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Gibt es Bewertungen oder Beschwerden über ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Wer sind die Kunden von ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Welche Märkte bedient ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Auf welche Branchen ist ICODA spezialisiert?"
+ },
+ {
+  "id": "Germany_de_positioning_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Arbeitet ICODA in Deutschland mit Kunden?"
+ },
+ {
+  "id": "Germany_de_positioning_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Was ist das Alleinstellungsmerkmal von ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Wie schneidet ICODA im Vergleich zu anderen Krypto-Marketingagenturen ab?"
+ },
+ {
+  "id": "Germany_de_competitive_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Wer sind die Hauptwettbewerber von ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Was sind die Stärken und Schwächen von ICODA im Vergleich zur Konkurrenz?"
+ },
+ {
+  "id": "Germany_de_competitive_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Welche Krypto-Marketingagentur ist in Deutschland die beste, und wo steht ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Sollte ich ICODA oder eine größere Agentur für einen Web3-Launch wählen?"
+ },
+ {
+  "id": "Germany_de_services_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Welche Dienstleistungen bietet ICODA an?"
+ },
+ {
+  "id": "Germany_de_services_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Bietet ICODA PR und Influencer-Marketing an?"
+ },
+ {
+  "id": "Germany_de_services_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Bietet ICODA SEO, PPC oder Content-Marketing an?"
+ },
+ {
+  "id": "Germany_de_services_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Organisiert ICODA Krypto-Events und Konferenzen oder ist Partner davon?"
+ },
+ {
+  "id": "Germany_de_services_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Was kann ICODA für ein Web3-Projekt tun, das in Deutschland startet?"
+ }
+]

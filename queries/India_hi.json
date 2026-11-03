@@ -1,0 +1,177 @@
+[
+ {
+  "id": "India_hi_identity_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA क्या है?"
+ },
+ {
+  "id": "India_hi_identity_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA क्या काम करती है?"
+ },
+ {
+  "id": "India_hi_identity_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "क्या आप मुझे ICODA कंपनी के बारे में बता सकते हैं?"
+ },
+ {
+  "id": "India_hi_identity_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "क्या ICODA भारत में जानी-पहचानी कंपनी है?"
+ },
+ {
+  "id": "India_hi_identity_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA के पीछे कौन है और इसका मुख्यालय कहाँ है?"
+ },
+ {
+  "id": "India_hi_trust_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA एक भरोसेमंद एजेंसी है?"
+ },
+ {
+  "id": "India_hi_trust_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "लोग ICODA के बारे में क्या कहते हैं?"
+ },
+ {
+  "id": "India_hi_trust_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA असली कंपनी है या स्कैम?"
+ },
+ {
+  "id": "India_hi_trust_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या मुझे भारत में अपना मार्केटिंग बजट ICODA को सौंपना चाहिए?"
+ },
+ {
+  "id": "India_hi_trust_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA के बारे में कोई रिव्यू या शिकायतें हैं?"
+ },
+ {
+  "id": "India_hi_positioning_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA के क्लाइंट कौन हैं?"
+ },
+ {
+  "id": "India_hi_positioning_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA किन बाज़ारों में सेवाएँ देती है?"
+ },
+ {
+  "id": "India_hi_positioning_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA किन उद्योगों में विशेषज्ञ है?"
+ },
+ {
+  "id": "India_hi_positioning_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "क्या ICODA भारत में क्लाइंट्स के साथ काम करती है?"
+ },
+ {
+  "id": "India_hi_positioning_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA की खासियत (USP) क्या है?"
+ },
+ {
+  "id": "India_hi_competitive_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "ICODA की तुलना अन्य क्रिप्टो मार्केटिंग एजेंसियों से कैसे होती है?"
+ },
+ {
+  "id": "India_hi_competitive_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "ICODA के मुख्य प्रतिस्पर्धी कौन हैं?"
+ },
+ {
+  "id": "India_hi_competitive_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "प्रतिस्पर्धियों की तुलना में ICODA की ताकत और कमज़ोरियाँ क्या हैं?"
+ },
+ {
+  "id": "India_hi_competitive_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "भारत में सबसे अच्छी क्रिप्टो मार्केटिंग एजेंसी कौन सी है और ICODA कहाँ आती है?"
+ },
+ {
+  "id": "India_hi_competitive_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "Web3 लॉन्च के लिए मुझे ICODA चुननी चाहिए या कोई बड़ी एजेंसी?"
+ },
+ {
+  "id": "India_hi_services_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "ICODA कौन सी सेवाएँ देती है?"
+ },
+ {
+  "id": "India_hi_services_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA पीआर और इन्फ्लुएंसर मार्केटिंग करती है?"
+ },
+ {
+  "id": "India_hi_services_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA SEO, PPC या कंटेंट मार्केटिंग देती है?"
+ },
+ {
+  "id": "India_hi_services_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA क्रिप्टो इवेंट्स और कॉन्फ्रेंस आयोजित करती है या उनमें पार्टनर बनती है?"
+ },
+ {
+  "id": "India_hi_services_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "भारत में लॉन्च हो रहे Web3 प्रोजेक्ट के लिए ICODA क्या कर सकती है?"
+ }
+]

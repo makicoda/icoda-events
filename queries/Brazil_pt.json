@@ -1,0 +1,177 @@
+[
+ {
+  "id": "Brazil_pt_identity_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "O que é a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_identity_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "O que a ICODA faz?"
+ },
+ {
+  "id": "Brazil_pt_identity_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "Pode me falar sobre a empresa ICODA?"
+ },
+ {
+  "id": "Brazil_pt_identity_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "A ICODA é conhecida no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_identity_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "Quem está por trás da ICODA e onde fica a sede?"
+ },
+ {
+  "id": "Brazil_pt_trust_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "A ICODA é uma agência confiável?"
+ },
+ {
+  "id": "Brazil_pt_trust_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "O que as pessoas dizem sobre a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_trust_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "A ICODA é legítima ou é golpe?"
+ },
+ {
+  "id": "Brazil_pt_trust_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "Você confiaria um orçamento de marketing à ICODA no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_trust_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "Existem avaliações ou reclamações sobre a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_positioning_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Quem são os clientes da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_positioning_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Quais mercados a ICODA atende?"
+ },
+ {
+  "id": "Brazil_pt_positioning_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Em quais setores a ICODA é especializada?"
+ },
+ {
+  "id": "Brazil_pt_positioning_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "A ICODA trabalha com clientes no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_positioning_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Qual é o diferencial da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_competitive_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Como a ICODA se compara a outras agências de marketing cripto?"
+ },
+ {
+  "id": "Brazil_pt_competitive_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Quem são os principais concorrentes da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_competitive_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Quais são os pontos fortes e fracos da ICODA em relação aos concorrentes?"
+ },
+ {
+  "id": "Brazil_pt_competitive_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Qual é a melhor agência de marketing cripto no Brasil e onde a ICODA se posiciona?"
+ },
+ {
+  "id": "Brazil_pt_competitive_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Devo escolher a ICODA ou uma agência maior para lançar um projeto Web3?"
+ },
+ {
+  "id": "Brazil_pt_services_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "Quais serviços a ICODA oferece?"
+ },
+ {
+  "id": "Brazil_pt_services_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA faz PR e marketing de influenciadores?"
+ },
+ {
+  "id": "Brazil_pt_services_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA oferece SEO, PPC ou marketing de conteúdo?"
+ },
+ {
+  "id": "Brazil_pt_services_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA organiza ou é parceira de eventos e conferências cripto?"
+ },
+ {
+  "id": "Brazil_pt_services_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "O que a ICODA pode fazer por um projeto Web3 lançado no Brasil?"
+ }
+]

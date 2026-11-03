@@ -1,0 +1,1752 @@
+[
+ {
+  "id": "US_en_identity_1",
+  "geo": "US",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What is ICODA?"
+ },
+ {
+  "id": "US_en_identity_2",
+  "geo": "US",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What does ICODA do?"
+ },
+ {
+  "id": "US_en_identity_3",
+  "geo": "US",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Can you tell me about the company ICODA?"
+ },
+ {
+  "id": "US_en_identity_4",
+  "geo": "US",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Is ICODA well known in the US?"
+ },
+ {
+  "id": "US_en_identity_5",
+  "geo": "US",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Who is behind ICODA and where is it based?"
+ },
+ {
+  "id": "US_en_trust_1",
+  "geo": "US",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA a reliable agency?"
+ },
+ {
+  "id": "US_en_trust_2",
+  "geo": "US",
+  "language": "en",
+  "question_type": "trust",
+  "question": "What do people say about ICODA?"
+ },
+ {
+  "id": "US_en_trust_3",
+  "geo": "US",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA legit or a scam?"
+ },
+ {
+  "id": "US_en_trust_4",
+  "geo": "US",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Would you trust ICODA with a marketing budget in the US?"
+ },
+ {
+  "id": "US_en_trust_5",
+  "geo": "US",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Are there any reviews or complaints about ICODA?"
+ },
+ {
+  "id": "US_en_positioning_1",
+  "geo": "US",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Who are ICODA's clients?"
+ },
+ {
+  "id": "US_en_positioning_2",
+  "geo": "US",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What markets does ICODA serve?"
+ },
+ {
+  "id": "US_en_positioning_3",
+  "geo": "US",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What industries does ICODA specialize in?"
+ },
+ {
+  "id": "US_en_positioning_4",
+  "geo": "US",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Does ICODA work with clients in the US?"
+ },
+ {
+  "id": "US_en_positioning_5",
+  "geo": "US",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What is ICODA's unique selling point?"
+ },
+ {
+  "id": "US_en_competitive_1",
+  "geo": "US",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "How does ICODA compare to other crypto marketing agencies?"
+ },
+ {
+  "id": "US_en_competitive_2",
+  "geo": "US",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Who are ICODA's main competitors?"
+ },
+ {
+  "id": "US_en_competitive_3",
+  "geo": "US",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "What are ICODA's strengths and weaknesses compared to rivals?"
+ },
+ {
+  "id": "US_en_competitive_4",
+  "geo": "US",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Which crypto marketing agency is best in the US, and where does ICODA rank?"
+ },
+ {
+  "id": "US_en_competitive_5",
+  "geo": "US",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Should I choose ICODA or a larger agency for a Web3 launch?"
+ },
+ {
+  "id": "US_en_services_1",
+  "geo": "US",
+  "language": "en",
+  "question_type": "services",
+  "question": "What services does ICODA offer?"
+ },
+ {
+  "id": "US_en_services_2",
+  "geo": "US",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA do PR and influencer marketing?"
+ },
+ {
+  "id": "US_en_services_3",
+  "geo": "US",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA offer SEO, PPC or content marketing?"
+ },
+ {
+  "id": "US_en_services_4",
+  "geo": "US",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA organise or partner with crypto events and conferences?"
+ },
+ {
+  "id": "US_en_services_5",
+  "geo": "US",
+  "language": "en",
+  "question_type": "services",
+  "question": "What can ICODA do for a Web3 project launching in the US?"
+ },
+ {
+  "id": "UK_en_identity_1",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What is ICODA?"
+ },
+ {
+  "id": "UK_en_identity_2",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What does ICODA do?"
+ },
+ {
+  "id": "UK_en_identity_3",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Can you tell me about the company ICODA?"
+ },
+ {
+  "id": "UK_en_identity_4",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Is ICODA well known in the UK?"
+ },
+ {
+  "id": "UK_en_identity_5",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Who is behind ICODA and where is it based?"
+ },
+ {
+  "id": "UK_en_trust_1",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA a reliable agency?"
+ },
+ {
+  "id": "UK_en_trust_2",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "trust",
+  "question": "What do people say about ICODA?"
+ },
+ {
+  "id": "UK_en_trust_3",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA legit or a scam?"
+ },
+ {
+  "id": "UK_en_trust_4",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Would you trust ICODA with a marketing budget in the UK?"
+ },
+ {
+  "id": "UK_en_trust_5",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Are there any reviews or complaints about ICODA?"
+ },
+ {
+  "id": "UK_en_positioning_1",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Who are ICODA's clients?"
+ },
+ {
+  "id": "UK_en_positioning_2",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What markets does ICODA serve?"
+ },
+ {
+  "id": "UK_en_positioning_3",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What industries does ICODA specialize in?"
+ },
+ {
+  "id": "UK_en_positioning_4",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Does ICODA work with clients in the UK?"
+ },
+ {
+  "id": "UK_en_positioning_5",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What is ICODA's unique selling point?"
+ },
+ {
+  "id": "UK_en_competitive_1",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "How does ICODA compare to other crypto marketing agencies?"
+ },
+ {
+  "id": "UK_en_competitive_2",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Who are ICODA's main competitors?"
+ },
+ {
+  "id": "UK_en_competitive_3",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "What are ICODA's strengths and weaknesses compared to rivals?"
+ },
+ {
+  "id": "UK_en_competitive_4",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Which crypto marketing agency is best in the UK, and where does ICODA rank?"
+ },
+ {
+  "id": "UK_en_competitive_5",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Should I choose ICODA or a larger agency for a Web3 launch?"
+ },
+ {
+  "id": "UK_en_services_1",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "services",
+  "question": "What services does ICODA offer?"
+ },
+ {
+  "id": "UK_en_services_2",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA do PR and influencer marketing?"
+ },
+ {
+  "id": "UK_en_services_3",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA offer SEO, PPC or content marketing?"
+ },
+ {
+  "id": "UK_en_services_4",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA organise or partner with crypto events and conferences?"
+ },
+ {
+  "id": "UK_en_services_5",
+  "geo": "UK",
+  "language": "en",
+  "question_type": "services",
+  "question": "What can ICODA do for a Web3 project launching in the UK?"
+ },
+ {
+  "id": "UAE_en_identity_1",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What is ICODA?"
+ },
+ {
+  "id": "UAE_en_identity_2",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What does ICODA do?"
+ },
+ {
+  "id": "UAE_en_identity_3",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Can you tell me about the company ICODA?"
+ },
+ {
+  "id": "UAE_en_identity_4",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Is ICODA well known in the UAE?"
+ },
+ {
+  "id": "UAE_en_identity_5",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Who is behind ICODA and where is it based?"
+ },
+ {
+  "id": "UAE_en_trust_1",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA a reliable agency?"
+ },
+ {
+  "id": "UAE_en_trust_2",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "trust",
+  "question": "What do people say about ICODA?"
+ },
+ {
+  "id": "UAE_en_trust_3",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA legit or a scam?"
+ },
+ {
+  "id": "UAE_en_trust_4",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Would you trust ICODA with a marketing budget in the UAE?"
+ },
+ {
+  "id": "UAE_en_trust_5",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Are there any reviews or complaints about ICODA?"
+ },
+ {
+  "id": "UAE_en_positioning_1",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Who are ICODA's clients?"
+ },
+ {
+  "id": "UAE_en_positioning_2",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What markets does ICODA serve?"
+ },
+ {
+  "id": "UAE_en_positioning_3",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What industries does ICODA specialize in?"
+ },
+ {
+  "id": "UAE_en_positioning_4",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Does ICODA work with clients in the UAE?"
+ },
+ {
+  "id": "UAE_en_positioning_5",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What is ICODA's unique selling point?"
+ },
+ {
+  "id": "UAE_en_competitive_1",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "How does ICODA compare to other crypto marketing agencies?"
+ },
+ {
+  "id": "UAE_en_competitive_2",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Who are ICODA's main competitors?"
+ },
+ {
+  "id": "UAE_en_competitive_3",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "What are ICODA's strengths and weaknesses compared to rivals?"
+ },
+ {
+  "id": "UAE_en_competitive_4",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Which crypto marketing agency is best in the UAE, and where does ICODA rank?"
+ },
+ {
+  "id": "UAE_en_competitive_5",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Should I choose ICODA or a larger agency for a Web3 launch?"
+ },
+ {
+  "id": "UAE_en_services_1",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "services",
+  "question": "What services does ICODA offer?"
+ },
+ {
+  "id": "UAE_en_services_2",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA do PR and influencer marketing?"
+ },
+ {
+  "id": "UAE_en_services_3",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA offer SEO, PPC or content marketing?"
+ },
+ {
+  "id": "UAE_en_services_4",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA organise or partner with crypto events and conferences?"
+ },
+ {
+  "id": "UAE_en_services_5",
+  "geo": "UAE",
+  "language": "en",
+  "question_type": "services",
+  "question": "What can ICODA do for a Web3 project launching in the UAE?"
+ },
+ {
+  "id": "India_en_identity_1",
+  "geo": "India",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What is ICODA?"
+ },
+ {
+  "id": "India_en_identity_2",
+  "geo": "India",
+  "language": "en",
+  "question_type": "identity",
+  "question": "What does ICODA do?"
+ },
+ {
+  "id": "India_en_identity_3",
+  "geo": "India",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Can you tell me about the company ICODA?"
+ },
+ {
+  "id": "India_en_identity_4",
+  "geo": "India",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Is ICODA well known in India?"
+ },
+ {
+  "id": "India_en_identity_5",
+  "geo": "India",
+  "language": "en",
+  "question_type": "identity",
+  "question": "Who is behind ICODA and where is it based?"
+ },
+ {
+  "id": "India_en_trust_1",
+  "geo": "India",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA a reliable agency?"
+ },
+ {
+  "id": "India_en_trust_2",
+  "geo": "India",
+  "language": "en",
+  "question_type": "trust",
+  "question": "What do people say about ICODA?"
+ },
+ {
+  "id": "India_en_trust_3",
+  "geo": "India",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Is ICODA legit or a scam?"
+ },
+ {
+  "id": "India_en_trust_4",
+  "geo": "India",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Would you trust ICODA with a marketing budget in India?"
+ },
+ {
+  "id": "India_en_trust_5",
+  "geo": "India",
+  "language": "en",
+  "question_type": "trust",
+  "question": "Are there any reviews or complaints about ICODA?"
+ },
+ {
+  "id": "India_en_positioning_1",
+  "geo": "India",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Who are ICODA's clients?"
+ },
+ {
+  "id": "India_en_positioning_2",
+  "geo": "India",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What markets does ICODA serve?"
+ },
+ {
+  "id": "India_en_positioning_3",
+  "geo": "India",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What industries does ICODA specialize in?"
+ },
+ {
+  "id": "India_en_positioning_4",
+  "geo": "India",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "Does ICODA work with clients in India?"
+ },
+ {
+  "id": "India_en_positioning_5",
+  "geo": "India",
+  "language": "en",
+  "question_type": "positioning",
+  "question": "What is ICODA's unique selling point?"
+ },
+ {
+  "id": "India_en_competitive_1",
+  "geo": "India",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "How does ICODA compare to other crypto marketing agencies?"
+ },
+ {
+  "id": "India_en_competitive_2",
+  "geo": "India",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Who are ICODA's main competitors?"
+ },
+ {
+  "id": "India_en_competitive_3",
+  "geo": "India",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "What are ICODA's strengths and weaknesses compared to rivals?"
+ },
+ {
+  "id": "India_en_competitive_4",
+  "geo": "India",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Which crypto marketing agency is best in India, and where does ICODA rank?"
+ },
+ {
+  "id": "India_en_competitive_5",
+  "geo": "India",
+  "language": "en",
+  "question_type": "competitive",
+  "question": "Should I choose ICODA or a larger agency for a Web3 launch?"
+ },
+ {
+  "id": "India_en_services_1",
+  "geo": "India",
+  "language": "en",
+  "question_type": "services",
+  "question": "What services does ICODA offer?"
+ },
+ {
+  "id": "India_en_services_2",
+  "geo": "India",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA do PR and influencer marketing?"
+ },
+ {
+  "id": "India_en_services_3",
+  "geo": "India",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA offer SEO, PPC or content marketing?"
+ },
+ {
+  "id": "India_en_services_4",
+  "geo": "India",
+  "language": "en",
+  "question_type": "services",
+  "question": "Does ICODA organise or partner with crypto events and conferences?"
+ },
+ {
+  "id": "India_en_services_5",
+  "geo": "India",
+  "language": "en",
+  "question_type": "services",
+  "question": "What can ICODA do for a Web3 project launching in India?"
+ },
+ {
+  "id": "Germany_de_identity_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Was ist ICODA?"
+ },
+ {
+  "id": "Germany_de_identity_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Was macht ICODA?"
+ },
+ {
+  "id": "Germany_de_identity_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Kannst du mir etwas über das Unternehmen ICODA erzählen?"
+ },
+ {
+  "id": "Germany_de_identity_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Ist ICODA in Deutschland bekannt?"
+ },
+ {
+  "id": "Germany_de_identity_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "identity",
+  "question": "Wer steckt hinter ICODA und wo sitzt das Unternehmen?"
+ },
+ {
+  "id": "Germany_de_trust_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Ist ICODA eine zuverlässige Agentur?"
+ },
+ {
+  "id": "Germany_de_trust_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Was sagen die Leute über ICODA?"
+ },
+ {
+  "id": "Germany_de_trust_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Ist ICODA seriös oder Betrug?"
+ },
+ {
+  "id": "Germany_de_trust_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Würdest du ICODA in Deutschland ein Marketingbudget anvertrauen?"
+ },
+ {
+  "id": "Germany_de_trust_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "trust",
+  "question": "Gibt es Bewertungen oder Beschwerden über ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Wer sind die Kunden von ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Welche Märkte bedient ICODA?"
+ },
+ {
+  "id": "Germany_de_positioning_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Auf welche Branchen ist ICODA spezialisiert?"
+ },
+ {
+  "id": "Germany_de_positioning_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Arbeitet ICODA in Deutschland mit Kunden?"
+ },
+ {
+  "id": "Germany_de_positioning_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "positioning",
+  "question": "Was ist das Alleinstellungsmerkmal von ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Wie schneidet ICODA im Vergleich zu anderen Krypto-Marketingagenturen ab?"
+ },
+ {
+  "id": "Germany_de_competitive_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Wer sind die Hauptwettbewerber von ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Was sind die Stärken und Schwächen von ICODA im Vergleich zur Konkurrenz?"
+ },
+ {
+  "id": "Germany_de_competitive_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Welche Krypto-Marketingagentur ist in Deutschland die beste, und wo steht ICODA?"
+ },
+ {
+  "id": "Germany_de_competitive_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "competitive",
+  "question": "Sollte ich ICODA oder eine größere Agentur für einen Web3-Launch wählen?"
+ },
+ {
+  "id": "Germany_de_services_1",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Welche Dienstleistungen bietet ICODA an?"
+ },
+ {
+  "id": "Germany_de_services_2",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Bietet ICODA PR und Influencer-Marketing an?"
+ },
+ {
+  "id": "Germany_de_services_3",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Bietet ICODA SEO, PPC oder Content-Marketing an?"
+ },
+ {
+  "id": "Germany_de_services_4",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Organisiert ICODA Krypto-Events und Konferenzen oder ist Partner davon?"
+ },
+ {
+  "id": "Germany_de_services_5",
+  "geo": "Germany",
+  "language": "de",
+  "question_type": "services",
+  "question": "Was kann ICODA für ein Web3-Projekt tun, das in Deutschland startet?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 어떤 일을 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA라는 회사에 대해 알려주세요."
+ },
+ {
+  "id": "SouthKorea_ko_identity_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 한국에서 잘 알려져 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 누가 운영하고 어디에 본사가 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA는 믿을 만한 에이전시인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "사람들은 ICODA에 대해 뭐라고 말하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA는 합법적인 회사인가요, 사기인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "한국에서 마케팅 예산을 ICODA에 맡겨도 될까요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA에 대한 리뷰나 불만 사항이 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA의 고객사는 누구인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 어떤 시장을 대상으로 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 어떤 산업에 특화되어 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 한국에서 고객과 일하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA의 차별점은 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "ICODA는 다른 암호화폐 마케팅 에이전시와 비교하면 어떤가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "ICODA의 주요 경쟁사는 어디인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "경쟁사와 비교했을 때 ICODA의 강점과 약점은 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "한국에서 가장 좋은 암호화폐 마케팅 에이전시는 어디이고 ICODA는 몇 위인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "웹3 프로젝트 런칭에 ICODA와 대형 에이전시 중 어디를 선택해야 할까요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 어떤 서비스를 제공하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 PR과 인플루언서 마케팅을 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 SEO, PPC, 콘텐츠 마케팅을 제공하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 암호화폐 행사나 컨퍼런스를 주최하거나 파트너로 참여하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "한국에서 웹3 프로젝트를 런칭할 때 ICODA는 무엇을 해줄 수 있나요?"
+ },
+ {
+  "id": "Japan_ja_identity_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAとは何ですか?"
+ },
+ {
+  "id": "Japan_ja_identity_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは何をしている会社ですか?"
+ },
+ {
+  "id": "Japan_ja_identity_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAという会社について教えてください。"
+ },
+ {
+  "id": "Japan_ja_identity_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは日本で知られていますか?"
+ },
+ {
+  "id": "Japan_ja_identity_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "identity",
+  "question": "ICODAは誰が運営していて、どこに拠点がありますか?"
+ },
+ {
+  "id": "Japan_ja_trust_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAは信頼できるエージェンシーですか?"
+ },
+ {
+  "id": "Japan_ja_trust_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAについて人々はどう言っていますか?"
+ },
+ {
+  "id": "Japan_ja_trust_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAは正規の会社ですか、それとも詐欺ですか?"
+ },
+ {
+  "id": "Japan_ja_trust_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "日本でマーケティング予算をICODAに任せても大丈夫ですか?"
+ },
+ {
+  "id": "Japan_ja_trust_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "trust",
+  "question": "ICODAに関する口コミや苦情はありますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAのクライアントはどこですか?"
+ },
+ {
+  "id": "Japan_ja_positioning_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAはどの市場を対象にしていますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAはどの業界に特化していますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAは日本でクライアントと仕事をしていますか?"
+ },
+ {
+  "id": "Japan_ja_positioning_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "positioning",
+  "question": "ICODAの強み・独自性は何ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "ICODAは他の暗号資産マーケティング会社と比べてどうですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "ICODAの主な競合はどこですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "競合と比べたICODAの強みと弱みは何ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "日本で最も優れた暗号資産マーケティング会社はどこで、ICODAは何位ですか?"
+ },
+ {
+  "id": "Japan_ja_competitive_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "competitive",
+  "question": "Web3プロジェクトのローンチには、ICODAと大手代理店のどちらを選ぶべきですか?"
+ },
+ {
+  "id": "Japan_ja_services_1",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはどんなサービスを提供していますか?"
+ },
+ {
+  "id": "Japan_ja_services_2",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはPRやインフルエンサーマーケティングを行っていますか?"
+ },
+ {
+  "id": "Japan_ja_services_3",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAはSEO、PPC、コンテンツマーケティングを提供していますか?"
+ },
+ {
+  "id": "Japan_ja_services_4",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "ICODAは暗号資産イベントやカンファレンスを主催またはパートナーとして支援していますか?"
+ },
+ {
+  "id": "Japan_ja_services_5",
+  "geo": "Japan",
+  "language": "ja",
+  "question_type": "services",
+  "question": "日本でWeb3プロジェクトをローンチする場合、ICODAは何ができますか?"
+ },
+ {
+  "id": "UAE_ar_identity_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "ما هي ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "ماذا تفعل شركة ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "هل يمكنك إخباري عن شركة ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "هل ICODA معروفة في الإمارات؟"
+ },
+ {
+  "id": "UAE_ar_identity_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "من يقف وراء ICODA وأين مقرها؟"
+ },
+ {
+  "id": "UAE_ar_trust_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل ICODA وكالة موثوقة؟"
+ },
+ {
+  "id": "UAE_ar_trust_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "ماذا يقول الناس عن ICODA؟"
+ },
+ {
+  "id": "UAE_ar_trust_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل ICODA شركة شرعية أم عملية احتيال؟"
+ },
+ {
+  "id": "UAE_ar_trust_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل تنصح بإسناد ميزانية التسويق الخاصة بي في الإمارات إلى ICODA؟"
+ },
+ {
+  "id": "UAE_ar_trust_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل توجد تقييمات أو شكاوى بشأن ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "من هم عملاء ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما الأسواق التي تخدمها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما القطاعات التي تتخصص فيها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "هل تعمل ICODA مع عملاء في الإمارات؟"
+ },
+ {
+  "id": "UAE_ar_positioning_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما الذي يميز ICODA عن غيرها؟"
+ },
+ {
+  "id": "UAE_ar_competitive_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "كيف تقارن ICODA بوكالات التسويق الأخرى في مجال العملات المشفرة؟"
+ },
+ {
+  "id": "UAE_ar_competitive_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "من هم المنافسون الرئيسيون لـ ICODA؟"
+ },
+ {
+  "id": "UAE_ar_competitive_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "ما نقاط القوة والضعف لدى ICODA مقارنة بمنافسيها؟"
+ },
+ {
+  "id": "UAE_ar_competitive_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "ما أفضل وكالة تسويق للعملات المشفرة في الإمارات، وأين تقع ICODA في الترتيب؟"
+ },
+ {
+  "id": "UAE_ar_competitive_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "هل أختار ICODA أم وكالة أكبر لإطلاق مشروع Web3؟"
+ },
+ {
+  "id": "UAE_ar_services_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "ما الخدمات التي تقدمها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_services_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تقدم ICODA خدمات العلاقات العامة والتسويق عبر المؤثرين؟"
+ },
+ {
+  "id": "UAE_ar_services_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تقدم ICODA خدمات SEO وPPC والتسويق بالمحتوى؟"
+ },
+ {
+  "id": "UAE_ar_services_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تنظم ICODA فعاليات ومؤتمرات العملات المشفرة أو تشارك فيها كشريك؟"
+ },
+ {
+  "id": "UAE_ar_services_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "ماذا يمكن لـ ICODA أن تفعل لمشروع Web3 يُطلق في الإمارات؟"
+ },
+ {
+  "id": "India_hi_identity_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA क्या है?"
+ },
+ {
+  "id": "India_hi_identity_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA क्या काम करती है?"
+ },
+ {
+  "id": "India_hi_identity_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "क्या आप मुझे ICODA कंपनी के बारे में बता सकते हैं?"
+ },
+ {
+  "id": "India_hi_identity_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "क्या ICODA भारत में जानी-पहचानी कंपनी है?"
+ },
+ {
+  "id": "India_hi_identity_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "identity",
+  "question": "ICODA के पीछे कौन है और इसका मुख्यालय कहाँ है?"
+ },
+ {
+  "id": "India_hi_trust_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA एक भरोसेमंद एजेंसी है?"
+ },
+ {
+  "id": "India_hi_trust_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "लोग ICODA के बारे में क्या कहते हैं?"
+ },
+ {
+  "id": "India_hi_trust_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA असली कंपनी है या स्कैम?"
+ },
+ {
+  "id": "India_hi_trust_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या मुझे भारत में अपना मार्केटिंग बजट ICODA को सौंपना चाहिए?"
+ },
+ {
+  "id": "India_hi_trust_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "trust",
+  "question": "क्या ICODA के बारे में कोई रिव्यू या शिकायतें हैं?"
+ },
+ {
+  "id": "India_hi_positioning_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA के क्लाइंट कौन हैं?"
+ },
+ {
+  "id": "India_hi_positioning_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA किन बाज़ारों में सेवाएँ देती है?"
+ },
+ {
+  "id": "India_hi_positioning_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA किन उद्योगों में विशेषज्ञ है?"
+ },
+ {
+  "id": "India_hi_positioning_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "क्या ICODA भारत में क्लाइंट्स के साथ काम करती है?"
+ },
+ {
+  "id": "India_hi_positioning_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "positioning",
+  "question": "ICODA की खासियत (USP) क्या है?"
+ },
+ {
+  "id": "India_hi_competitive_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "ICODA की तुलना अन्य क्रिप्टो मार्केटिंग एजेंसियों से कैसे होती है?"
+ },
+ {
+  "id": "India_hi_competitive_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "ICODA के मुख्य प्रतिस्पर्धी कौन हैं?"
+ },
+ {
+  "id": "India_hi_competitive_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "प्रतिस्पर्धियों की तुलना में ICODA की ताकत और कमज़ोरियाँ क्या हैं?"
+ },
+ {
+  "id": "India_hi_competitive_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "भारत में सबसे अच्छी क्रिप्टो मार्केटिंग एजेंसी कौन सी है और ICODA कहाँ आती है?"
+ },
+ {
+  "id": "India_hi_competitive_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "competitive",
+  "question": "Web3 लॉन्च के लिए मुझे ICODA चुननी चाहिए या कोई बड़ी एजेंसी?"
+ },
+ {
+  "id": "India_hi_services_1",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "ICODA कौन सी सेवाएँ देती है?"
+ },
+ {
+  "id": "India_hi_services_2",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA पीआर और इन्फ्लुएंसर मार्केटिंग करती है?"
+ },
+ {
+  "id": "India_hi_services_3",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA SEO, PPC या कंटेंट मार्केटिंग देती है?"
+ },
+ {
+  "id": "India_hi_services_4",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "क्या ICODA क्रिप्टो इवेंट्स और कॉन्फ्रेंस आयोजित करती है या उनमें पार्टनर बनती है?"
+ },
+ {
+  "id": "India_hi_services_5",
+  "geo": "India",
+  "language": "hi",
+  "question_type": "services",
+  "question": "भारत में लॉन्च हो रहे Web3 प्रोजेक्ट के लिए ICODA क्या कर सकती है?"
+ },
+ {
+  "id": "Brazil_pt_identity_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "O que é a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_identity_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "O que a ICODA faz?"
+ },
+ {
+  "id": "Brazil_pt_identity_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "Pode me falar sobre a empresa ICODA?"
+ },
+ {
+  "id": "Brazil_pt_identity_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "A ICODA é conhecida no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_identity_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "identity",
+  "question": "Quem está por trás da ICODA e onde fica a sede?"
+ },
+ {
+  "id": "Brazil_pt_trust_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "A ICODA é uma agência confiável?"
+ },
+ {
+  "id": "Brazil_pt_trust_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "O que as pessoas dizem sobre a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_trust_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "A ICODA é legítima ou é golpe?"
+ },
+ {
+  "id": "Brazil_pt_trust_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "Você confiaria um orçamento de marketing à ICODA no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_trust_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "trust",
+  "question": "Existem avaliações ou reclamações sobre a ICODA?"
+ },
+ {
+  "id": "Brazil_pt_positioning_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Quem são os clientes da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_positioning_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Quais mercados a ICODA atende?"
+ },
+ {
+  "id": "Brazil_pt_positioning_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Em quais setores a ICODA é especializada?"
+ },
+ {
+  "id": "Brazil_pt_positioning_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "A ICODA trabalha com clientes no Brasil?"
+ },
+ {
+  "id": "Brazil_pt_positioning_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "positioning",
+  "question": "Qual é o diferencial da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_competitive_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Como a ICODA se compara a outras agências de marketing cripto?"
+ },
+ {
+  "id": "Brazil_pt_competitive_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Quem são os principais concorrentes da ICODA?"
+ },
+ {
+  "id": "Brazil_pt_competitive_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Quais são os pontos fortes e fracos da ICODA em relação aos concorrentes?"
+ },
+ {
+  "id": "Brazil_pt_competitive_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Qual é a melhor agência de marketing cripto no Brasil e onde a ICODA se posiciona?"
+ },
+ {
+  "id": "Brazil_pt_competitive_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "competitive",
+  "question": "Devo escolher a ICODA ou uma agência maior para lançar um projeto Web3?"
+ },
+ {
+  "id": "Brazil_pt_services_1",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "Quais serviços a ICODA oferece?"
+ },
+ {
+  "id": "Brazil_pt_services_2",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA faz PR e marketing de influenciadores?"
+ },
+ {
+  "id": "Brazil_pt_services_3",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA oferece SEO, PPC ou marketing de conteúdo?"
+ },
+ {
+  "id": "Brazil_pt_services_4",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "A ICODA organiza ou é parceira de eventos e conferências cripto?"
+ },
+ {
+  "id": "Brazil_pt_services_5",
+  "geo": "Brazil",
+  "language": "pt",
+  "question_type": "services",
+  "question": "O que a ICODA pode fazer por um projeto Web3 lançado no Brasil?"
+ }
+]

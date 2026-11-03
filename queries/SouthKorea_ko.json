@@ -1,0 +1,177 @@
+[
+ {
+  "id": "SouthKorea_ko_identity_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 어떤 일을 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA라는 회사에 대해 알려주세요."
+ },
+ {
+  "id": "SouthKorea_ko_identity_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 한국에서 잘 알려져 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_identity_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "identity",
+  "question": "ICODA는 누가 운영하고 어디에 본사가 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA는 믿을 만한 에이전시인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "사람들은 ICODA에 대해 뭐라고 말하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA는 합법적인 회사인가요, 사기인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "한국에서 마케팅 예산을 ICODA에 맡겨도 될까요?"
+ },
+ {
+  "id": "SouthKorea_ko_trust_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "trust",
+  "question": "ICODA에 대한 리뷰나 불만 사항이 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA의 고객사는 누구인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 어떤 시장을 대상으로 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 어떤 산업에 특화되어 있나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA는 한국에서 고객과 일하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_positioning_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "positioning",
+  "question": "ICODA의 차별점은 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "ICODA는 다른 암호화폐 마케팅 에이전시와 비교하면 어떤가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "ICODA의 주요 경쟁사는 어디인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "경쟁사와 비교했을 때 ICODA의 강점과 약점은 무엇인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "한국에서 가장 좋은 암호화폐 마케팅 에이전시는 어디이고 ICODA는 몇 위인가요?"
+ },
+ {
+  "id": "SouthKorea_ko_competitive_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "competitive",
+  "question": "웹3 프로젝트 런칭에 ICODA와 대형 에이전시 중 어디를 선택해야 할까요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_1",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 어떤 서비스를 제공하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_2",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 PR과 인플루언서 마케팅을 하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_3",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 SEO, PPC, 콘텐츠 마케팅을 제공하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_4",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "ICODA는 암호화폐 행사나 컨퍼런스를 주최하거나 파트너로 참여하나요?"
+ },
+ {
+  "id": "SouthKorea_ko_services_5",
+  "geo": "South Korea",
+  "language": "ko",
+  "question_type": "services",
+  "question": "한국에서 웹3 프로젝트를 런칭할 때 ICODA는 무엇을 해줄 수 있나요?"
+ }
+]

@@ -1,0 +1,177 @@
+[
+ {
+  "id": "UAE_ar_identity_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "ما هي ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "ماذا تفعل شركة ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "هل يمكنك إخباري عن شركة ICODA؟"
+ },
+ {
+  "id": "UAE_ar_identity_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "هل ICODA معروفة في الإمارات؟"
+ },
+ {
+  "id": "UAE_ar_identity_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "identity",
+  "question": "من يقف وراء ICODA وأين مقرها؟"
+ },
+ {
+  "id": "UAE_ar_trust_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل ICODA وكالة موثوقة؟"
+ },
+ {
+  "id": "UAE_ar_trust_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "ماذا يقول الناس عن ICODA؟"
+ },
+ {
+  "id": "UAE_ar_trust_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل ICODA شركة شرعية أم عملية احتيال؟"
+ },
+ {
+  "id": "UAE_ar_trust_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل تنصح بإسناد ميزانية التسويق الخاصة بي في الإمارات إلى ICODA؟"
+ },
+ {
+  "id": "UAE_ar_trust_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "trust",
+  "question": "هل توجد تقييمات أو شكاوى بشأن ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "من هم عملاء ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما الأسواق التي تخدمها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما القطاعات التي تتخصص فيها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_positioning_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "هل تعمل ICODA مع عملاء في الإمارات؟"
+ },
+ {
+  "id": "UAE_ar_positioning_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "positioning",
+  "question": "ما الذي يميز ICODA عن غيرها؟"
+ },
+ {
+  "id": "UAE_ar_competitive_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "كيف تقارن ICODA بوكالات التسويق الأخرى في مجال العملات المشفرة؟"
+ },
+ {
+  "id": "UAE_ar_competitive_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "من هم المنافسون الرئيسيون لـ ICODA؟"
+ },
+ {
+  "id": "UAE_ar_competitive_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "ما نقاط القوة والضعف لدى ICODA مقارنة بمنافسيها؟"
+ },
+ {
+  "id": "UAE_ar_competitive_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "ما أفضل وكالة تسويق للعملات المشفرة في الإمارات، وأين تقع ICODA في الترتيب؟"
+ },
+ {
+  "id": "UAE_ar_competitive_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "competitive",
+  "question": "هل أختار ICODA أم وكالة أكبر لإطلاق مشروع Web3؟"
+ },
+ {
+  "id": "UAE_ar_services_1",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "ما الخدمات التي تقدمها ICODA؟"
+ },
+ {
+  "id": "UAE_ar_services_2",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تقدم ICODA خدمات العلاقات العامة والتسويق عبر المؤثرين؟"
+ },
+ {
+  "id": "UAE_ar_services_3",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تقدم ICODA خدمات SEO وPPC والتسويق بالمحتوى؟"
+ },
+ {
+  "id": "UAE_ar_services_4",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "هل تنظم ICODA فعاليات ومؤتمرات العملات المشفرة أو تشارك فيها كشريك؟"
+ },
+ {
+  "id": "UAE_ar_services_5",
+  "geo": "UAE",
+  "language": "ar",
+  "question_type": "services",
+  "question": "ماذا يمكن لـ ICODA أن تفعل لمشروع Web3 يُطلق في الإمارات؟"
+ }
+]
