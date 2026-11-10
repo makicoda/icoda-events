@@ -7,12 +7,12 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:#dfe2ee;font-family:'Onest',sans-serif;color:var(--ink)}
 .stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#fff;transform-origin:0 0}
-.bg{position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,#fbfaff 100%)}
-.blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.55}
-.b1{width:760px;height:760px;background:#d9d2ff;left:-260px;top:-120px}
-.b2{width:700px;height:700px;background:#ffd6e8;right:-300px;top:520px}
-.b3{width:820px;height:820px;background:#cfe6ff;left:-200px;bottom:-260px}
-.b4{width:520px;height:520px;background:#e6dcff;right:-160px;bottom:140px}
+.bg{position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,#f3f7ff 45%,#dfeaff 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.6}
+.b1{width:760px;height:760px;background:#d3e2ff;left:-260px;top:-160px}
+.b2{width:700px;height:700px;background:#e4eeff;right:-300px;top:520px}
+.b3{width:820px;height:820px;background:#b9d0ff;left:-240px;bottom:-300px}
+.b4{width:520px;height:520px;background:#c6d9ff;right:-200px;bottom:60px}
 .mark{position:absolute;left:80px;top:262px;display:flex;align-items:center;gap:22px}
 .logo{font-weight:800;font-size:60px;letter-spacing:-.045em;color:var(--ink);line-height:1}
 .logo i{font-style:normal;color:var(--accent)}
@@ -67,7 +67,7 @@ svg{display:block}
 <body>
 <div class="stage" id="stage">
   <div class="bg"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i></div>
-  <div class="mark" id="mark"><span class="logo">icoda<i>.</i></span><span class="pill">10-Week Case</span></div>
+  <div class="mark" id="mark"><img src="../lib/icoda-logo.png" alt="icoda" style="height:54px;display:block"></div>
   <div id="txts"></div>
 
   <div id="hero">
@@ -85,17 +85,6 @@ svg{display:block}
         <div class="cmt" id="c1"><i class="av"></i><div class="bars"><i style="width:96%"></i><i style="width:80%"></i><i style="width:52%"></i></div></div>
         <div class="cmt" id="c2"><i class="av"></i><div class="bars"><i style="width:90%"></i><i style="width:64%"></i></div></div>
         <div class="cmt" id="c3"><i class="av"></i><div class="bars"><i style="width:84%"></i><i style="width:70%"></i></div></div>
-      </div>
-    </div>
-    <!-- L2: the audit -->
-    <div class="layer" id="L2">
-      <div class="lab" id="mentLab" style="left:0;width:920px;text-align:center;top:4px">22 brand mentions</div>
-      <div class="chip" id="chG" style="left:40px;top:290px"><span class="d" style="background:var(--green)"></span><b data-n="14">14</b> Positive</div>
-      <div class="chip" id="chN" style="left:344px;top:290px"><span class="d" style="background:var(--faint)"></span><b>1</b> Neutral</div>
-      <div class="chip" id="chR" style="left:620px;top:290px"><span class="d" style="background:var(--red)"></span><b>7</b> Negative</div>
-      <div class="card abs" id="gap" style="left:0;top:410px;width:920px;height:220px">
-        <div class="abs res" id="gapN" style="left:44px;top:34px;font-size:148px;letter-spacing:-.045em;line-height:1.1">62</div>
-        <div class="abs" style="left:290px;top:44px;width:590px;font-weight:700;font-size:40px;line-height:1.22;letter-spacing:-.02em">high-intent threads with no brand presence</div>
       </div>
     </div>
     <!-- L3: formats -->
@@ -132,7 +121,7 @@ svg{display:block}
     </div>
     <!-- L7: CTA -->
     <div class="layer" id="L7">
-      <div class="abs logo" id="bigLogo" style="left:0;width:920px;text-align:center;top:40px;font-size:190px">icoda<i>.</i></div>
+      <img class="abs" id="bigLogo" src="../lib/icoda-logo.png" alt="icoda" style="left:130px;top:70px;width:660px">
       <div class="abs" id="arrow" style="left:380px;top:380px;width:160px;height:160px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 24px 50px -14px rgba(57,70,244,.6)">
         <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M5.5 13.5L12 20l6.5-6.5"/></svg></div>
       <div class="abs" id="capt" style="left:0;width:920px;text-align:center;top:565px;font-weight:600;font-size:46px;color:var(--muted)">Link in the caption</div>
@@ -169,13 +158,12 @@ function count(el, t, d, from, to, fmt = v => v) { tw(el, t, d, p => { el.textCo
 
 /* ---------- script (all text from the case) ---------- */
 const SCR = [
-  { key: 'hook', head: 'Casino Ads Get Removed on <em>Reddit</em>', sub: 'Threads That Answer Players’ Questions Stay Live.', min: 7.2, nums: 0 },
-  { key: 'audit', head: 'It Starts With an <em>Audit</em>', sub: 'The brand wasn’t in the conversations players were already reading.', min: 7.2, nums: 2 },
-  { key: 'formats', head: 'Formats Get <em>Tested</em> First', sub: 'Detailed breakdowns stayed live. Short brand comments got removed.', min: 7.6, nums: 1 },
-  { key: 'answers', head: 'Specific <em>Numbers</em> Beat Praise', sub: 'Exact timelines instead of promises.', min: 7.2, nums: 2 },
-  { key: 'growth', head: 'Sentiment Grows <em>Steadily</em>', sub: 'No new negative mentions during the campaign.', min: 7.8, nums: 2 },
-  { key: 'google', head: 'Threads Take the <em>#1</em> Spot', sub: 'Players now see a clear answer first.', min: 7.2, nums: 3 },
-  { key: 'cta', head: 'Want Threads That <em>Rank</em>?', sub: 'Talk to our team: <span style="white-space:nowrap">icoda.io/contact-us</span>', min: 5.8, nums: 0 },
+  { key: 'hook', head: 'Casino Ads Get Removed on <em>Reddit</em>', sub: 'Threads That Answer Players’ Questions Stay Live.', min: 6, nums: 0 },
+  { key: 'formats', head: 'Formats Get <em>Tested</em> First', sub: 'Detailed breakdowns stayed live. Short brand comments got removed.', min: 6.4, nums: 1 },
+  { key: 'answers', head: 'Specific <em>Numbers</em> Beat Praise', sub: 'Exact timelines instead of promises.', min: 6, nums: 2 },
+  { key: 'growth', head: 'Sentiment Grows <em>Steadily</em>', sub: 'No new negative mentions during the campaign.', min: 6, nums: 2 },
+  { key: 'google', head: 'Threads Take the <em>#1</em> Spot', sub: 'Players now see a clear answer first.', min: 5.6, nums: 3 },
+  { key: 'cta', head: 'Want Threads That <em>Rank</em>?', sub: 'Talk to our team: <span style="white-space:nowrap">icoda.io/contact-us</span>', min: 5, nums: 0 },
 ];
 const BPM = 88, B = 60 / BPM;
 const strip = h => h.replace(/<[^>]+>/g, '');
@@ -202,7 +190,7 @@ enter($('#mark'), .1, { d: 1 });
 cue('cut', 0.3);
 
 /* layers: every transition = collapse into the core dot, then the core opens into the next form */
-const L = [1, 2, 3, 4, 5, 6, 7].map(i => $('#L' + i));
+const L = [1, 3, 4, 5, 6, 7].map(i => $('#L' + i));
 const LS = i => T[i] + .4;                 // when layer i starts to open
 const LE = i => T[i] + D[i] - .6;          // when layer i starts to collapse
 L.forEach((el, i) => {
@@ -230,64 +218,43 @@ cue('drop', T[1] + .05);
 /* ===== S1 hook: promo post is removed, an answering thread stays ===== */
 {
   const ad = $('#adPost'), st = $('#stamp'), rp = $('#realPost'), lt = $('#liveTag');
-  enter(ad, 1.2, { d: .9, y: 60 }); cue('card', 1.3);
-  tw(st, 2.5, .5, p => S(st, { o: cl(p * 4), s: lerp(1.9, 1, p), r: -7 }), E.expoOut); cue('slap', 2.55); cue('pop', 2.55);
-  tw(ad, 3.55, .6, p => S(ad, { o: 1 - p, x: -200 * p, y: 160 * p, r: -12 * p }), E.cubicIn);
-  tw(st, 3.55, .6, p => S(st, { o: 1 - p, x: -200 * p, y: 160 * p, r: -7 - 12 * p }), E.cubicIn);
-  enter(rp, 3.85, { d: 1, y: 70 }); cue('card', 3.95);
-  [$('#c1'), $('#c2'), $('#c3')].forEach((c, k) => { enter(c, 4.5 + k * .25, { d: .7, y: 26, key: c }); cue('pop', 4.55 + k * .25); });
-  tw(lt, 5.5, .5, p => S(lt, { o: 1, s: lerp(.6, 1, p) }), E.backOut); cue('pop', 5.5);
-}
-/* ===== S2 audit: the thread opens into 22 mentions, then the gap ===== */
-{
-  const t0 = LS(1) + .3; const dots = [];
-  const cols = ['#07bd47', '#07bd47', '#07bd47'];
-  for (let i = 0; i < 22; i++) {
-    const r = i < 11 ? 0 : 1, c = i % 11, el = document.createElement('i'); el.className = 'dot';
-    const clr = i < 14 ? '#07bd47' : i === 14 ? '#9aa3bd' : '#e5484d'; el.style.background = clr; el.style.opacity = 0;
-    $('#L2').appendChild(el);
-    const x = 60 + 80 * c - 32, y = 112 + 90 * r - 32, ox = 460 - 32 - x, oy = 320 - 32 - y;
-    el.style.left = x + 'px'; el.style.top = y + 'px'; dots.push(el);
-    tw(el, t0 + .7 + i * .035, .8, p => S(el, { o: cl(p * 5), x: ox * (1 - p), y: oy * (1 - p), s: lerp(.4, 1, p) }), E.expoOut);
-  }
-  cue('count', t0 + .7, { d: .9 });
-  const lab = $('#mentLab'); enter(lab, t0 + 1.3, { d: .8, y: 20 });
-  [['#chG', 14], ['#chN', 1], ['#chR', 7]].forEach(([id, n], k) => {
-    const el = $(id), b = el.querySelector('b'); pop(el, t0 + 2.2 + k * .22, { from: .6 }); cue('pop', t0 + 2.25 + k * .22);
-    count(b, t0 + 2.2 + k * .22, .7, 0, n);
-  });
-  const gp = $('#gap'); enter(gp, t0 + 3.5, { d: 1, y: 50 }); cue('card', t0 + 3.55);
-  count($('#gapN'), t0 + 3.9, 1.3, 0, 62); cue('count', t0 + 3.9, { d: 1.3 });
+  enter(ad, .9, { d: .9, y: 60 }); cue('card', 1.0);
+  tw(st, 2.0, .5, p => S(st, { o: cl(p * 4), s: lerp(1.9, 1, p), r: -7 }), E.expoOut); cue('pop', 2.05);
+  tw(ad, 2.9, .6, p => S(ad, { o: 1 - p, x: -200 * p, y: 160 * p, r: -12 * p }), E.cubicIn);
+  tw(st, 2.9, .6, p => S(st, { o: 1 - p, x: -200 * p, y: 160 * p, r: -7 - 12 * p }), E.cubicIn);
+  enter(rp, 3.15, { d: 1, y: 70 }); cue('card', 3.25);
+  [$('#c1'), $('#c2'), $('#c3')].forEach((c, k) => { enter(c, 3.9 + k * .22, { d: .7, y: 26, key: c }); cue('pop', 3.95 + k * .22); });
+  tw(lt, 4.7, .5, p => S(lt, { o: 1, s: lerp(.6, 1, p) }), E.backOut); cue('pop', 4.7);
 }
 /* ===== S3 formats ===== */
 {
-  const t0 = LS(2) + .3, fl = $('#fL'), fr = $('#fR'), stL = $('#stL');
-  enter(fl, t0 + .5, { d: .9, y: 50 }); cue('card', t0 + .55);
-  tw(stL, t0 + 1.7, .5, p => S(stL, { o: cl(p * 4), s: lerp(1.8, 1, p), r: -5 }), E.expoOut); cue('slap', t0 + 1.75, { big: false }); cue('pop', t0 + 1.75);
-  tw('fLdim', t0 + 2.4, .6, p => { fl.style.opacity = lerp(1, .6, p); }, E.cubicOut);
-  enter(fr, t0 + 2.3, { d: .9, y: 50 }); cue('card', t0 + 2.35);
-  $$('#fchips .fchip').forEach((c, k) => { pop(c, t0 + 3.1 + k * .2, { from: .6 }); cue('pop', t0 + 3.15 + k * .2); });
-  const h = $('#hund'); count(h, t0 + 3.9, 1.2, 0, 100, v => v + '%'); cue('count', t0 + 3.9, { d: 1.2 });
-  pop($('#liveL'), t0 + 5.1, { from: .7 }); cue('pop', t0 + 5.1);
+  const t0 = LS(1) + .3, fl = $('#fL'), fr = $('#fR'), stL = $('#stL');
+  enter(fl, t0 + .3, { d: .9, y: 50 }); cue('card', t0 + .35);
+  tw(stL, t0 + 1.3, .5, p => S(stL, { o: cl(p * 4), s: lerp(1.8, 1, p), r: -5 }), E.expoOut); cue('pop', t0 + 1.35);
+  tw('fLdim', t0 + 1.9, .6, p => { fl.style.opacity = lerp(1, .6, p); }, E.cubicOut);
+  enter(fr, t0 + 1.8, { d: .9, y: 50 }); cue('card', t0 + 1.85);
+  $$('#fchips .fchip').forEach((c, k) => { pop(c, t0 + 2.6 + k * .18, { from: .6 }); cue('pop', t0 + 2.65 + k * .18); });
+  const h = $('#hund'); count(h, t0 + 3.2, 1.1, 0, 100, v => v + '%'); cue('count', t0 + 3.2, { d: 1.1 });
+  pop($('#liveL'), t0 + 4.4, { from: .7 }); cue('pop', t0 + 4.4);
 }
 /* ===== S4 answers: documents once -> approval -> provider -> paid ===== */
 {
-  const t0 = LS(3) + .3, line = $('#tline'); line.style.strokeDasharray = 520;
+  const t0 = LS(2) + .3, line = $('#tline'); line.style.strokeDasharray = 520;
   const rows = [
     ['Documents checked <span class="res">once</span>', 61], ['Approval: up to <span class="res">24 hours</span>', 211],
     ['Provider: <span class="res">3–5 business days</span>', 361], ['Paid out', 511]];
-  tw(line, t0 + .5, 3.6, p => { line.style.strokeDashoffset = 520 * (1 - p); }, E.cubicOut);
+  tw(line, t0 + .4, 2.9, p => { line.style.strokeDashoffset = 520 * (1 - p); }, E.cubicOut);
   rows.forEach(([h, cy], k) => {
     const r = document.createElement('div'); r.className = 'row card'; r.style.top = (cy - 61) + 'px'; r.innerHTML = '<span>' + h + '</span>';
     const n = document.createElement('i'); n.className = 'node'; n.style.top = (cy - 18) + 'px'; n.style.left = '22px';
     if (k === 3) { n.style.background = 'var(--green)'; n.style.boxShadow = '0 0 0 10px rgba(7,189,71,.16)'; r.style.color = 'var(--green)'; r.innerHTML = '<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#07bd47" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="margin-right:18px"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Paid out'; }
     $('#L4').appendChild(r); $('#L4').appendChild(n);
-    const ta = t0 + .6 + k * 1.05; enter(r, ta, { d: .9, y: 40, key: r }); pop(n, ta, { from: .3, d: .5 }); cue('pop', ta + .05); if (k === 1) cue('count', ta, { d: .8 });
+    const ta = t0 + .4 + k * .8; enter(r, ta, { d: .9, y: 40, key: r }); pop(n, ta, { from: .3, d: .5 }); cue('pop', ta + .05); if (k === 1) cue('count', ta, { d: .8 });
   });
 }
 /* ===== S5 growth chart ===== */
 {
-  const t0 = LS(4) + .3, svg = $('#chart'), NS = 'http://www.w3.org/2000/svg';
+  const t0 = LS(3) + .3, svg = $('#chart'), NS = 'http://www.w3.org/2000/svg';
   const pts = [['Jul 31', 0, 64], ['Sep 1', 32, 78], ['Sep 14', 45, 87], ['Sep 21', 52, 92], ['Oct 12', 73, 94]]
     .map(([l, d, v]) => ({ l, v, x: 60 + d / 73 * 800, y: 330 - (v - 60) / 40 * 300 }));
   const mk = (n, a, par = svg) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); par.appendChild(e); return e; };
@@ -296,10 +263,10 @@ cue('drop', T[1] + .05);
   const area = mk('path', { d: d + ` L${pts[4].x} 330 L${pts[0].x} 330 Z`, fill: 'rgba(57,70,244,.09)' });
   const path = mk('path', { d, fill: 'none', stroke: '#3946f4', 'stroke-width': 9, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
   const len = path.getTotalLength(); path.style.strokeDasharray = len;
-  const DR = 3.4;
-  tw(path, t0 + .6, DR, p => { path.style.strokeDashoffset = len * (1 - p); area.style.opacity = cl((p - .2) / .8); }, E.expoInOut);
-  cue('draw', t0 + .6, { d: DR });
-  const big = $('#big'); count(big, t0 + .6, DR, 64, 94, v => v + '%'); cue('count', t0 + .6, { d: DR });
+  const DR = 2.6;
+  tw(path, t0 + .4, DR, p => { path.style.strokeDashoffset = len * (1 - p); area.style.opacity = cl((p - .2) / .8); }, E.expoInOut);
+  cue('draw', t0 + .4, { d: DR });
+  const big = $('#big'); count(big, t0 + .4, DR, 64, 94, v => v + '%'); cue('count', t0 + .4, { d: DR });
   pts.forEach((pt, k) => {
     const p0 = pt;
     const g = mk('g', {});
@@ -311,7 +278,7 @@ cue('drop', T[1] + .05);
     // progress along the polyline decides when each point appears
     let acc2 = 0; for (let j = 1; j <= k; j++) acc2 += Math.hypot(pts[j].x - pts[j - 1].x, pts[j].y - pts[j - 1].y);
     const frac = k === 0 ? 0 : acc2 / [...Array(4).keys()].reduce((s, j) => s + Math.hypot(pts[j + 1].x - pts[j].x, pts[j + 1].y - pts[j].y), 0);
-    const ta = t0 + .6 + DR * invEase(frac);
+    const ta = t0 + .4 + DR * invEase(frac);
     tw(g, ta, .5, p => { g.style.opacity = cl(p * 3);  }, E.backOut);
     if (k > 0) cue('pop', ta);
   });
@@ -319,18 +286,18 @@ cue('drop', T[1] + .05);
 function invEase(y) { let lo = 0, hi = 1; for (let i = 0; i < 30; i++) { const m = (lo + hi) / 2; E.expoInOut(m) < y ? lo = m : hi = m; } return lo; }
 /* ===== S6 Google ===== */
 {
-  const t0 = LS(5) + .3;
-  [['#rA', 0], ['#rB', 1.2]].forEach(([id, dt]) => { const el = $(id); enter(el, t0 + .5 + dt, { d: .9, y: 50 }); cue('card', t0 + .55 + dt); const b = el.querySelector('.badge'); pop(b, t0 + 1.3 + dt, { from: .3 }); cue('pop', t0 + 1.35 + dt); });
-  const c = $('#rC'); enter(c, t0 + 3.2, { d: .9, y: 50 }); cue('card', t0 + 3.25);
+  const t0 = LS(4) + .3;
+  [['#rA', 0], ['#rB', .9]].forEach(([id, dt]) => { const el = $(id); enter(el, t0 + .3 + dt, { d: .9, y: 50 }); cue('card', t0 + .35 + dt); const b = el.querySelector('.badge'); pop(b, t0 + 1.0 + dt, { from: .3 }); cue('pop', t0 + 1.05 + dt); });
+  const c = $('#rC'); enter(c, t0 + 2.3, { d: .9, y: 50 }); cue('card', t0 + 2.35);
 }
 /* ===== S7 CTA ===== */
 {
   const t0 = T[LAST]; const bl = $('#bigLogo'), ar = $('#arrow'), cp = $('#capt');
   exit($('#mark'), t0 + .1);
-  tw(bl, LS(LAST) + .7, 1, p => S(bl, { o: cl(p * 3), y: 40 * (1 - p), s: lerp(.85, 1, p), b: 12 * (1 - p) }), E.expoOut); cue('logo', LS(LAST) + .9);
-  enter(cp, LS(LAST) + 1.6, { d: .9, y: 24 });
-  tw(ar, LS(LAST) + 1.4, .6, p => S(ar, { o: cl(p * 4), s: lerp(.3, 1, p) }), E.backOut); cue('burst', LS(LAST) - .1);
-  ticks.push(t => { const u = t - (LS(LAST) + 2.2); if (u > 0) { ar.style.transform = `translateY(${Math.sin(u * 3.2) * 12}px)`; } });
+  tw(bl, LS(LAST) + .5, 1, p => S(bl, { o: cl(p * 3), y: 40 * (1 - p), s: lerp(.85, 1, p), b: 12 * (1 - p) }), E.expoOut); cue('logo', LS(LAST) + .7);
+  enter(cp, LS(LAST) + 1.3, { d: .9, y: 24 });
+  tw(ar, LS(LAST) + 1.1, .6, p => S(ar, { o: cl(p * 4), s: lerp(.3, 1, p) }), E.backOut); cue('burst', LS(LAST) - .1);
+  ticks.push(t => { const u = t - (LS(LAST) + 1.9); if (u > 0) { ar.style.transform = `translateY(${Math.sin(u * 3.2) * 12}px)`; } });
 }
 cue('drop', T[1] + .05);
 
