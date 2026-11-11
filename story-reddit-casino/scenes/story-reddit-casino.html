@@ -126,7 +126,6 @@ svg{display:block}
         <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M5.5 13.5L12 20l6.5-6.5"/></svg></div>
       <div class="abs" id="capt" style="left:0;width:920px;text-align:center;top:565px;font-weight:600;font-size:46px;color:var(--muted)">Link in the caption</div>
     </div>
-    <div class="core" id="core"></div>
   </div>
   <div class="guides" id="guides" style="display:none"><i style="top:0;height:230px"></i><i style="top:1590px;height:330px"></i></div>
 </div>
@@ -189,23 +188,16 @@ txts.forEach(x => { x.h.style.position = x.p.style.position = 'relative'; });
 enter($('#mark'), .1, { d: 1 });
 cue('cut', 0.3);
 
-/* layers: every transition = collapse into the core dot, then the core opens into the next form */
+/* layers: each form fades up and out (no intermediate shape) */
 const L = [1, 3, 4, 5, 6, 7].map(i => $('#L' + i));
-const LS = i => T[i] + .4;                 // when layer i starts to open
-const LE = i => T[i] + D[i] - .6;          // when layer i starts to collapse
+const LS = i => T[i] + .25;                 // when layer i starts to open
+const LE = i => T[i] + D[i] - .5;          // when layer i starts to collapse
 L.forEach((el, i) => {
-  if (i > 0) tw(el, LS(i), .95, p => S(el, { o: cl(p * 3), s: lerp(.04, 1, p), b: 10 * (1 - p) }), E.expoOut);
+  if (i > 0) tw(el, LS(i), .95, p => S(el, { o: cl(p * 2.5), s: lerp(.94, 1, p), y: 40 * (1 - p), b: 10 * (1 - p) }), E.expoOut);
   else tw(el, 0, .01, p => S(el, { o: 1 }), E.lin);
-  if (i < LAST) tw(el, LE(i), .5, p => S(el, { o: 1 - cl((p - .55) / .45), s: lerp(1, .04, p), b: 10 * p }), E.cubicIn);
+  if (i < LAST) tw(el, LE(i), .5, p => S(el, { o: 1 - p, s: lerp(1, .96, p), y: -30 * p, b: 10 * p }), E.cubicIn);
 });
-const core = $('#core');
 ticks.push(t => {
-  let o = 0, s = 1;
-  for (let i = 0; i < LAST; i++) {
-    const a = LE(i) + .3, z = LS(i + 1) + .28;
-    if (t > a && t < z) { const u = (t - a) / (z - a); o = Math.min(cl((t - a) / .12), cl((z - t) / .15)); s = 1 + .35 * Math.sin(u * Math.PI); }
-  }
-  S(core, { o, s });
   const k = t * .4;   // slow background drift
   $('.b1').style.transform = `translate(${Math.sin(k) * 60}px,${Math.cos(k * .8) * 50}px)`;
   $('.b2').style.transform = `translate(${Math.cos(k * .9) * -60}px,${Math.sin(k * .7) * 60}px)`;
