@@ -28,7 +28,7 @@ HEADERS = {"User-Agent": UA, "Accept-Language": "es-ES,es;q=0.9,en;q=0.5"}
 
 KEYWORDS = ["señal", "senal", "cripto", "inversión", "inversion", "trading", "mercado",
             "análisis", "analisis", "gratis", "dinero", "bolsa", "monedas", "futuros", "noticias"]
-MIN_KEYWORDS = 2
+MIN_KEYWORDS = 1
 
 TME_RE = re.compile(r"(?:https?://)?(?:www\.)?t(?:elegram)?\.me/(?:s/)?(@?[A-Za-z][A-Za-z0-9_]{3,31})(?![A-Za-z0-9_])",
                     re.I)
