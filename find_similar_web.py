@@ -148,9 +148,25 @@ def extract_contacts(desc, links, self_name):
     return " | ".join(dict.fromkeys(parts))
 
 
+SPANISH_STOP = {"de", "la", "el", "los", "las", "que", "en", "y", "para", "con", "por", "una", "un", "del",
+                "es", "se", "tu", "te", "mi", "más", "mas", "como", "al", "lo", "nuestro", "nuestra",
+                "grupo", "canal", "aquí", "aqui", "hoy", "sin", "sobre", "todos", "solo", "sólo"}
+ENGLISH_STOP = {"the", "and", "of", "to", "in", "is", "for", "with", "you", "your", "are", "on", "this",
+                "that", "we", "our", "join", "channel", "from", "all", "new", "get"}
+
+
 def is_spanish(*texts):
+    """Испанский, если доля испанских служебных слов заметно выше английских
+    (+ хотя бы одно ключевое слово по теме). Ключевые слова сами по себе язык не доказывают."""
     low = " ".join(texts).lower()
-    return sum(1 for k in KEYWORDS if k in low) >= MIN_KEYWORDS
+    words = re.findall(r"[a-záéíóúñü]+", low)
+    if len(words) < 8:
+        return False
+    es = sum(w in SPANISH_STOP for w in words)
+    en = sum(w in ENGLISH_STOP for w in words)
+    marks = sum(low.count(c) for c in "ñ¿¡áéíóú")
+    topic = any(k in low for k in KEYWORDS)
+    return topic and es >= 3 and es > 2 * en and (marks >= 2 or es >= 6)
 
 
 def read_lines(p):
